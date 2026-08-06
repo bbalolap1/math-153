@@ -19,7 +19,12 @@ REQUIRED_HEADINGS = {
     "Recognition Clues": "recognition_clues",
     "First Decision": "first_decision",
     "Decision Path": "decision_path",
+    "Hidden Prerequisites": "hidden_prerequisites",
+    "Difficulty Ladder": "difficulty_ladder_raw",
+    "Expected Answer Presentation": "expected_answer_presentation",
 }
+
+LAYER = re.compile(r"^## (L[0-7])(?:\s+.*?)?\s*$", re.MULTILINE)
 
 
 def _sections(body: str) -> dict[str, str]:
@@ -49,6 +54,18 @@ def load_question_family(path: str | Path) -> QuestionFamily:
     payload = dict(metadata)
     for heading, field_name in REQUIRED_HEADINGS.items():
         payload[field_name] = sections[heading]
+    ladder = payload.pop("difficulty_ladder_raw")
+    layer_matches = list(LAYER.finditer(ladder))
+    payload["difficulty_ladder"] = {
+        match.group(1): ladder[
+            match.end() : layer_matches[index + 1].start()
+            if index + 1 < len(layer_matches)
+            else len(ladder)
+        ].strip()
+        for index, match in enumerate(layer_matches)
+    }
+    if len(payload["difficulty_ladder"]) < 5:
+        raise ValueError(f"Difficulty Ladder in {path} must define at least five layers")
     payload["restrictions_and_required_checks"] = sections.get(
         "Restrictions and Required Checks", ""
     )
