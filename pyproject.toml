@@ -1,0 +1,20 @@
+[project]
+name = "math153-tutor"
+version = "0.0.0"
+description = "Source-grounded adaptive Math 153 review system"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic>=2.8",
+  "PyYAML>=6.0",
+  "streamlit>=1.38",
+  "sympy>=1.13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "mypy>=1.11"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
