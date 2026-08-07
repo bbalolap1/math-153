@@ -1,10 +1,15 @@
-# Math 153 Handwritten Training System
+# Math 153 Learning System — Version 0
 
 A source-grounded learning system built around **Student solves; computer coaches and evaluates.** It bridges visible professor-style construction to hidden mathematical structure while requiring paper work before answer entry.
 
-## Current milestone
+## Working Version 0
 
-The runnable vertical slice supports family recognition, an independently recorded first decision, a paper gate with voluntary timer, mathematically aware final-answer validation, error reflection, bounded remediation, a deterministic related problem, local attempt storage, and multidimensional skill evidence. Four representative families are included, but their prompts are explicitly model-inferred until the absent course binaries can be reviewed.
+The app launches on a dashboard and provides a readable course binder, persistent learner-added
+Markdown materials, paper-answer practice, professor-style teaching support, bounded next-line
+coaching, configurable multiple-choice assessments, saved question-by-question review, mistake repair
+with a transfer check, and progress calculated from stored attempts. The controlled practice catalog
+covers 35 families across Foundation through Chapter 5. Runtime questions remain explicitly
+model-inferred until the absent professor/course binaries can be reviewed.
 
 ## Install and run
 
@@ -17,7 +22,11 @@ pip install -e '.[dev]'
 streamlit run src/math153_tutor/app.py
 ```
 
-Learner history is stored locally in ignored `learner_data/attempts.sqlite3`.
+Learner data is stored locally under ignored `learner_data/`:
+
+- `learning_records.sqlite3`: completed assessments and repair checks;
+- `practice_attempts.sqlite3`: Paper Answer Mode submissions;
+- `course_materials/*.md`: learner-added transcripts and notes.
 
 ## Repository structure
 
@@ -40,6 +49,10 @@ pytest
 ruff check .
 ```
 
-## Known limitations
+## Source boundary and V0 limits
 
-Actual PDFs, screenshots, and transcripts are not present, so professor fidelity is not yet verifiable. Professor Mode, assessment builders, delayed scheduling, interval/domain parsing, and Next-Line graphs are later phases. The system does not claim full family or course coverage.
+Actual professor PDFs, screenshots, and transcripts named in the source inventories are not present, so
+professor fidelity is not verifiable. Professor Mode teaches from controlled runtime metadata and labels
+that limitation. Next-Line Coach validates equivalent symbolic lines along the authored worked-solution
+path; it is intentionally not an unrestricted proof engine. Graph practice provides a rendered
+coordinate plane plus a validated coordinate selection rather than free-form canvas clicking.

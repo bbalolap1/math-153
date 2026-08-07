@@ -159,3 +159,37 @@ class PracticeAttempt(BaseModel):
     correct: bool
     answer_type: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+
+
+class AssessmentQuestionResult(BaseModel):
+    problem: PracticeProblem
+    selected_answer: str
+    correct: bool
+    error_code: str | None = None
+
+
+class AssessmentRecord(BaseModel):
+    assessment_id: str
+    assessment_type: Literal["Quiz", "Test", "Exam"]
+    scopes: list[str]
+    question_results: list[AssessmentQuestionResult]
+    duration_seconds: int = Field(ge=0)
+    completed_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+
+    @property
+    def correct_count(self) -> int:
+        return sum(result.correct for result in self.question_results)
+
+    @property
+    def accuracy(self) -> float:
+        return self.correct_count / len(self.question_results) if self.question_results else 0.0
+
+
+class RepairRecord(BaseModel):
+    assessment_id: str
+    problem_id: str
+    family_id: str
+    rule_check_correct: bool
+    transfer_problem_id: str | None = None
+    transfer_correct: bool | None = None
+    completed_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
