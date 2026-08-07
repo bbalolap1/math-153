@@ -3,83 +3,99 @@ family_id: CH5-LOG-EQUATIONS
 chapter: 5
 section: "5.5-5.6"
 title: Logarithmic equations with domain checking
-status: seed
+status: model_inference_pending_source_review
 source_refs:
-  - TRANSCRIPT-CH5-LOGS
+  - MODEL-INFERENCE-PENDING-SOURCE-REVIEW
 ---
 
 # Purpose
 
-Teach the learner to recognize when equal-base logarithms permit argument comparison, when log properties must be applied first, and when an algebraic candidate must be rejected because an original logarithm argument is not positive.
+Bridge direct lecture-shaped examples to independently recognized handwritten solutions. This seed is internal mathematical interpretation pending review of the absent course sources.
 
 # Professor Surface Construction
 
-The professor may present:
-- equal-base logs on both sides;
-- sums/differences of logs that must first be condensed;
-- a linear or quadratic equation after condensation;
-- a candidate that becomes extraneous in the original equation;
-- natural log notation instead of explicit base notation.
+The verified professor construction is not yet available. The milestone uses a short equation/function prompt with no displayed method; this must be replaced or confirmed after visual source review.
 
 # Underlying Mathematical Structure
 
-A logarithm accepts only positive arguments. Equal logarithmic outputs from the same valid base imply equal arguments because the logarithm is one-to-one.
+State positivity restrictions before comparing or condensing logarithms.
+
+# Lecture Form
+
+A direct single-decision example with the relevant notation already visible.
+
+# Assessment Form
+
+A minimally guided prompt that requires recognition, a first decision, handwritten work, and a complete answer.
+
+# Hidden Prerequisites
+
+log properties, factoring, and domain checking.
 
 # Recognition Clues
 
-- logarithms occur on both sides;
-- bases match or both are `ln`/common log;
-- the prompt says solve;
-- multiple logs on one side signal a combine step;
-- final candidates must be tested in every original argument.
+Use the operation and notation in the prompt, not merely its vocabulary, to identify the family.
 
 # First Decision
 
-State argument restrictions, then determine whether logs can be directly compared or must first be combined.
+State positivity restrictions before comparing or condensing logarithms.
 
 # Decision Path
 
 ```text
-state domain restrictions
-→ apply log properties if needed
-→ use one-to-one property
-→ solve algebraic equation
-→ substitute candidates into original arguments
-→ reject invalid candidates
-→ present valid solution set
+recognize the invariant structure
+→ choose the first reversible or evaluative action
+→ complete the algebra on paper
+→ verify restrictions and requested form
+→ present the answer
 ```
+
+# Restrictions and Required Checks
+
+Recheck the result in the original prompt. Apply domain restrictions whenever an operation requires them.
+
+# Variation Dimensions
+
+Change one controlled dimension at a time: coefficients, notation, representation, then prerequisite mixture. Do not claim professor fidelity until sources are reviewed.
 
 # Difficulty Ladder
 
+## L0 Foundation
+Repair log properties, factoring, and domain checking in isolation.
+
 ## L1 Direct
-`log_b(linear) = log_b(linear)` with one valid solution.
+Solve the direct symbolic form with a single decision.
 
 ## L2 Guided
-Same structure with explicit domain boxes and step prompts.
+Classify the family and select the first decision before solving.
 
 ## L3 Representation Change
-Use `ln`, common log, or a table-to-equation interpretation.
+Use a table, verbal statement, or alternate notation when source-supported.
 
 ## L4 Mixed Prerequisite
-Condense product/quotient/power rules before solving.
+Combine the family with one older algebra skill.
 
 ## L5 Professor Style
-No method hint; one candidate is extraneous or no solution remains.
+Use reviewed source-like information order and guidance density; currently blocked on source review.
 
 ## L6 Timed
-Mixed with exponential equations and form conversion.
+Mix with adjacent families without hints.
 
 ## L7 Cumulative Transfer
-Multipart problem requiring domain, exact solution, decimal approximation, and comparison to a graph.
+Recognize the method in an unfamiliar source-supported construction.
 
 # Common Errors
 
-- adding log arguments instead of multiplying;
-- comparing arguments before bases/expressions are aligned;
-- failing to state positivity restrictions;
-- retaining an extraneous candidate;
-- returning a decimal when exact form is required.
+Misrecognition; an invalid first decision; arithmetic or algebra execution errors; omitted restrictions; incomplete answer form.
+
+# Feedback Rules
+
+Give recognition feedback first, then a bounded first-decision cue. Do not reveal the full solution before controlled retries.
+
+# Expected Answer Presentation
+
+Present a checked exact solution set, with checks required by the original operations.
 
 # Mastery Rule
 
-Three representations, two professor-style successes, and zero domain/extraneous errors in a delayed timed attempt.
+Require three surface constructions, representation transfer where applicable, hint-free professor-style success, delayed success, no critical check errors, and a cumulative prerequisite problem.
