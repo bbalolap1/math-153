@@ -73,11 +73,11 @@ class Attempt(BaseModel):
     error_categories: list[ErrorCategory] = Field(default_factory=list)
     hints_used: int = 0
     duration_seconds: int = Field(ge=0)
-    mode: Literal["handwritten", "professor"] = "handwritten"
-    recognition_answer: str
-    first_decision_answer: str
+    mode: Literal["handwritten", "professor", "assessment"] = "handwritten"
+    recognition_answer: str | None = None
+    first_decision_answer: str | None = None
     final_answer: str
-    confidence: int = Field(ge=1, le=5)
+    confidence: int | None = Field(default=None, ge=1, le=5)
     self_reported_error: ErrorCategory | None = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 

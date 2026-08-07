@@ -32,3 +32,31 @@ def submit_attempt(
     )
     repository.add(attempt)
     return attempt, result
+
+
+def submit_assessment_attempt(
+    repository: AttemptRepository,
+    problem: GeneratedProblem,
+    final_answer: str,
+    duration_seconds: int,
+) -> tuple[Attempt, ValidationResult]:
+    """Persist final-answer evidence without inventing uncollected learning evidence."""
+    result = validate_answer(problem, final_answer)
+    errors = [] if result.correct else [
+        ErrorCategory.DOMAIN if problem.critical_checks else ErrorCategory.ALGEBRA
+    ]
+    attempt = Attempt(
+        problem_id=problem.problem_id,
+        family_id=problem.family_id,
+        layer=problem.difficulty_layer,
+        correct=result.correct,
+        recognition_correct=None,
+        first_decision_correct=None,
+        critical_check_correct=result.correct if problem.critical_checks else None,
+        error_categories=errors,
+        duration_seconds=duration_seconds,
+        mode="assessment",
+        final_answer=final_answer,
+    )
+    repository.add(attempt)
+    return attempt, result
