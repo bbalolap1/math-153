@@ -116,6 +116,9 @@ def _style() -> None:
 
 
 def _go(page: str) -> None:
+    """Queue navigation for the next rerun instead of mutating an instantiated widget."""
+    if page not in NAVIGATION:
+        raise ValueError(f"Unknown navigation destination: {page}")
     st.session_state.pending_navigation = page
     st.rerun()
 
@@ -128,6 +131,8 @@ def _sidebar() -> str:
     if "navigation_page" not in st.session_state:
         st.session_state.navigation_page = "Dashboard"
     if "pending_navigation" in st.session_state:
+        # Streamlit forbids changing a widget-backed key after that widget is rendered.
+        # This synchronization happens before navigation_selector is instantiated.
         st.session_state.navigation_page = st.session_state.pop("pending_navigation")
         st.session_state.navigation_selector = st.session_state.navigation_page
     st.sidebar.caption("COURSES")

@@ -35,6 +35,36 @@ def test_app_launches_on_dashboard_without_starting_assessment(
     ]
 
 
+def test_dashboard_cards_queue_navigation_without_mutating_sidebar_widget(
+    tmp_path: Path, monkeypatch
+) -> None:
+    destinations = {
+        "Course Review": "Math 153 — Course Review",
+        "Learning Tools": "Learning Tools",
+        "Quiz / Test / Exam": "Quiz / Test / Exam",
+        "Progress": "Progress",
+    }
+    for destination, expected_title in destinations.items():
+        app = _app(tmp_path, monkeypatch)
+        next(
+            button for button in app.button if button.label == f"Open {destination}"
+        ).click().run()
+
+        assert not app.exception
+        assert app.session_state["navigation_page"] == destination
+        assert app.session_state["navigation_selector"] == destination
+        assert app.title[0].value == expected_title
+
+
+def test_dashboard_section_shortcut_uses_safe_navigation(tmp_path: Path, monkeypatch) -> None:
+    app = _app(tmp_path, monkeypatch)
+    next(button for button in app.button if button.label == "Open Foundation").click().run()
+
+    assert not app.exception
+    assert app.session_state["navigation_page"] == "Course Review"
+    assert app.title[0].value == "Math 153 — Course Review"
+
+
 def test_course_review_opens_readable_family_content(tmp_path: Path, monkeypatch) -> None:
     app = _app(tmp_path, monkeypatch)
     _navigation(app).set_value("Course Review").run()
