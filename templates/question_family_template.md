@@ -57,6 +57,14 @@ recognize
 
 # Common Errors
 
+# Professor Traps
+
+# Professor-Style Templates
+
+1. Source-reviewed construction A.
+2. Source-reviewed construction B.
+3. Source-reviewed construction C.
+
 # Feedback Rules
 
 # Expected Answer Presentation
