@@ -88,6 +88,16 @@ Recognize the method in an unfamiliar source-supported construction.
 
 Misrecognition; an invalid first decision; arithmetic or algebra execution errors; omitted restrictions; incomplete answer form.
 
+# Professor Traps
+
+Model-inferred V0 traps: changed information order, a hidden prerequisite, an invalid inverse operation, and omission of the required check. These are not attributed to the professor until source binaries are reviewed.
+
+# Professor-Style Templates
+
+1. A minimally guided symbolic logarithmic equations prompt with the method unstated.
+2. A logarithmic equations representation bridge that changes notation or context while preserving the same first decision.
+3. A cumulative logarithmic equations prompt with one prerequisite and the required final-form check.
+
 # Feedback Rules
 
 Give recognition feedback first, then a bounded first-decision cue. Do not reveal the full solution before controlled retries.

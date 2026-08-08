@@ -8,7 +8,8 @@ from fractions import Fraction
 
 import sympy
 
-from .models import PracticeProblem, WorkedSolution
+from .models import DifficultyLayer, PracticeProblem, WorkedSolution
+from .validation import validate_practice_answer
 
 FOUNDATION = "Foundation / Version 0.0"
 CHAPTERS_12 = "Chapters 1–2"
@@ -26,6 +27,23 @@ class FamilySpec:
     chapter: str
     section: str
     skills: tuple[str, ...]
+
+    @property
+    def available_layers(self) -> tuple[DifficultyLayer, ...]:
+        return tuple(DifficultyLayer)
+
+    @property
+    def source_grounding(self) -> str:
+        if self.family_id == "CH34-DOMAIN-RADICAL-RATIONAL":
+            return "user_provided_example_pending_source_binary_review"
+        return "model_inference_pending_source_review"
+
+    @property
+    def mastery_rule(self) -> str:
+        return (
+            "Correct recognition across representations, a correct professor/timed first decision, "
+            "two independent correct variants, no critical check failure, and transfer repair."
+        )
 
 
 _SPECS = [
@@ -117,6 +135,14 @@ _SPECS = [
     ("CH34-CIRCLES", "Circles", CHAPTERS_34, "3", "3.4", ("circle equations", "completing square")),
     ("CH34-FUNCTIONS", "Functions", CHAPTERS_34, "4", "4.1", ("function notation", "domain/range")),
     (
+        "CH34-DOMAIN-RADICAL-RATIONAL",
+        "Domain of radical-rational functions",
+        CHAPTERS_34,
+        "4",
+        "4.1",
+        ("inequalities", "radical domains", "denominator restrictions", "interval notation"),
+    ),
+    (
         "CH34-COMPOSITION",
         "Function composition",
         CHAPTERS_34,
@@ -207,6 +233,35 @@ FAMILY_SPECS = {row[0]: FamilySpec(*row) for row in _SPECS}
 
 def _difficulty(variant: int) -> str:
     return ("direct", "standard", "professor", "mixed")[min(variant // 3, 3)]
+
+
+def _difficulty_layer(variant: int) -> DifficultyLayer:
+    layers = [
+        DifficultyLayer.FOUNDATION,
+        DifficultyLayer.DIRECT,
+        DifficultyLayer.GUIDED,
+        DifficultyLayer.REPRESENTATION,
+        DifficultyLayer.MIXED,
+        DifficultyLayer.PROFESSOR,
+        DifficultyLayer.TIMED,
+        DifficultyLayer.CUMULATIVE,
+        DifficultyLayer.PROFESSOR,
+        DifficultyLayer.CUMULATIVE,
+    ]
+    return layers[variant % 10]
+
+
+def _representation(prompt: str, answer_type: str) -> str:
+    if answer_type == "table":
+        return "table"
+    if "graph" in prompt.casefold() or "vertex" in prompt.casefold():
+        return "graph"
+    if answer_type in {"multiple_choice", "multi_select"}:
+        return "classification"
+    context_clues = {"account", "population", "service", "travels", "investment", "model"}
+    if any(clue in prompt.casefold() for clue in context_clues):
+        return "context"
+    return "symbolic"
 
 
 def _solution(
@@ -426,6 +481,30 @@ def _build(
                     [f"{a}={a + 1}, which is false."],
                     "no solution",
                     "No x can repair a false constant equality.",
+                ),
+            )
+        if 3 <= k <= 6:
+            units = r.randint(4, 12)
+            rate = r.randint(3, 9)
+            setup_fee = r.randint(10, 45)
+            total = setup_fee + rate * units
+            return (
+                f"A repair service charges a fixed setup fee of \\${setup_fee} plus "
+                f"\\${rate} per replacement part. The bill is \\${total}. "
+                "How many replacement parts were used?",
+                "solution_set",
+                str(units),
+                str((total - rate) // setup_fee),
+                [],
+                _solution(
+                    "A total equals fixed cost plus rate times quantity.",
+                    f"{setup_fee}+{rate}x={total}",
+                    [f"{rate}x={total - setup_fee}", f"x={units}"],
+                    str(units),
+                    f"{setup_fee}+{rate}({units})={total}; the nonnegative integer fits the context.",
+                    inference="Translate fixed fee + per-part cost into a linear equation.",
+                    prerequisite="Money units, inverse operations, and interpreting a whole-number result.",
+                    family_reason="The unknown quantity is multiplied by a constant rate and combined with a fixed fee.",
                 ),
             )
         return (
@@ -711,6 +790,57 @@ def _build(
                 "Evaluate multiplication before addition.",
             ),
         )
+    if fid == "CH34-DOMAIN-RADICAL-RATIONAL":
+        variable = ["x", "t", "u", "z", "w"][k % 5]
+        function_name = ["f", "g", "h", "p", "R"][k % 5]
+        radical_coefficient = r.randint(1, 5)
+        lower_bound = r.randint(-4, 6)
+        denominator_coefficient = r.randint(1, 6)
+        excluded = lower_bound + r.randint(1, 5) if k >= 4 else lower_bound - r.randint(1, 5)
+        radical_constant = -radical_coefficient * lower_bound
+        denominator_constant = -denominator_coefficient * excluded
+        numerator = f"{radical_coefficient}{variable}{radical_constant:+d}"
+        denominator = f"{denominator_coefficient}{variable}{denominator_constant:+d}"
+        if excluded > lower_bound:
+            answer = f"[{lower_bound},{excluded}) U ({excluded},oo)"
+            intersection = (
+                f"{variable}>={lower_bound} with {variable}!={excluded} splits the domain at "
+                f"{excluded}."
+            )
+            wrong = f"[{lower_bound},oo)"
+        else:
+            answer = f"[{lower_bound},oo)"
+            intersection = (
+                f"{variable}>={lower_bound} already excludes {excluded}, so no interval split is needed."
+            )
+            wrong = f"({lower_bound},oo)"
+        prompt = (
+            "Find the domain of the function. State both restrictions, then write the final answer "
+            f"in interval notation: ${function_name}({variable})="
+            f"\\frac{{\\sqrt{{{numerator}}}}}{{{denominator}}}$"
+        )
+        return (
+            prompt,
+            "domain",
+            answer,
+            wrong,
+            [],
+            _solution(
+                "An even radical requires a nonnegative radicand, and a denominator cannot equal zero.",
+                f"{radical_coefficient}{variable}{radical_constant:+d}>=0",
+                [
+                    f"{variable}>={lower_bound}",
+                    f"{denominator_coefficient}{variable}{denominator_constant:+d}!=0",
+                    f"{variable}!={excluded}",
+                    intersection,
+                ],
+                answer,
+                "The final interval satisfies the radical inequality and excludes every denominator zero.",
+                inference="Recognize that two domain restrictions must be intersected, not handled separately.",
+                prerequisite="Solve a linear inequality, solve a linear equation, and write interval notation.",
+                family_reason="The function combines an even-index radical with a variable denominator.",
+            ),
+        )
     if fid == "CH34-COMPOSITION":
         a, b, n = r.randint(2, 5), r.randint(-4, 4), r.randint(-3, 5)
         ans = a * n * n + b
@@ -981,25 +1111,20 @@ def generate_practice_problem(
         raise ValueError(f"Unknown family: {family_id}")
     spec = FAMILY_SPECS[family_id]
     variant = seed % 10 if variant is None else variant % 10
-    prompt, answer_type, expected, _wrong, choices, solution = _build(spec, seed, variant)
+    prompt, answer_type, expected, authored_wrong, choices, solution = _build(spec, seed, variant)
     if answer_type == "multiple_choice":
         wrong = next(choice for choice in choices if choice != expected)
     elif answer_type == "multi_select":
         wrong = next(choice for choice in choices if choice not in expected.split(","))
-    elif answer_type == "interval":
-        wrong = "(999999,1000000)"
-    elif answer_type == "ordered_pair":
-        wrong = "(999999,999999)"
-    elif answer_type == "equation":
-        wrong = "y=999999*x+999999"
-    elif answer_type == "solution_set":
-        wrong = "999999"
-    elif answer_type == "complex_number":
-        wrong = "999999+999999i"
     else:
-        wrong = "999999"
+        wrong = authored_wrong
     difficulty = _difficulty(variant)
-    return PracticeProblem(
+    source_refs = (
+        ["USER-PROMPT-2026-08-08-DOMAIN-EXAMPLE"]
+        if family_id == "CH34-DOMAIN-RADICAL-RATIONAL"
+        else ["MODEL-INFERENCE-PENDING-SOURCE-REVIEW"]
+    )
+    problem = PracticeProblem(
         problem_id=f"{family_id}-{seed}-{variant}",
         group=spec.group,
         chapter=spec.chapter,
@@ -1012,8 +1137,16 @@ def generate_practice_problem(
         expected_answer=expected,
         wrong_answer=wrong,
         choices=choices,
-        source_type="model_inference",
-        source_file="unavailable_course_binaries",
+        source_type=(
+            "user_provided_example_pending_binary_review"
+            if family_id == "CH34-DOMAIN-RADICAL-RATIONAL"
+            else "model_inference"
+        ),
+        source_file=(
+            "user_prompt_2026-08-08"
+            if family_id == "CH34-DOMAIN-RADICAL-RATIONAL"
+            else "unavailable_course_binaries"
+        ),
         source_question_or_page="not_available",
         construction_notes=(
             "Controlled exam-review template; not claimed as copied or professor-verified. "
@@ -1023,7 +1156,28 @@ def generate_practice_problem(
         required_skills=list(spec.skills),
         worked_solution=solution,
         parameter_seed=seed,
+        difficulty_layer=_difficulty_layer(variant),
+        representation=_representation(prompt, answer_type),
+        source_refs=source_refs,
+        variant_reason=(
+            f"Controlled { _difficulty_layer(variant).value } variant {variant + 1}/10; "
+            "changes only authored parameters, representation, or prerequisite mixture."
+        ),
+        reasoning_checkpoints=[solution.setup, *solution.calculation, solution.check],
     )
+    if validate_practice_answer(problem, problem.wrong_answer).correct:
+        fallback = {
+            "interval": "(0,0)",
+            "domain": "(0,0)",
+            "range": "(0,0)",
+            "ordered_pair": "(0,0)",
+            "ordered_pairs": "(0,0)",
+            "equation": "y=0",
+            "solution_set": "No solution",
+            "complex_number": "0",
+        }.get(answer_type, "0" if expected != "0" else "1")
+        problem = problem.model_copy(update={"wrong_answer": fallback})
+    return problem
 
 
 def family_variants(family_id: str) -> list[PracticeProblem]:

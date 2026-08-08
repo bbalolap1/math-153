@@ -59,6 +59,8 @@ class QuestionFamily(BaseModel):
     expected_answer_presentation: str
     restrictions_and_required_checks: str = ""
     common_errors: str = ""
+    professor_traps: str
+    professor_style_templates: str
     mastery_rule: str = ""
 
 
@@ -73,11 +75,11 @@ class Attempt(BaseModel):
     error_categories: list[ErrorCategory] = Field(default_factory=list)
     hints_used: int = 0
     duration_seconds: int = Field(ge=0)
-    mode: Literal["handwritten", "professor"] = "handwritten"
-    recognition_answer: str
-    first_decision_answer: str
+    mode: Literal["handwritten", "professor", "assessment"] = "handwritten"
+    recognition_answer: str | None = None
+    first_decision_answer: str | None = None
     final_answer: str
-    confidence: int = Field(ge=1, le=5)
+    confidence: int | None = Field(default=None, ge=1, le=5)
     self_reported_error: ErrorCategory | None = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
@@ -150,6 +152,11 @@ class PracticeProblem(BaseModel):
     required_skills: list[str]
     worked_solution: WorkedSolution
     parameter_seed: int
+    difficulty_layer: DifficultyLayer
+    representation: Literal["symbolic", "context", "table", "graph", "classification"]
+    source_refs: list[str]
+    variant_reason: str
+    reasoning_checkpoints: list[str]
 
 
 class PracticeAttempt(BaseModel):
@@ -159,3 +166,39 @@ class PracticeAttempt(BaseModel):
     correct: bool
     answer_type: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+
+
+class AssessmentQuestionResult(BaseModel):
+    problem: PracticeProblem
+    selected_answer: str
+    correct: bool
+    error_code: str | None = None
+    error_category: str | None = None
+
+
+class AssessmentRecord(BaseModel):
+    assessment_id: str
+    assessment_type: Literal["Quiz", "Test", "Exam"]
+    scopes: list[str]
+    question_results: list[AssessmentQuestionResult]
+    duration_seconds: int = Field(ge=0)
+    started_at: datetime
+    completed_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+
+    @property
+    def correct_count(self) -> int:
+        return sum(result.correct for result in self.question_results)
+
+    @property
+    def accuracy(self) -> float:
+        return self.correct_count / len(self.question_results) if self.question_results else 0.0
+
+
+class RepairRecord(BaseModel):
+    assessment_id: str
+    problem_id: str
+    family_id: str
+    rule_check_correct: bool
+    transfer_problem_id: str | None = None
+    transfer_correct: bool | None = None
+    completed_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
