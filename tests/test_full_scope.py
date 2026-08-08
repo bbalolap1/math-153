@@ -32,7 +32,7 @@ def test_every_family_has_ten_working_variants(family_id: str) -> None:
         assert problem.worked_solution.calculation
         assert problem.worked_solution.final_answer == problem.expected_answer
         assert problem.worked_solution.check
-        assert problem.source_type == "model_inference"
+        assert problem.source_type == "source_markdown_controlled_template"
         assert problem.source_refs
         assert problem.difficulty_layer.value in {f"L{index}" for index in range(8)}
         assert problem.representation

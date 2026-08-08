@@ -1,36 +1,58 @@
+import json
 from pathlib import Path
 
 from math153_tutor.source_manifest import (
-    build_inventory_manifest,
-    classify,
+    build_family_source_map,
+    build_markdown_manifest,
+    coverage_report,
+    discover_markdown_sources,
+    extract_markdown_source,
     read_manifest,
     write_manifest,
 )
 
 
-def test_inventory_manifest_records_absent_binaries_and_pairs_sources(tmp_path: Path) -> None:
-    inventory = tmp_path / "math_inventory.txt"
-    inventory.write_text(
-        "math153/1.1.pdf\nmath153/Quiz_1.pdf\nmath153/Quiz_1 Solution.pdf\n",
-        encoding="utf-8",
-    )
+def test_markdown_extraction_reads_body_and_records_evidence(tmp_path: Path) -> None:
+    root = tmp_path
+    path = root / "sources" / "quizzes" / "Quiz_5.md"
+    path.parent.mkdir(parents=True)
+    path.write_text("# Quiz 5\n\n## Q.1\nSolve $x+2=4$.\n", encoding="utf-8")
 
-    entries = build_inventory_manifest([inventory])
+    entry = extract_markdown_source(path, root)
 
-    assert entries[0].source_kind == "lecture_section"
-    assert entries[0].section == "1.1"
-    assert all(not entry.binary_present for entry in entries)
-    quiz = next(entry for entry in entries if entry.source_kind == "quiz")
-    solution = next(entry for entry in entries if entry.source_kind == "quiz_solution")
-    assert quiz.paired_source_id == solution.source_id
-    assert solution.paired_source_id == quiz.source_id
+    assert entry.actual_path == "sources/quizzes/Quiz_5.md"
+    assert entry.extraction_status == "complete"
+    assert entry.question_count == 1
+    assert entry.formula_count == 1
+    assert entry.content_length == len(path.read_text(encoding="utf-8"))
+    assert entry.content_hash
+    assert any(record.content == "Solve $x+2=4$." for record in entry.extracted_records)
 
-    output = tmp_path / "manifest.csv"
+
+def test_repository_corpus_is_complete_and_covers_every_chapter() -> None:
+    root = Path(__file__).parents[1]
+    paths = discover_markdown_sources(root / "sources")
+    entries = build_markdown_manifest(root)
+
+    assert len(paths) == len(entries) == 53
+    assert all(entry.extraction_status == "complete" for entry in entries)
+    assert coverage_report(entries)["chapters_detected"] == ["1.x", "2.x", "3.x", "4.x", "5.x"]
+    quiz = next(entry for entry in entries if entry.actual_path == "sources/quizzes/Quiz_5.md")
+    assert quiz.question_count > 0
+    assert quiz.formula_count > 0
+    assert quiz.content_length > 100
+
+
+def test_manifest_round_trip_and_every_source_is_used(tmp_path: Path) -> None:
+    root = Path(__file__).parents[1]
+    entries = build_markdown_manifest(root)
+    output = tmp_path / "manifest.json"
     write_manifest(entries, output)
-    assert "inventory_only" in output.read_text(encoding="utf-8")
     assert read_manifest(output) == entries
 
-
-def test_manifest_classification_is_filename_evidence_only() -> None:
-    assert classify("Version 2 (With Solutions).pdf")[0] == "exam_solution"
-    assert classify("Screenshot 2026.png")[0] == "image"
+    family_ids = ["F0-FRACTIONS", "CH12-COMPLEX", "CH5-LOGARITHMS"]
+    mapping = build_family_source_map(entries, family_ids)
+    assert all(mapping.values())
+    used = {path for refs in mapping.values() for path in refs}
+    assert used == {entry.actual_path for entry in entries}
+    assert json.loads(output.read_text(encoding="utf-8"))[0]["extracted_records"]
