@@ -3,18 +3,22 @@ family_id: CH1-LINEAR-EQUATIONS
 chapter: 1
 section: "1.x"
 title: Linear equations
-status: model_inference_pending_source_review
+status: source_grounded
 source_refs:
-  - MODEL-INFERENCE-PENDING-SOURCE-REVIEW
+  - sources/lectures/2.1.md
+  - sources/quizzes/Quiz_1.md
+  - sources/quizzes/Quiz_1_Solution.md
+  - sources/tests/Test_1.md
+  - sources/tests/Test_1_Solutions.md
 ---
 
 # Purpose
 
-Bridge direct lecture-shaped examples to independently recognized handwritten solutions. This seed is internal mathematical interpretation pending review of the absent course sources.
+Lecture 2.1 develops equation solving and explicitly distinguishes identities, contradictions, and conditional equations. Quiz 1 and Test 1 then remove much of the scaffolding and require the algebra to be shown.
 
 # Professor Surface Construction
 
-The verified professor construction is not yet available. The milestone uses a short equation/function prompt with no displayed method; this must be replaced or confirmed after visual source review.
+The assessment sources place distribution, fractions, radicals, and absolute-value notation around the equation, so the solver must classify the equation before choosing reversible operations.
 
 # Underlying Mathematical Structure
 
@@ -56,7 +60,7 @@ Recheck the result in the original prompt. Apply domain restrictions whenever an
 
 # Variation Dimensions
 
-Change one controlled dimension at a time: coefficients, notation, representation, then prerequisite mixture. Do not claim professor fidelity until sources are reviewed.
+Change one controlled dimension at a time: coefficients, notation, representation, then prerequisite mixture. Use only variations supported by the attached lecture and assessment sources.
 
 # Difficulty Ladder
 
@@ -76,7 +80,7 @@ Use a table, verbal statement, or alternate notation when source-supported.
 Combine the family with one older algebra skill.
 
 ## L5 Professor Style
-Use reviewed source-like information order and guidance density; currently blocked on source review.
+Use the information order and guidance density visible in the attached assessment and review sources.
 
 ## L6 Timed
 Mix with adjacent families without hints.
@@ -90,7 +94,7 @@ Misrecognition; an invalid first decision; arithmetic or algebra execution error
 
 # Professor Traps
 
-Model-inferred V0 traps: changed information order, a hidden prerequisite, an invalid inverse operation, and omission of the required check. These are not attributed to the professor until source binaries are reviewed.
+Source-observed risks include distributing a negative sign incorrectly, clearing only some denominators, dividing by a variable expression without a restriction, and failing to identify no-solution or all-real-number outcomes.
 
 # Professor-Style Templates
 

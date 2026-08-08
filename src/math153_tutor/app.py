@@ -37,9 +37,10 @@ from math153_tutor.practice_catalog import (
     CHAPTER_5,
     FAMILY_SPECS,
     FOUNDATION,
+    family_source_refs,
     generate_practice_problem,
 )
-from math153_tutor.paths import content_root, learner_data_root, source_manifest_path
+from math153_tutor.paths import REPOSITORY_ROOT, content_root, learner_data_root, source_manifest_path
 from math153_tutor.source_manifest import read_manifest
 from math153_tutor.storage import (
     LearningRecordRepository,
@@ -274,14 +275,38 @@ def _course_review() -> None:
             )
         st.dataframe(catalog_rows, hide_index=True, width="stretch")
 
-    with st.expander("Source availability"):
+    with st.expander("Source Inspector"):
         manifest = read_manifest(source_manifest_path())
-        present = sum(item.binary_present for item in manifest)
-        st.write(f"{len(manifest)} inventoried source filenames · {present} binaries present")
-        st.caption(
-            "Inventory-only records establish filenames and likely source roles, not mathematical "
-            "content or professor verification."
-        )
+        st.write(f"{len(manifest)} source files · {sum(item.extraction_status == 'complete' for item in manifest)} read completely")
+        if manifest:
+            selected_path = st.selectbox("Open source", [item.actual_path for item in manifest])
+            selected = next(item for item in manifest if item.actual_path == selected_path)
+            st.markdown("### ORIGINAL SOURCE")
+            st.code((REPOSITORY_ROOT / selected.actual_path).read_text(encoding="utf-8"), language="markdown")
+            st.markdown("### EXTRACTED DATA")
+            st.write({
+                "questions": selected.question_count,
+                "solutions": selected.solution_count,
+                "formulas": selected.formula_count,
+                "topics": selected.topics,
+                "content_length": selected.content_length,
+            })
+            for record_type in ("question", "example", "formula", "solution"):
+                records = [record.model_dump() for record in selected.extracted_records if record.record_type == record_type]
+                if records:
+                    with st.expander(record_type.title() + "s"):
+                        st.write(records)
+            used_by = [family_id for family_id, refs in family_source_refs().items() if selected.actual_path in refs]
+            st.markdown("### USED BY")
+            st.write(used_by)
+            st.markdown("### GENERATED FROM THIS SOURCE")
+            generated = []
+            for family_id in used_by:
+                if family_id not in FAMILY_SPECS:
+                    continue
+                problem = generate_practice_problem(family_id, 153, 0)
+                generated.append({"family_id": family_id, "difficulty": problem.difficulty_layer.value, "seed": problem.parameter_seed, "prompt": problem.prompt})
+            st.write(generated)
 
     if st.button("Add Course Material", type="primary"):
         st.session_state.show_add_material = True

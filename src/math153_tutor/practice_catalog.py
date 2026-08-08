@@ -3,12 +3,15 @@ from __future__ import annotations
 
 import math
 import random
+import json
 from dataclasses import dataclass
 from fractions import Fraction
+from functools import lru_cache
 
 import sympy
 
 from .models import DifficultyLayer, PracticeProblem, WorkedSolution
+from .paths import REPOSITORY_ROOT
 from .validation import validate_practice_answer
 
 FOUNDATION = "Foundation / Version 0.0"
@@ -34,7 +37,7 @@ class FamilySpec:
 
     @property
     def source_grounding(self) -> str:
-        return "model_inference_pending_source_review"
+        return "source_markdown_controlled_template"
 
     @property
     def mastery_rule(self) -> str:
@@ -219,6 +222,14 @@ _SPECS = [
     ),
 ]
 FAMILY_SPECS = {row[0]: FamilySpec(*row) for row in _SPECS}
+
+
+@lru_cache
+def family_source_refs() -> dict[str, list[str]]:
+    path = REPOSITORY_ROOT / "data" / "derived" / "family_source_map.json"
+    if not path.is_file():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _difficulty(variant: int) -> str:
@@ -1058,6 +1069,7 @@ def generate_practice_problem(
     else:
         wrong = authored_wrong
     difficulty = _difficulty(variant)
+    source_refs = family_source_refs().get(family_id, [])
     problem = PracticeProblem(
         problem_id=f"{family_id}-{seed}-{variant}",
         group=spec.group,
@@ -1071,11 +1083,11 @@ def generate_practice_problem(
         expected_answer=expected,
         wrong_answer=wrong,
         choices=choices,
-        source_type="model_inference",
-        source_file="unavailable_course_binaries",
-        source_question_or_page="not_available",
+        source_type="source_markdown_controlled_template",
+        source_file=source_refs[0] if source_refs else "source_mapping_not_built",
+        source_question_or_page="extracted family evidence",
         construction_notes=(
-            "Controlled exam-review template; not claimed as copied or professor-verified. "
+            "Controlled exam-review template linked to extracted corpus evidence; not copied verbatim. "
             f"Variant {variant + 1}/10 changes parameters and difficulty layer."
         ),
         rule_or_formula=solution.rule,
@@ -1084,7 +1096,7 @@ def generate_practice_problem(
         parameter_seed=seed,
         difficulty_layer=_difficulty_layer(variant),
         representation=_representation(prompt, answer_type),
-        source_refs=["MODEL-INFERENCE-PENDING-SOURCE-REVIEW"],
+        source_refs=source_refs,
         variant_reason=(
             f"Controlled { _difficulty_layer(variant).value } variant {variant + 1}/10; "
             "changes only authored parameters, representation, or prerequisite mixture."
