@@ -32,7 +32,7 @@ def save_course_material(
         raise ValueError("Course material cannot be empty.")
     directory = Path(root)
     directory.mkdir(parents=True, exist_ok=True)
-    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%S%fZ")
     path = directory / f"{stamp}-{_safe_fragment(title)}.md"
     document = (
         "---\n"
