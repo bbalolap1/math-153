@@ -22,6 +22,8 @@ REQUIRED_HEADINGS = {
     "Hidden Prerequisites": "hidden_prerequisites",
     "Difficulty Ladder": "difficulty_ladder_raw",
     "Expected Answer Presentation": "expected_answer_presentation",
+    "Professor Traps": "professor_traps",
+    "Professor-Style Templates": "professor_style_templates",
 }
 
 LAYER = re.compile(r"^## (L[0-7])(?:\s+.*?)?\s*$", re.MULTILINE)
