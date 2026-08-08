@@ -1,57 +1,45 @@
-# Math 153 Adaptive Review System — Version 0.0
+# Math 153 Handwritten Training System
 
-This repository is the Codex-ready foundation for a Math 153 study and assessment system built from the user's actual course materials.
+A source-grounded learning system built around **Student solves; computer coaches and evaluates.** It bridges visible professor-style construction to hidden mathematical structure while requiring paper work before answer entry.
 
-## Central problem
+## Current milestone
 
-The lecture usually presents a direct concept and a simple example, while activities, quizzes, tests, and final-exam versions hide the same concept behind different wording, representations, prerequisite skills, and multi-step decisions. The system must preserve the professor's question construction while teaching the learner to recognize the underlying mathematical structure.
+The runnable vertical slice supports family recognition, an independently recorded first decision, a paper gate with voluntary timer, mathematically aware final-answer validation, error reflection, bounded remediation, a deterministic related problem, local attempt storage, and multidimensional skill evidence. Four representative families are included, but their prompts are explicitly model-inferred until the absent course binaries can be reviewed.
 
-## Non-negotiable requirements
+## Install and run
 
-1. Source-first: generated material must trace back to a lecture, activity, quiz, test, review, exam version, or uploaded exercise image.
-2. Professor-style preservation: keep wording patterns, question order, answer form, common traps, and expected solution structure.
-3. Layered progression: Version 0.0 foundation → guided recognition → direct skill → representation change → mixed prerequisite → professor-style → timed exam transfer.
-4. Human-readable authoring: Markdown is the primary content format. Do not use large hand-authored JSON files.
-5. Recognition before speed: every family teaches “what is this question really asking?” before requiring a full solution.
-6. Exact mathematics: preserve domain restrictions, excluded values, extraneous-solution checks, endpoint rules, and requested answer format.
-7. Computer practice with handwritten logic: math input, multiple choice, ordered steps, tables, graph interpretation, and free response must coexist.
+Requires Python 3.12.
 
-## Course organization
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install -e '.[dev]'
+streamlit run src/math153_tutor/app.py
+```
 
-- Chapter 0.0: real numbers, signs, fractions, algebra language, order of operations, exponent foundations.
-- Chapters 1–2: radicals, rational exponents, factoring, rational expressions, equations, quadratics, complex numbers, absolute value, radical/rational equations, inequalities.
-- Chapters 3–4: coordinate plane, distance/midpoint, lines, circles, functions, domain/range, transformations, polynomial and rational functions.
-- Chapter 5: inverse/composition, exponential functions, compound interest, logarithms, log properties, exponential/log equations.
+Learner history is stored locally in ignored `learner_data/attempts.sqlite3`.
 
-## Start here
+## Repository structure
 
-1. Read `AGENTS.md`.
-2. Read `docs/PRODUCT_SPEC.md` and `docs/CONTENT_ARCHITECTURE.md`.
-3. Run `python scripts/build_source_manifest.py` after placing/extracting source archives.
-4. Implement the vertical slice in `docs/IMPLEMENTATION_PLAN.md`.
+- `content/`: canonical family Markdown
+- `src/math153_tutor/`: generation, validation, session, persistence, mastery, and UI logic
+- `data/source_registry/`: available file inventories
+- `data/derived/source_conflicts.md`: discrepancies and provenance gaps
+- `templates/`: human authoring templates
+- `docs/`: architecture, policy, audit, and roadmap
+- `tests/`: content, mathematics, and workflow checks
 
-## Initial vertical slice
+## Content authoring
 
-Build one complete family: **Section 5.5 logarithm properties and equations**.
+Read `AGENTS.md`, the relevant registry entry, `templates/question_family_template.md`, and `docs/content-authoring.md`. Never author canonical content in JSON or silently repair a source.
 
-It must include:
+## Testing
 
-- source-linked examples;
-- concept-to-exam connection map;
-- five difficulty layers;
-- multiple-choice, ordered-step, and free-response modes;
-- domain/extraneous-solution feedback;
-- an eight-question quiz generated from readable Markdown templates;
-- attempt storage and error classification.
+```bash
+pytest
+ruff check .
+```
 
-## Technology direction
+## Known limitations
 
-- Python 3.12
-- Streamlit first for rapid visual iteration
-- Pydantic for validated runtime models
-- SQLite for attempts/mastery
-- SymPy for controlled symbolic validation
-- Markdown + YAML front matter for authored content
-- pytest for logic tests
-
-The system may later migrate to React/TypeScript, but Version 0.0 should prove the learning model and source fidelity first.
+Actual PDFs, screenshots, and transcripts are not present, so professor fidelity is not yet verifiable. Professor Mode, assessment builders, delayed scheduling, interval/domain parsing, and Next-Line graphs are later phases. The system does not claim full family or course coverage.

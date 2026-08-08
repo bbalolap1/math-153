@@ -1,8 +1,8 @@
 ---
-family_id: CH5-LOG-EQUATIONS
-chapter: 5
-section: "5.5-5.6"
-title: Logarithmic equations with domain checking
+family_id: CH4-FUNCTION-COMPOSITION
+chapter: 4
+section: "4.x"
+title: Function composition
 status: model_inference_pending_source_review
 source_refs:
   - MODEL-INFERENCE-PENDING-SOURCE-REVIEW
@@ -18,7 +18,7 @@ The verified professor construction is not yet available. The milestone uses a s
 
 # Underlying Mathematical Structure
 
-State positivity restrictions before comparing or condensing logarithms.
+Identify and evaluate the inner function before the outer function.
 
 # Lecture Form
 
@@ -30,7 +30,7 @@ A minimally guided prompt that requires recognition, a first decision, handwritt
 
 # Hidden Prerequisites
 
-log properties, factoring, and domain checking.
+function notation and substitution.
 
 # Recognition Clues
 
@@ -38,7 +38,7 @@ Use the operation and notation in the prompt, not merely its vocabulary, to iden
 
 # First Decision
 
-State positivity restrictions before comparing or condensing logarithms.
+Identify and evaluate the inner function before the outer function.
 
 # Decision Path
 
@@ -61,7 +61,7 @@ Change one controlled dimension at a time: coefficients, notation, representatio
 # Difficulty Ladder
 
 ## L0 Foundation
-Repair log properties, factoring, and domain checking in isolation.
+Repair function notation and substitution in isolation.
 
 ## L1 Direct
 Solve the direct symbolic form with a single decision.
@@ -94,7 +94,7 @@ Give recognition feedback first, then a bounded first-decision cue. Do not revea
 
 # Expected Answer Presentation
 
-Present a checked exact solution set, with checks required by the original operations.
+Present an exact function value, with checks required by the original operations.
 
 # Mastery Rule
 
