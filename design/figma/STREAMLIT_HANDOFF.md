@@ -70,12 +70,12 @@ dimensions are only scored when the learner actually completes those tasks.
 
 | Tool | Current implementation | Remaining backend gap |
 |---|---|---|
-| Paper Answer Mode | Generated problem + multiple-choice final result + validator + attempt persistence | richer family-specific distractors |
-| Professor Mode | Current problem, family recognition, first decision, prerequisites, reasoning checkpoints | conversational Professor service + indexed source citations |
-| Next-Line Coach | One-line input and bounded next-decision feedback | symbolic `StepEngine` for exact current-line validation |
-| Quiz Review | Persisted assessment attempts, correctness, error category | assessment/session grouping and richer evidence detail |
-| Mistake Repair | Latest incorrect attempt + targeted family feedback + first-decision repair check | diagnosis/remediation service + transfer scheduling |
-| Progress | SQLite attempts + current evidence model | delayed/varied mastery evidence and recommendation service |
+| Paper Answer Mode | Full-scope catalog problem + multiple-choice result + validator + persistent attempt | richer source-reviewed distractors |
+| Professor Mode | Rule, prerequisites, bounded hint/deeper explanation, parallel example, and walkthrough | indexed professor-source citations after binaries are supplied |
+| Next-Line Coach | Normalized symbolic/equation checking against the authored worked-solution path | unrestricted branch-aware symbolic step graph |
+| Quiz Review | Persisted assessment sessions with prompt, learner/correct answer, explanation, and repair routing | source-linked explanation enrichment |
+| Mistake Repair | Actual missed item, rule/setup repair, generated transfer check, and persistent repair result | delayed transfer scheduling |
+| Progress | Assessment history, overall/topic accuracy, weak areas, paper attempts, and repair totals | delayed/varied mastery recommendation policy |
 
 ## Source-honesty boundary
 
