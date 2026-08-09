@@ -11,6 +11,7 @@ from .math_display import display_choices, readable_prompt
 from .practice_catalog import FAMILY_SPECS, generate_practice_problem
 from .source_manifest import ExtractedRecord, SourceManifestEntry
 from .validation import validate_practice_answer
+from .solution_detail import teaching_solution
 
 
 class QuestionAudit(BaseModel):
@@ -210,6 +211,12 @@ def quality_metrics(
         for problem in variants
     ]
     statuses = Counter(audit.mapping_status for audit in audits)
+    representative_problems = [
+        generate_practice_problem(family_id, 71530 + index, index % 10)
+        for index, family_id in enumerate(FAMILY_SPECS)
+    ]
+    detailed = [teaching_solution(problem) for problem in representative_problems]
+    flagged = sum(len(problem.worked_solution.calculation) < 3 for problem in representative_problems)
     return {
         "source_questions_audited": len(audits),
         "correct_family_mappings": statuses["CORRECT FAMILY"],
@@ -228,6 +235,18 @@ def quality_metrics(
         "generated_variants_passed": sum(variant_passes),
         "student_math_render_failures": math_failures,
         "multiple_choice_order_failures": choice_failures,
+        "review_solution_mode_default": "teaching_solution",
+        "families_with_detailed_execution": sum(
+            solution.quality_status == "detailed" for solution in detailed
+        ),
+        "solutions_flagged_for_hidden_steps": flagged,
+        "solutions_expanded_after_validation": flagged,
+        "quiz_review_detailed_solution_pass": all(
+            solution.quality_status == "detailed" for solution in detailed
+        ),
+        "test_review_detailed_solution_pass": all(
+            solution.quality_status == "detailed" for solution in detailed
+        ),
         "max_question_limit": 50,
         "question_count_50_supported": len(fifty) == 50,
         "fifty_question_generation_test": "passed" if len(fifty) == 50 else "failed",

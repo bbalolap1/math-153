@@ -8,6 +8,7 @@ from collections import defaultdict
 from math153_tutor.fidelity import audit_questions, build_test_matrix, quality_metrics
 from math153_tutor.practice_catalog import FAMILY_SPECS, generate_practice_problem
 from math153_tutor.source_manifest import read_manifest
+from math153_tutor.solution_detail import teaching_solution
 
 
 def main(repository_root: str = ".") -> None:
@@ -22,8 +23,19 @@ def main(repository_root: str = ".") -> None:
         raise ValueError(f"Expected to audit 240 extracted questions; found {len(audits)}.")
     required_zero = ("incorrect_mappings", "unmapped_questions", "student_math_render_failures", "multiple_choice_order_failures", "duplicate_questions_in_50_set")
     failures = {key: metrics[key] for key in required_zero if metrics[key] != 0}
-    if failures or metrics["generated_variants_failed"] or not metrics["fifty_question_validation_passed"]:
-        raise ValueError(f"Fidelity gates failed: {failures or metrics}")
+    detailed_failures = {
+        key: metrics[key]
+        for key in ("quiz_review_detailed_solution_pass", "test_review_detailed_solution_pass")
+        if not metrics[key]
+    }
+    if (
+        failures
+        or detailed_failures
+        or metrics["families_with_detailed_execution"] != metrics["final_question_family_count"]
+        or metrics["generated_variants_failed"]
+        or not metrics["fifty_question_validation_passed"]
+    ):
+        raise ValueError(f"Fidelity gates failed: {failures or detailed_failures or metrics}")
     (derived / "question_fidelity_audit.json").write_text(
         json.dumps([audit.model_dump() for audit in audits], indent=2) + "\n", encoding="utf-8"
     )
@@ -87,6 +99,19 @@ def main(repository_root: str = ".") -> None:
         })
     (derived / "representative_transformations.json").write_text(
         json.dumps(transformations, indent=2) + "\n", encoding="utf-8"
+    )
+    teaching_matrix = []
+    for index, family_id in enumerate(FAMILY_SPECS):
+        problem = generate_practice_problem(family_id, 71530 + index, index % 10)
+        teaching_matrix.append({
+            "family_id": family_id,
+            "problem_id": problem.problem_id,
+            "prompt": problem.prompt,
+            "source_refs": problem.source_refs,
+            "teaching_solution": teaching_solution(problem).model_dump(),
+        })
+    (derived / "teaching_solution_matrix.json").write_text(
+        json.dumps(teaching_matrix, indent=2) + "\n", encoding="utf-8"
     )
     (derived / "fidelity_metrics.json").write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
 

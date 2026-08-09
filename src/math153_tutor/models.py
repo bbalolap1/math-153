@@ -124,6 +124,24 @@ class WorkedSolution(BaseModel):
     family_reason: str = "The prompt uses the defining operation of this family."
 
 
+class ExecutionStep(BaseModel):
+    step_title: str
+    before_expression: str
+    operation: str
+    why: str
+    after_expression: str
+
+
+class TeachingSolution(BaseModel):
+    recognize: str
+    decide: str
+    original_rule_or_formula: str
+    execute: list[ExecutionStep]
+    verify: str
+    final_answer: str
+    quality_status: Literal["detailed", "insufficient_step_detail"] = "detailed"
+
+
 class PracticeProblem(BaseModel):
     """A selectable exam-review problem with validation and provenance."""
 

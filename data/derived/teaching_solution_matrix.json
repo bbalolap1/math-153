@@ -1,0 +1,2049 @@
+[
+  {
+    "family_id": "F0-REAL-NUMBERS",
+    "problem_id": "F0-REAL-NUMBERS-71530-0",
+    "prompt": "Select every real-number set that contains $-7$.",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.4.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Use the nesting natural \u2282 whole \u2282 integer \u2282 rational \u2282 real; irrational numbers are real but not rational.",
+      "original_rule_or_formula": "Use the nesting natural \u2282 whole \u2282 integer \u2282 rational \u2282 real; irrational numbers are real but not rational.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Select every real-number set that contains $-7$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Use the nesting natural \u2282 whole \u2282 integer \u2282 rational \u2282 real; irrational numbers are real but not rational."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Use the nesting natural \u2282 whole \u2282 integer \u2282 rational \u2282 real; irrational numbers are real but not rational.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "Determine whether -7 is a terminating/repeating ratio or a non-rational constant/root."
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "Determine whether -7 is a terminating/repeating ratio or a non-rational constant/root.",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "Classification: integer,rational,real."
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "Classification: integer,rational,real.",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Each selected set contains the displayed value."
+        }
+      ],
+      "verify": "Each selected set contains the displayed value.",
+      "final_answer": "integer,rational,real",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "F0-SIGNED-OPERATIONS",
+    "problem_id": "F0-SIGNED-OPERATIONS-71531-1",
+    "prompt": "Evaluate: $(-4) - (5) + (2)$.",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Subtracting a number means adding its opposite.",
+      "original_rule_or_formula": "Subtracting a number means adding its opposite.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Evaluate: $(-4) - (5) + (2)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Subtracting a number means adding its opposite."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Subtracting a number means adding its opposite.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "(-4) - (5) + (2)"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "(-4) - (5) + (2)",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "-4-5+2=-7"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "-4-5+2=-7",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Estimate the sign and magnitude."
+        }
+      ],
+      "verify": "Estimate the sign and magnitude.",
+      "final_answer": "-7",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "F0-FRACTIONS",
+    "problem_id": "F0-FRACTIONS-71532-2",
+    "prompt": "Compute and simplify: $\\frac{1}{7} * \\frac{3}{5}$.",
+    "source_refs": [
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1_Review.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Use common denominators for addition/subtraction; multiply by the reciprocal for division.",
+      "original_rule_or_formula": "Use common denominators for addition/subtraction; multiply by the reciprocal for division.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Compute and simplify: $\\frac{1}{7} * \\frac{3}{5}$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Use common denominators for addition/subtraction; multiply by the reciprocal for division."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Use common denominators for addition/subtraction; multiply by the reciprocal for division.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "1/7 * 3/5"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "1/7 * 3/5",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "Reduce the resulting fraction to 3/35."
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "Reduce the resulting fraction to 3/35.",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Substitute decimal approximations to check."
+        }
+      ],
+      "verify": "Substitute decimal approximations to check.",
+      "final_answer": "3/35",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "F0-ORDER-OPERATIONS",
+    "problem_id": "F0-ORDER-OPERATIONS-71533-3",
+    "prompt": "Evaluate: $-3^2+4(2+2)$.",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Parentheses, exponents, multiplication/division, then addition/subtraction.",
+      "original_rule_or_formula": "Parentheses, exponents, multiplication/division, then addition/subtraction.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Evaluate: $-3^2+4(2+2)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Parentheses, exponents, multiplication/division, then addition/subtraction."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Parentheses, exponents, multiplication/division, then addition/subtraction.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "Evaluate: $-3^2+4(2+2)$."
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "Evaluate: $-3^2+4(2+2)$.",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "-3^2=-9"
+        },
+        {
+          "step_title": "Perform algebraic transformation 2",
+          "before_expression": "-3^2=-9",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "4(2+2)=16"
+        },
+        {
+          "step_title": "Perform algebraic transformation 3",
+          "before_expression": "4(2+2)=16",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "Total=7"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "Total=7",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The negative is outside the exponent."
+        }
+      ],
+      "verify": "The negative is outside the exponent.",
+      "final_answer": "7",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "F0-EXPONENT-RULES",
+    "problem_id": "F0-EXPONENT-RULES-71534-4",
+    "prompt": "Simplify: $(x^3)^2$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Power rule: multiply exponents.",
+      "original_rule_or_formula": "Power rule: multiply exponents.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Simplify: $(x^3)^2$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Power rule: multiply exponents."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Power rule: multiply exponents.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "Simplify: $(x^3)^2$."
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "Simplify: $(x^3)^2$.",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x^6"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x^6",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Exponent laws preserve numeric checks for nonzero x."
+        }
+      ],
+      "verify": "Exponent laws preserve numeric checks for nonzero x.",
+      "final_answer": "x^6",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "F0-ALGEBRA-VOCAB",
+    "problem_id": "F0-ALGEBRA-VOCAB-71535-5",
+    "prompt": "For $E=5x+-5$, evaluate $E$ when $x=2$.",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_3.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Substitute the given value for the variable.",
+      "original_rule_or_formula": "Substitute the given value for the variable.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "For $E=5x+-5$, evaluate $E$ when $x=2$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Substitute the given value for the variable."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Substitute the given value for the variable.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "E=5(2)+-5"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "E=5(2)+-5",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "E=5"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "E=5",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Re-evaluate multiplication before addition."
+        }
+      ],
+      "verify": "Re-evaluate multiplication before addition.",
+      "final_answer": "5",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-EXPRESSIONS",
+    "problem_id": "CH12-EXPRESSIONS-71536-6",
+    "prompt": "Simplify: $4(x+0)+2x+0$.",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Distribute, then combine like terms.",
+      "original_rule_or_formula": "Distribute, then combine like terms.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Simplify: $4(x+0)+2x+0$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Distribute, then combine like terms."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Distribute, then combine like terms.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "4x+0+2x+0"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "4x+0+2x+0",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "6*x+(0)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "6*x+(0)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Expand the simplified form to compare."
+        }
+      ],
+      "verify": "Expand the simplified form to compare.",
+      "final_answer": "6*x+(0)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-LINEAR-EQUATIONS",
+    "problem_id": "CH12-LINEAR-EQUATIONS-71537-7",
+    "prompt": "Solve: $5(x+1)=5x+6$.",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "A false constant statement is a contradiction.",
+      "original_rule_or_formula": "A false constant statement is a contradiction.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Solve: $5(x+1)=5x+6$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "A false constant statement is a contradiction."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "A false constant statement is a contradiction.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "Distribute and subtract the variable terms."
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "Distribute and subtract the variable terms.",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "5=6, which is false."
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "5=6, which is false.",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "No x can repair a false constant equality."
+        }
+      ],
+      "verify": "No x can repair a false constant equality.",
+      "final_answer": "no solution",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-FACTORING",
+    "problem_id": "CH12-FACTORING-71538-8",
+    "prompt": "Factor completely: $x**2 - 5*x - 6$.",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_2.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/1.3.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/4.1.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_1.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Find factors whose product is the constant and sum is the linear coefficient.",
+      "original_rule_or_formula": "Find factors whose product is the constant and sum is the linear coefficient.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Factor completely: $x**2 - 5*x - 6$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Find factors whose product is the constant and sum is the linear coefficient."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Find factors whose product is the constant and sum is the linear coefficient.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "x**2 - 5*x - 6"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "x**2 - 5*x - 6",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "(x-6)*(x+1)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "(x-6)*(x+1)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Expand the factors to recover the original polynomial."
+        }
+      ],
+      "verify": "Expand the factors to recover the original polynomial.",
+      "final_answer": "(x-6)*(x+1)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "problem_id": "CH12-RATIONAL-EXPRESSIONS-71539-9",
+    "prompt": "Simplify $\\frac{x^2-36}{x-6}$. State the original restriction in your paper work.",
+    "source_refs": [
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1_Review.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Factor first; cancel factors, never terms.",
+      "original_rule_or_formula": "Factor first; cancel factors, never terms.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Simplify $\\frac{x^2-36}{x-6}$. State the original restriction in your paper work.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Factor first; cancel factors, never terms."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Factor first; cancel factors, never terms.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "(x-6)(x+6)/(x-6), x\\ne 6"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "(x-6)(x+6)/(x-6), x\\ne 6",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x+6, x\\ne 6"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x+6, x\\ne 6",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The original denominator excludes x=6."
+        }
+      ],
+      "verify": "The original denominator excludes x=6.",
+      "final_answer": "x+6",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-RADICALS",
+    "problem_id": "CH12-RADICALS-71540-0",
+    "prompt": "Simplify: $\\sqrt{72}$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Extract the largest perfect-square factor.",
+      "original_rule_or_formula": "Extract the largest perfect-square factor.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Simplify: $\\sqrt{72}$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Extract the largest perfect-square factor."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Extract the largest perfect-square factor.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "sqrt(36*2)"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "sqrt(36*2)",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "6*sqrt(2)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "6*sqrt(2)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "(6*sqrt(2))^2=72."
+        }
+      ],
+      "verify": "(6*sqrt(2))^2=72.",
+      "final_answer": "6*sqrt(2)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-RADICAL-EQUATIONS",
+    "problem_id": "CH12-RADICAL-EQUATIONS-71541-1",
+    "prompt": "Solve and check: $\\sqrt{x+4}=4$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Isolate the radical, square both sides, and check the original.",
+      "original_rule_or_formula": "Isolate the radical, square both sides, and check the original.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Solve and check: $\\sqrt{x+4}=4$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Isolate the radical, square both sides, and check the original."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Isolate the radical, square both sides, and check the original.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "x+4=16"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "x+4=16",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x=12"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x=12",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "sqrt(16)=4; valid."
+        }
+      ],
+      "verify": "sqrt(16)=4; valid.",
+      "final_answer": "12",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-QUADRATICS",
+    "problem_id": "CH12-QUADRATICS-71542-2",
+    "prompt": "Solve exactly: $x**2 - 16=0$.",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Set the quadratic to zero and use factoring or the quadratic formula.",
+      "original_rule_or_formula": "Set the quadratic to zero and use factoring or the quadratic formula.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Solve exactly: $x**2 - 16=0$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Set the quadratic to zero and use factoring or the quadratic formula."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Set the quadratic to zero and use factoring or the quadratic formula.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "(x-(-4))(x-(4))=0"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "(x-(-4))(x-(4))=0",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x=-4 or x=4"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x=-4 or x=4",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Substitute both roots in the original polynomial."
+        }
+      ],
+      "verify": "Substitute both roots in the original polynomial.",
+      "final_answer": "-4,4",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-COMPLEX",
+    "problem_id": "CH12-COMPLEX-71543-3",
+    "prompt": "Multiply: $(5+-3i)(1+-2i)$.",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.4.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Distribute and replace i\u00b2 with \u22121.",
+      "original_rule_or_formula": "Distribute and replace i\u00b2 with \u22121.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Multiply: $(5+-3i)(1+-2i)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Distribute and replace i\u00b2 with \u22121."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Distribute and replace i\u00b2 with \u22121.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "ac+adi+bci+bd i^2"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "ac+adi+bci+bd i^2",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "-1+-13i"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "-1+-13i",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Multiply using complex-number arithmetic."
+        }
+      ],
+      "verify": "Multiply using complex-number arithmetic.",
+      "final_answer": "-1+(-13)*I",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-ABSOLUTE",
+    "problem_id": "CH12-ABSOLUTE-71544-4",
+    "prompt": "Solve: $|x-(1)|=4$.",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "For |A|=k>0, solve A=k and A=\u2212k.",
+      "original_rule_or_formula": "For |A|=k>0, solve A=k and A=\u2212k.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Solve: $|x-(1)|=4$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "For |A|=k>0, solve A=k and A=\u2212k."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "For |A|=k>0, solve A=k and A=\u2212k.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "x-1=4 or x-1=-4"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "x-1=4 or x-1=-4",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x=-3,5"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x=-3,5",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Both values are the required distance from the center."
+        }
+      ],
+      "verify": "Both values are the required distance from the center.",
+      "final_answer": "-3,5",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH12-INEQUALITIES",
+    "problem_id": "CH12-INEQUALITIES-71545-5",
+    "prompt": "Write in interval notation: $x>-2$ and $x\\le 2$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_4.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Open endpoints represent strict inequalities; closed endpoints include equality.",
+      "original_rule_or_formula": "Open endpoints represent strict inequalities; closed endpoints include equality.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Write in interval notation: $x>-2$ and $x\\le 2$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Open endpoints represent strict inequalities; closed endpoints include equality."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Open endpoints represent strict inequalities; closed endpoints include equality.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "-2<x<=2"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "-2<x<=2",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "(-2,2]"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "(-2,2]",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Check both endpoint symbols."
+        }
+      ],
+      "verify": "Check both endpoint symbols.",
+      "final_answer": "(-2,2]",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-COORDINATE",
+    "problem_id": "CH34-COORDINATE-71546-6",
+    "prompt": "Find the midpoint of $(-6,5)$ and $(-5,6)$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/lectures/3.1(2).md",
+      "sources/quizzes/Quiz_4.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Average corresponding coordinates.",
+      "original_rule_or_formula": "Average corresponding coordinates.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Find the midpoint of $(-6,5)$ and $(-5,6)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Average corresponding coordinates."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Average corresponding coordinates.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "((-6+-5)/2,(5+6)/2)"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "((-6+-5)/2,(5+6)/2)",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "(-11/2,11/2)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "(-11/2,11/2)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The midpoint is halfway in each coordinate."
+        }
+      ],
+      "verify": "The midpoint is halfway in each coordinate.",
+      "final_answer": "(-11/2,11/2)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-LINES",
+    "problem_id": "CH34-LINES-71547-7",
+    "prompt": "Write the line with slope $-3$ through $(2,3)$ in slope-intercept form.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/3.1(2).md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Use point-slope form, then solve for y.",
+      "original_rule_or_formula": "Use point-slope form, then solve for y.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Write the line with slope $-3$ through $(2,3)$ in slope-intercept form.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Use point-slope form, then solve for y."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Use point-slope form, then solve for y.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "y-3=-3(x-2)"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "y-3=-3(x-2)",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "y=-3*x+(9)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "y=-3*x+(9)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "At x=2, y=3."
+        }
+      ],
+      "verify": "At x=2, y=3.",
+      "final_answer": "y=-3*x+(9)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-TABLES",
+    "problem_id": "CH34-TABLES-71548-8",
+    "prompt": "A table follows the rule $y=4x+-1$. Find the missing value.\n\n| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| y | -1 | 3 | 7 | ? |",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.1(2).md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The information is represented as a table with a missing entry.",
+      "decide": "Inspect the rule connecting each x-column to y.",
+      "original_rule_or_formula": "Inspect the rule connecting each x-column to y.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "A table follows the rule $y=4x+-1$. Find the missing value.\n\n| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| y | -1 | 3 | 7 | ? |",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Inspect the rule connecting each x-column to y."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Inspect the rule connecting each x-column to y.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "For x=3, y=4(3)+-1."
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "For x=3, y=4(3)+-1.",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "y=11"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "y=11",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The y-values have constant difference equal to the slope."
+        }
+      ],
+      "verify": "The y-values have constant difference equal to the slope.",
+      "final_answer": "11",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-CIRCLES",
+    "problem_id": "CH34-CIRCLES-71549-9",
+    "prompt": "Write the circle with center $(-3,-5)$ and radius $7$.",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Circle standard form is (x\u2212h)\u00b2+(y\u2212k)\u00b2=r\u00b2.",
+      "original_rule_or_formula": "Circle standard form is (x\u2212h)\u00b2+(y\u2212k)\u00b2=r\u00b2.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Write the circle with center $(-3,-5)$ and radius $7$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Circle standard form is (x\u2212h)\u00b2+(y\u2212k)\u00b2=r\u00b2."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Circle standard form is (x\u2212h)\u00b2+(y\u2212k)\u00b2=r\u00b2.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "h=-3, k=-5, r=7"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "h=-3, k=-5, r=7",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "(x-(-3))^2+(y-(-5))^2=49"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "(x-(-3))^2+(y-(-5))^2=49",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The center signs reverse inside each squared binomial."
+        }
+      ],
+      "verify": "The center signs reverse inside each squared binomial.",
+      "final_answer": "(x-(-3))^2+(y-(-5))^2=49",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-FUNCTIONS",
+    "problem_id": "CH34-FUNCTIONS-71550-0",
+    "prompt": "If $f(x)=5x+-1$, find $f(-1)$.",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Function notation directs substitution into the input.",
+      "original_rule_or_formula": "Function notation directs substitution into the input.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "If $f(x)=5x+-1$, find $f(-1)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Function notation directs substitution into the input."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Function notation directs substitution into the input.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "f(-1)=5(-1)+-1"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "f(-1)=5(-1)+-1",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "-6"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "-6",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Evaluate multiplication before addition."
+        }
+      ],
+      "verify": "Evaluate multiplication before addition.",
+      "final_answer": "-6",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-COMPOSITION",
+    "problem_id": "CH34-COMPOSITION-71551-1",
+    "prompt": "Let $f(x)=4x+-2$ and $g(x)=x^2$. Find $(f\\circ g)(5)$.",
+    "source_refs": [
+      "sources/activities/Activity_4.md",
+      "sources/lectures/3.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Evaluate the inner function before the outer function.",
+      "original_rule_or_formula": "Evaluate the inner function before the outer function.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Let $f(x)=4x+-2$ and $g(x)=x^2$. Find $(f\\circ g)(5)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Evaluate the inner function before the outer function."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Evaluate the inner function before the outer function.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "g(5)=25; f(25)=4(25)+-2"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "g(5)=25; f(25)=4(25)+-2",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "98"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "98",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Composition order is f(g(input))."
+        }
+      ],
+      "verify": "Composition order is f(g(input)).",
+      "final_answer": "98",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-INVERSES",
+    "problem_id": "CH34-INVERSES-71552-2",
+    "prompt": "Find $f^{-1}(x)$ for $f(x)=2x+2$.",
+    "source_refs": [
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Write y=f(x), swap x and y, then solve for y.",
+      "original_rule_or_formula": "Write y=f(x), swap x and y, then solve for y.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Find $f^{-1}(x)$ for $f(x)=2x+2$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Write y=f(x), swap x and y, then solve for y."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Write y=f(x), swap x and y, then solve for y.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "x=2y+2"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "x=2y+2",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "y=(x-(2))/2"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "y=(x-(2))/2",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Composing the inverse with f simplifies to x."
+        }
+      ],
+      "verify": "Composing the inverse with f simplifies to x.",
+      "final_answer": "(x-(2))/2",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-DIFFERENCE-QUOTIENT",
+    "problem_id": "CH34-DIFFERENCE-QUOTIENT-71553-3",
+    "prompt": "For $f(x)=2x^2+-1x+-1$, simplify $[f(x+h)-f(x)]/h$.",
+    "source_refs": [
+      "sources/lectures/3.4.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Substitute x+h, subtract f(x), factor h, and cancel.",
+      "original_rule_or_formula": "Substitute x+h, subtract f(x), factor h, and cancel.",
+      "execute": [
+        {
+          "step_title": "Write the original function",
+          "before_expression": "f(x)",
+          "operation": "Copy the given function exactly.",
+          "why": "The difference quotient uses both f(x+h) and f(x).",
+          "after_expression": "2x^2+(-1)x+(-1)"
+        },
+        {
+          "step_title": "Substitute x+h",
+          "before_expression": "2x^2+(-1)x+(-1)",
+          "operation": "Replace every x by (x+h).",
+          "why": "Function substitution requires the entire input to replace x.",
+          "after_expression": "2(x+h)^2+(-1)(x+h)+(-1)"
+        },
+        {
+          "step_title": "Expand the square",
+          "before_expression": "2(x+h)^2+(-1)(x+h)+(-1)",
+          "operation": "Use (x+h)^2=x^2+2xh+h^2.",
+          "why": "The binomial-square identity expands one grouped power.",
+          "after_expression": "2(x^2+2xh+h^2)+(-1)(x+h)+(-1)"
+        },
+        {
+          "step_title": "Distribute coefficients",
+          "before_expression": "2(x^2+2xh+h^2)+(-1)(x+h)+(-1)",
+          "operation": "Multiply 2 and -1 through their parentheses.",
+          "why": "The distributive property applies a coefficient to every enclosed term.",
+          "after_expression": "2x^2+4xh+2h^2+(-1)x+(-1)h+(-1)"
+        },
+        {
+          "step_title": "Substitute into the quotient",
+          "before_expression": "[f(x+h)-f(x)]/h",
+          "operation": "Insert the expanded f(x+h) and the original f(x).",
+          "why": "Both function values must be present before subtraction.",
+          "after_expression": "\\frac{(2x^2+4xh+2h^2+(-1)x+(-1)h+(-1))-(2x^2+(-1)x+(-1))}{h}"
+        },
+        {
+          "step_title": "Distribute the subtraction sign",
+          "before_expression": "\\frac{(2x^2+4xh+2h^2+(-1)x+(-1)h+(-1))-(2x^2+(-1)x+(-1))}{h}",
+          "operation": "Multiply every term of f(x) by -1.",
+          "why": "A minus sign outside parentheses changes every enclosed sign.",
+          "after_expression": "\\frac{2x^2+4xh+2h^2+(-1)x+(-1)h+(-1)-2x^2-(-1)x-(-1)}{h}"
+        },
+        {
+          "step_title": "Combine like terms",
+          "before_expression": "\\frac{2x^2+4xh+2h^2+(-1)x+(-1)h+(-1)-2x^2-(-1)x-(-1)}{h}",
+          "operation": "Cancel opposite x\u00b2, x, and constant terms.",
+          "why": "Only terms with identical variable factors may combine.",
+          "after_expression": "\\frac{4xh+2h^2+(-1)h}{h}"
+        },
+        {
+          "step_title": "Factor h",
+          "before_expression": "\\frac{4xh+2h^2+(-1)h}{h}",
+          "operation": "Factor h from every numerator term.",
+          "why": "Each numerator term contains a common factor h.",
+          "after_expression": "\\frac{h(4x+2h+(-1))}{h}"
+        },
+        {
+          "step_title": "Cancel h",
+          "before_expression": "\\frac{h(4x+2h+(-1))}{h}",
+          "operation": "Cancel the common nonzero factor h.",
+          "why": "The difference quotient assumes h\u22600, so division by h is allowed.",
+          "after_expression": "4x+2h+(-1)"
+        }
+      ],
+      "verify": "Expanding the numerator confirms every remaining term.",
+      "final_answer": "4*x+2*h+(-1)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-QUADRATIC-FUNCTIONS",
+    "problem_id": "CH34-QUADRATIC-FUNCTIONS-71554-4",
+    "prompt": "Find the vertex of $y=2(x-(-5))^2+(-5)$.",
+    "source_refs": [
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Vertex form y=a(x\u2212h)\u00b2+k has vertex (h,k).",
+      "original_rule_or_formula": "Vertex form y=a(x\u2212h)\u00b2+k has vertex (h,k).",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Find the vertex of $y=2(x-(-5))^2+(-5)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Vertex form y=a(x\u2212h)\u00b2+k has vertex (h,k)."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Vertex form y=a(x\u2212h)\u00b2+k has vertex (h,k).",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "h=-5, k=-5"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "h=-5, k=-5",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "(-5,-5)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "(-5,-5)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "At x=h the squared term is zero."
+        }
+      ],
+      "verify": "At x=h the squared term is zero.",
+      "final_answer": "(-5,-5)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-POLYNOMIALS",
+    "problem_id": "CH34-POLYNOMIALS-71555-5",
+    "prompt": "Find all real zeros of $p(x)=x**2 - 4*x - 5$.",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_2.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.3.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/4.1.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Factor and apply the zero-product property.",
+      "original_rule_or_formula": "Factor and apply the zero-product property.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Find all real zeros of $p(x)=x**2 - 4*x - 5$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Factor and apply the zero-product property."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Factor and apply the zero-product property.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "p(x)=(x-(-1))(x-(5))"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "p(x)=(x-(-1))(x-(5))",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "-1,5"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "-1,5",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Substitute both zeros."
+        }
+      ],
+      "verify": "Substitute both zeros.",
+      "final_answer": "-1,5",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH34-RATIONAL-FUNCTIONS",
+    "problem_id": "CH34-RATIONAL-FUNCTIONS-71556-6",
+    "prompt": "State the domain exclusions of $R(x)=\\frac{x-6}{(x-6)(x-11)}$.",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Exclude every zero of the original denominator, including canceled factors.",
+      "original_rule_or_formula": "Exclude every zero of the original denominator, including canceled factors.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "State the domain exclusions of $R(x)=\\frac{x-6}{(x-6)(x-11)}$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Exclude every zero of the original denominator, including canceled factors."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Exclude every zero of the original denominator, including canceled factors.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "(x-6)(x-11)=0"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "(x-6)(x-11)=0",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x\\ne 6,11"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x\\ne 6,11",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The canceled factor creates a hole, not a restored domain value."
+        }
+      ],
+      "verify": "The canceled factor creates a hole, not a restored domain value.",
+      "final_answer": "6,11",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-EXP-FUNCTIONS",
+    "problem_id": "CH5-EXP-FUNCTIONS-71557-7",
+    "prompt": "Evaluate $f(x)=2^x$ at $x=4$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Substitute the exponent; negative exponents produce reciprocals.",
+      "original_rule_or_formula": "Substitute the exponent; negative exponents produce reciprocals.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Evaluate $f(x)=2^x$ at $x=4$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Substitute the exponent; negative exponents produce reciprocals."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Substitute the exponent; negative exponents produce reciprocals.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "f(4)=2^4"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "f(4)=2^4",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "16"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "16",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Exponential outputs are positive."
+        }
+      ],
+      "verify": "Exponential outputs are positive.",
+      "final_answer": "16",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-EXP-MODELS",
+    "problem_id": "CH5-EXP-MODELS-71558-8",
+    "prompt": "A quantity starts at 950 and grows 12% per year. Find its value after 4 years, rounded to the nearest hundredth.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The repeated percent change defines an exponential model.",
+      "decide": "Exponential growth uses A=P(1+r)^t.",
+      "original_rule_or_formula": "Exponential growth uses A=P(1+r)^t.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "A quantity starts at 950 and grows 12% per year. Find its value after 4 years, rounded to the nearest hundredth.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Exponential growth uses A=P(1+r)^t."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Exponential growth uses A=P(1+r)^t.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "A=950(1+0.12)^4"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "A=950(1+0.12)^4",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "A\u22481494.84"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "A\u22481494.84",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The result exceeds the initial value."
+        }
+      ],
+      "verify": "The result exceeds the initial value.",
+      "final_answer": "1494.84",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-COMPOUND-INTEREST",
+    "problem_id": "CH5-COMPOUND-INTEREST-71559-9",
+    "prompt": "Deposit $2900 at 3% annual interest compounded 1 times per year for 8 years. Find the amount to the nearest cent.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Use A=P(1+r/n)^(nt).",
+      "original_rule_or_formula": "Use A=P(1+r/n)^(nt).",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Deposit $2900 at 3% annual interest compounded 1 times per year for 8 years. Find the amount to the nearest cent.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Use A=P(1+r/n)^(nt)."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Use A=P(1+r/n)^(nt).",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "A=2900(1+0.03/1)^(1\u00b78)"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "A=2900(1+0.03/1)^(1\u00b78)",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "A\u22483673.63"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "A\u22483673.63",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The amount exceeds principal; retain full calculator precision until rounding."
+        }
+      ],
+      "verify": "The amount exceeds principal; retain full calculator precision until rounding.",
+      "final_answer": "3673.63",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-NATURAL-EXP",
+    "problem_id": "CH5-NATURAL-EXP-71560-0",
+    "prompt": "Evaluate $f(t)=3e^t$ at $t=4$, rounded to three decimals.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Substitute into the natural exponential function.",
+      "original_rule_or_formula": "Substitute into the natural exponential function.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Evaluate $f(t)=3e^t$ at $t=4$, rounded to three decimals.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Substitute into the natural exponential function."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Substitute into the natural exponential function.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "f(4)=3e^4"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "f(4)=3e^4",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "\u2248163.794"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "\u2248163.794",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Keep e unrounded until the final step."
+        }
+      ],
+      "verify": "Keep e unrounded until the final step.",
+      "final_answer": "163.794",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-LOGARITHMS",
+    "problem_id": "CH5-LOGARITHMS-71561-1",
+    "prompt": "Evaluate exactly: $\\log_{5}(25)$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "log_b(A)=c exactly when b^c=A.",
+      "original_rule_or_formula": "log_b(A)=c exactly when b^c=A.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Evaluate exactly: $\\log_{5}(25)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "log_b(A)=c exactly when b^c=A."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "log_b(A)=c exactly when b^c=A.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "5^2=25"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "5^2=25",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "2"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "2",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Convert back to exponential form."
+        }
+      ],
+      "verify": "Convert back to exponential form.",
+      "final_answer": "2",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-LOG-PROPERTIES",
+    "problem_id": "CH5-LOG-PROPERTIES-71562-2",
+    "prompt": "Condense to one logarithm: $\\log(4x)+\\log(3)$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Product rule: log A + log B = log(AB).",
+      "original_rule_or_formula": "Product rule: log A + log B = log(AB).",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Condense to one logarithm: $\\log(4x)+\\log(3)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Product rule: log A + log B = log(AB)."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Product rule: log A + log B = log(AB).",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "log((4x)(3))"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "log((4x)(3))",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "log(12*x)"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "log(12*x)",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "Arguments multiply; they do not add."
+        }
+      ],
+      "verify": "Arguments multiply; they do not add.",
+      "final_answer": "log(12*x)",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-LOG-EQUATIONS-FULL",
+    "problem_id": "CH5-LOG-EQUATIONS-FULL-71563-3",
+    "prompt": "Solve and check the domain: $\\ln(x+3)=\\ln(10)$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The unknown occurs inside a logarithm.",
+      "decide": "State x+shift>0, then use the one-to-one property.",
+      "original_rule_or_formula": "State x+shift>0, then use the one-to-one property.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Solve and check the domain: $\\ln(x+3)=\\ln(10)$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "State x+shift>0, then use the one-to-one property."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "State x+shift>0, then use the one-to-one property.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "x+3=10"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "x+3=10",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x=7"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x=7",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "7+3=10>0; valid."
+        }
+      ],
+      "verify": "7+3=10>0; valid.",
+      "final_answer": "7",
+      "quality_status": "detailed"
+    }
+  },
+  {
+    "family_id": "CH5-EXP-EQUATIONS-FULL",
+    "problem_id": "CH5-EXP-EQUATIONS-FULL-71564-4",
+    "prompt": "Solve exactly: $3^x=27$.",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "teaching_solution": {
+      "recognize": "The required operation defines this problem family.",
+      "decide": "Rewrite with a common base and equate exponents.",
+      "original_rule_or_formula": "Rewrite with a common base and equate exponents.",
+      "execute": [
+        {
+          "step_title": "State the original rule or formula",
+          "before_expression": "Solve exactly: $3^x=27$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Rewrite with a common base and equate exponents."
+        },
+        {
+          "step_title": "Substitute the given values",
+          "before_expression": "Rewrite with a common base and equate exponents.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "3^x=3^3"
+        },
+        {
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "3^x=3^3",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "x=3"
+        },
+        {
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "x=3",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "3^3=27."
+        }
+      ],
+      "verify": "3^3=27.",
+      "final_answer": "3",
+      "quality_status": "detailed"
+    }
+  }
+]

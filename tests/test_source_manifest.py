@@ -10,6 +10,7 @@ from math153_tutor.source_manifest import (
     read_manifest,
     write_manifest,
 )
+from math153_tutor.practice_catalog import FAMILY_SPECS
 
 
 def test_markdown_extraction_reads_body_and_records_evidence(tmp_path: Path) -> None:
@@ -50,8 +51,7 @@ def test_manifest_round_trip_and_every_source_is_used(tmp_path: Path) -> None:
     write_manifest(entries, output)
     assert read_manifest(output) == entries
 
-    family_ids = ["F0-FRACTIONS", "CH12-COMPLEX", "CH5-LOGARITHMS"]
-    mapping = build_family_source_map(entries, family_ids)
+    mapping = build_family_source_map(entries, list(FAMILY_SPECS))
     assert all(mapping.values())
     used = {path for refs in mapping.values() for path in refs}
     assert used == {entry.actual_path for entry in entries}

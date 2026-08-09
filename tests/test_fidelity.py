@@ -23,6 +23,10 @@ def test_all_extracted_questions_are_audited_and_mapped() -> None:
     assert metrics["duplicate_questions_in_50_set"] == 0
     assert metrics["multiple_choice_order_failures"] == 0
     assert metrics["student_math_render_failures"] == 0
+    assert metrics["review_solution_mode_default"] == "teaching_solution"
+    assert metrics["families_with_detailed_execution"] == 35
+    assert metrics["quiz_review_detailed_solution_pass"] is True
+    assert metrics["test_review_detailed_solution_pass"] is True
 
 
 def test_render_matrix_covers_student_math_notation() -> None:
@@ -35,3 +39,25 @@ def test_render_matrix_covers_student_math_notation() -> None:
         r"Solve $2^x=8$.", r"Solve $\\log_2(x)=3$.",
     ]
     assert all("**" not in readable_prompt(prompt) for prompt in prompts)
+
+
+def test_difference_quotient_teaching_solution_shows_every_transformation() -> None:
+    from math153_tutor.practice_catalog import generate_practice_problem
+    from math153_tutor.solution_detail import teaching_solution
+
+    problem = generate_practice_problem("CH34-DIFFERENCE-QUOTIENT", 153, 0)
+    solution = teaching_solution(problem)
+    titles = [step.step_title for step in solution.execute]
+    assert solution.quality_status == "detailed"
+    assert titles == [
+        "Write the original function",
+        "Substitute x+h",
+        "Expand the square",
+        "Distribute coefficients",
+        "Substitute into the quotient",
+        "Distribute the subtraction sign",
+        "Combine like terms",
+        "Factor h",
+        "Cancel h",
+    ]
+    assert all(step.before_expression and step.operation and step.why and step.after_expression for step in solution.execute)

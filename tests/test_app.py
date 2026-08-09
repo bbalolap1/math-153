@@ -129,6 +129,9 @@ def test_review_routes_real_mistake_through_transfer_repair(tmp_path: Path, monk
     app = _app(tmp_path, monkeypatch)
     _navigation(app).set_value("Learning Tools").run()
     next(button for button in app.button if button.label == "Open Quiz Review").click().run()
+    solution_detail = next(radio for radio in app.radio if radio.label == "Solution detail")
+    assert solution_detail.value == "Teaching solution"
+    assert any("Step 1" in item.value for item in app.markdown)
     assert any(
         answer_to_latex(problem.expected_answer, problem.answer_type) in item.value
         for item in app.latex
@@ -175,6 +178,7 @@ def test_configured_assessment_completes_saves_and_opens_review(
     assert (tmp_path / "learner_data/learning_records.sqlite3").is_file()
     next(button for button in app.button if button.label == "Open Quiz Review").click().run()
     assert any(header.value == "Quiz / Test Review" for header in app.header)
+    assert next(radio for radio in app.radio if radio.label == "Solution detail").value == "Teaching solution"
     assert app.metric[0].value == "100%"
 
 

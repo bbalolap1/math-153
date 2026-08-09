@@ -48,6 +48,7 @@ from math153_tutor.storage import (
 )
 from math153_tutor.step_engine import check_step, solution_steps
 from math153_tutor.validation import validate_practice_answer
+from math153_tutor.solution_detail import teaching_solution
 from math153_tutor.config import QUESTION_COUNT_OPTIONS
 
 
@@ -351,18 +352,41 @@ def _active_practice_problem() -> PracticeProblem:
     return st.session_state.practice_tool_problem
 
 
-def _practice_solution(problem: PracticeProblem) -> None:
+def _solution_expression(label: str, expression: str) -> None:
+    st.markdown(f"**{label}**")
+    if "$" in expression:
+        st.markdown(readable_prompt(expression))
+    else:
+        st.latex(normalize_math_fragment(expression))
+
+
+def _practice_solution(problem: PracticeProblem, mode: str = "teaching_solution") -> None:
     solution = problem.worked_solution
-    st.markdown(f"**Recognize:** {solution.family_reason}")
-    st.markdown(f"**Decide:** {solution.rule}")
-    st.markdown("**Execute — setup**")
-    st.latex(normalize_math_fragment(solution.setup))
-    st.markdown("**Execute — algebra**")
-    for line in solution.calculation:
-        st.latex(normalize_math_fragment(line))
-    st.markdown(f"**Verify:** {solution.check}")
-    st.markdown("**Present — final answer**")
-    st.latex(answer_to_latex(solution.final_answer, problem.answer_type))
+    if mode == "key_steps":
+        st.markdown(f"**Recognize:** {solution.family_reason}")
+        st.markdown(f"**Decide:** {solution.rule}")
+        st.markdown("**Execute — key steps**")
+        st.latex(normalize_math_fragment(solution.setup))
+        for line in solution.calculation:
+            st.latex(normalize_math_fragment(line))
+        st.markdown(f"**Verify:** {solution.check}")
+        st.markdown("**Present — final answer**")
+        st.latex(answer_to_latex(solution.final_answer, problem.answer_type))
+        return
+    detailed = teaching_solution(problem)
+    st.markdown(f"**RECOGNIZE:** {detailed.recognize}")
+    st.markdown(f"**DECIDE:** {detailed.decide}")
+    st.markdown(f"**ORIGINAL RULE / FORMULA:** {detailed.original_rule_or_formula}")
+    st.markdown("### EXECUTE")
+    for index, step in enumerate(detailed.execute, 1):
+        st.markdown(f"#### Step {index} — {step.step_title}")
+        _solution_expression("Before", step.before_expression)
+        st.markdown(f"**Operation:** {step.operation}")
+        st.markdown(f"**Why allowed:** {step.why}")
+        _solution_expression("After", step.after_expression)
+    st.markdown(f"**VERIFY:** {detailed.verify}")
+    st.markdown("**PRESENT — FINAL ANSWER**")
+    st.latex(answer_to_latex(detailed.final_answer, problem.answer_type))
 
 
 def _render_practice_problem(problem: PracticeProblem) -> None:
@@ -612,6 +636,14 @@ def _quiz_review() -> None:
         ),
     )
     record = next(item for item in assessments if item.assessment_id == selected_id)
+    solution_mode_label = st.radio(
+        "Solution detail",
+        ["Teaching solution", "Key steps"],
+        index=0,
+        horizontal=True,
+        help="Teaching solution shows every algebraic transformation and is the default for quiz and test review.",
+    )
+    solution_mode = "teaching_solution" if solution_mode_label == "Teaching solution" else "key_steps"
     st.metric(
         "Score",
         f"{record.accuracy:.0%}",
@@ -633,7 +665,7 @@ def _quiz_review() -> None:
                 st.latex(answer_to_latex(problem.expected_answer, problem.answer_type))
             if result.error_category:
                 st.write(f"Likely error pattern: **{result.error_category}**")
-            _practice_solution(problem)
+            _practice_solution(problem, mode=solution_mode)
             if not result.correct and st.button(
                 "Repair this mistake", key=f"repair_{record.assessment_id}_{problem.problem_id}"
             ):
