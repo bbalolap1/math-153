@@ -1352,81 +1352,53 @@
   {
     "family_id": "CH34-DIFFERENCE-QUOTIENT",
     "problem_id": "CH34-DIFFERENCE-QUOTIENT-71553-3",
-    "prompt": "For $f(x)=2x^2+-1x+-1$, simplify $[f(x+h)-f(x)]/h$.",
+    "prompt": "For $f(x)=2x+-1$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.",
     "source_refs": [
       "sources/lectures/3.4.md"
     ],
     "teaching_solution": {
       "recognize": "The required operation defines this problem family.",
-      "decide": "Substitute x+h, subtract f(x), factor h, and cancel.",
-      "original_rule_or_formula": "Substitute x+h, subtract f(x), factor h, and cancel.",
+      "decide": "Substitute x+h, subtract the original function, factor h, and cancel for h\u22600.",
+      "original_rule_or_formula": "Substitute x+h, subtract the original function, factor h, and cancel for h\u22600.",
       "execute": [
         {
-          "step_title": "Write the original function",
-          "before_expression": "f(x)",
-          "operation": "Copy the given function exactly.",
-          "why": "The difference quotient uses both f(x+h) and f(x).",
-          "after_expression": "2x^2+(-1)x+(-1)"
+          "step_title": "State the original rule or formula",
+          "before_expression": "For $f(x)=2x+-1$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.",
+          "operation": "Identify the family rule before changing the expression.",
+          "why": "Naming the rule prevents an unsupported algebraic move.",
+          "after_expression": "Substitute x+h, subtract the original function, factor h, and cancel for h\u22600."
         },
         {
-          "step_title": "Substitute x+h",
-          "before_expression": "2x^2+(-1)x+(-1)",
-          "operation": "Replace every x by (x+h).",
-          "why": "Function substitution requires the entire input to replace x.",
-          "after_expression": "2(x+h)^2+(-1)(x+h)+(-1)"
+          "step_title": "Substitute the given values",
+          "before_expression": "Substitute x+h, subtract the original function, factor h, and cancel for h\u22600.",
+          "operation": "Replace the rule's variables with the values or expressions from the prompt.",
+          "why": "Substitution preserves equality when every occurrence is replaced consistently.",
+          "after_expression": "f(x+h)=2(x+h)+-1=2x+2h+-1"
         },
         {
-          "step_title": "Expand the square",
-          "before_expression": "2(x+h)^2+(-1)(x+h)+(-1)",
-          "operation": "Use (x+h)^2=x^2+2xh+h^2.",
-          "why": "The binomial-square identity expands one grouped power.",
-          "after_expression": "2(x^2+2xh+h^2)+(-1)(x+h)+(-1)"
+          "step_title": "Perform algebraic transformation 1",
+          "before_expression": "f(x+h)=2(x+h)+-1=2x+2h+-1",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "((2x+2h+-1)-(2x+-1))/h"
         },
         {
-          "step_title": "Distribute coefficients",
-          "before_expression": "2(x^2+2xh+h^2)+(-1)(x+h)+(-1)",
-          "operation": "Multiply 2 and -1 through their parentheses.",
-          "why": "The distributive property applies a coefficient to every enclosed term.",
-          "after_expression": "2x^2+4xh+2h^2+(-1)x+(-1)h+(-1)"
+          "step_title": "Perform algebraic transformation 2",
+          "before_expression": "((2x+2h+-1)-(2x+-1))/h",
+          "operation": "Apply one indicated arithmetic, algebraic, factoring, or simplification operation.",
+          "why": "The family rule permits this transformation while preserving the requested value or solution set.",
+          "after_expression": "2h/h=2"
         },
         {
-          "step_title": "Substitute into the quotient",
-          "before_expression": "[f(x+h)-f(x)]/h",
-          "operation": "Insert the expanded f(x+h) and the original f(x).",
-          "why": "Both function values must be present before subtraction.",
-          "after_expression": "\\frac{(2x^2+4xh+2h^2+(-1)x+(-1)h+(-1))-(2x^2+(-1)x+(-1))}{h}"
-        },
-        {
-          "step_title": "Distribute the subtraction sign",
-          "before_expression": "\\frac{(2x^2+4xh+2h^2+(-1)x+(-1)h+(-1))-(2x^2+(-1)x+(-1))}{h}",
-          "operation": "Multiply every term of f(x) by -1.",
-          "why": "A minus sign outside parentheses changes every enclosed sign.",
-          "after_expression": "\\frac{2x^2+4xh+2h^2+(-1)x+(-1)h+(-1)-2x^2-(-1)x-(-1)}{h}"
-        },
-        {
-          "step_title": "Combine like terms",
-          "before_expression": "\\frac{2x^2+4xh+2h^2+(-1)x+(-1)h+(-1)-2x^2-(-1)x-(-1)}{h}",
-          "operation": "Cancel opposite x\u00b2, x, and constant terms.",
-          "why": "Only terms with identical variable factors may combine.",
-          "after_expression": "\\frac{4xh+2h^2+(-1)h}{h}"
-        },
-        {
-          "step_title": "Factor h",
-          "before_expression": "\\frac{4xh+2h^2+(-1)h}{h}",
-          "operation": "Factor h from every numerator term.",
-          "why": "Each numerator term contains a common factor h.",
-          "after_expression": "\\frac{h(4x+2h+(-1))}{h}"
-        },
-        {
-          "step_title": "Cancel h",
-          "before_expression": "\\frac{h(4x+2h+(-1))}{h}",
-          "operation": "Cancel the common nonzero factor h.",
-          "why": "The difference quotient assumes h\u22600, so division by h is allowed.",
-          "after_expression": "4x+2h+(-1)"
+          "step_title": "Check restrictions and requested form",
+          "before_expression": "2h/h=2",
+          "operation": "Check the original prompt, domain restrictions, endpoint types, and required answer form.",
+          "why": "A transformed expression is acceptable only when it remains valid in the original problem.",
+          "after_expression": "The quotient is constant because a linear function has constant rate of change."
         }
       ],
-      "verify": "Expanding the numerator confirms every remaining term.",
-      "final_answer": "4*x+2*h+(-1)",
+      "verify": "The quotient is constant because a linear function has constant rate of change.",
+      "final_answer": "2",
       "quality_status": "detailed"
     }
   },

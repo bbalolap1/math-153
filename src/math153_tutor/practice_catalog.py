@@ -14,6 +14,7 @@ from .models import DifficultyLayer, PracticeProblem, WorkedSolution
 from .paths import REPOSITORY_ROOT
 from .validation import validate_practice_answer
 from .config import validate_question_count
+from .complexity import application_context, structural_signature
 
 FOUNDATION = "Foundation / Version 0.0"
 CHAPTERS_12 = "Chapters 1–2"
@@ -828,9 +829,40 @@ def _build(
         )
     if fid == "CH34-DIFFERENCE-QUOTIENT":
         a, b, c = r.randint(1, 4), r.randint(-5, 5), r.randint(-4, 4)
+        if k in {3, 4}:
+            return (
+                f"For $f(x)={a}x+{b}$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.",
+                "expression",
+                str(a),
+                f"{a}*x",
+                [],
+                _solution(
+                    "Substitute x+h, subtract the original function, factor h, and cancel for h≠0.",
+                    f"f(x+h)={a}(x+h)+{b}={a}x+{a}h+{b}",
+                    [f"(({a}x+{a}h+{b})-({a}x+{b}))/h", f"{a}h/h={a}"],
+                    str(a),
+                    "The quotient is constant because a linear function has constant rate of change.",
+                ),
+            )
+        if k in {6, 7}:
+            return (
+                "For $f(x)=x^3$, simplify $[f(x+h)-f(x)]/h$ for $h\\ne0$.",
+                "expression",
+                "3*x^2+3*x*h+h^2",
+                "3*x^2+h^2",
+                [],
+                _solution(
+                    "Expand (x+h)^3, subtract x^3, factor h, and cancel for h≠0.",
+                    "((x+h)^3-x^3)/h",
+                    ["(3*x^2*h+3*x*h^2+h^3)/h", "3*x^2+3*x*h+h^2"],
+                    "3*x^2+3*x*h+h^2",
+                    "Multiplying the result by h recovers the simplified numerator.",
+                ),
+            )
         answer = f"{2 * a}*x+{a}*h+({b})"
+        lead = "First find $f(x+h)$. Then " if k in {5, 8, 9} else ""
         return (
-            f"For $f(x)={a}x^2+{b}x+{c}$, simplify $[f(x+h)-f(x)]/h$.",
+            f"For $f(x)={a}x^2+{b}x+{c}$, {lead}simplify $[f(x+h)-f(x)]/h$.",
             "expression",
             answer,
             f"{2 * a}*x+({b})",
@@ -1071,6 +1103,19 @@ def generate_practice_problem(
         wrong = authored_wrong
     difficulty = _difficulty(variant)
     source_refs = family_source_refs().get(family_id, [])
+    layer = _difficulty_layer(variant)
+    representation = _representation(prompt, answer_type)
+    structural_variant, signature = structural_signature(
+        family_id, prompt, answer_type, representation
+    )
+    level_number = int(layer.value[1])
+    context = application_context(prompt)
+    requires_domain = (
+        "domain" in prompt.casefold()
+        or "excluded" in prompt.casefold()
+        or "LOG" in family_id
+        or "RATIONAL" in family_id
+    )
     problem = PracticeProblem(
         problem_id=f"{family_id}-{seed}-{variant}",
         group=spec.group,
@@ -1095,14 +1140,31 @@ def generate_practice_problem(
         required_skills=list(spec.skills),
         worked_solution=solution,
         parameter_seed=seed,
-        difficulty_layer=_difficulty_layer(variant),
-        representation=_representation(prompt, answer_type),
+        difficulty_layer=layer,
+        representation=representation,
         source_refs=source_refs,
         variant_reason=(
             f"Controlled { _difficulty_layer(variant).value } variant {variant + 1}/10; "
             "changes only authored parameters, representation, or prerequisite mixture."
         ),
         reasoning_checkpoints=[solution.setup, *solution.calculation, solution.check],
+        complexity_level=layer,
+        decision_count=max(1, 1 + max(0, level_number - 2) // 2),
+        prerequisite_count=max(1, min(len(spec.skills), 1 + max(0, level_number - 2) // 2)),
+        estimated_solution_steps=max(
+            len(solution.calculation) + 3,
+            (4, 4, 5, 5, 6, 7, 8, 10)[level_number],
+        ),
+        representation_type=representation,
+        structural_variant_type=structural_variant,
+        structural_signature=signature,
+        application_context=context,
+        requires_domain_check=requires_domain,
+        requires_extraneous_check="RADICAL-EQUATIONS" in family_id,
+        requires_factoring="FACTOR" in family_id or "factor" in prompt.casefold(),
+        requires_graph=representation == "graph",
+        requires_interpretation=context != "none" or representation in {"graph", "table"},
+        requires_multiple_methods=level_number >= 4,
     )
     if validate_practice_answer(problem, problem.wrong_answer).correct:
         fallback = {

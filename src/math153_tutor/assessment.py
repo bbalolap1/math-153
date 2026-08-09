@@ -9,6 +9,7 @@ from .distractors import meaningful_distractors
 from .practice_catalog import FAMILY_SPECS, generate_practice_problem
 from .validation import validate_practice_answer
 from .config import validate_question_count
+from .complexity import LAYER_VARIANTS, profile_layers
 
 
 def _unique_problem(
@@ -46,13 +47,21 @@ def build_assessment(
     seed: int,
     family_ids: list[str] | None = None,
     variant_pool: list[int] | None = None,
+    complexity_profile: str | None = None,
 ) -> list[PracticeProblem]:
     eligible = [family_id for family_id, spec in FAMILY_SPECS.items() if spec.group in set(scopes)]
     family_ids = eligible if family_ids is None else [item for item in family_ids if item in eligible]
     if not family_ids:
         raise ValueError("Choose at least one course scope with available questions.")
     validate_question_count(count)
-    variants = variant_pool or list(range(10))
+    if complexity_profile is not None:
+        layers = profile_layers(complexity_profile, count)
+        variants = [
+            LAYER_VARIANTS[layer][index % len(LAYER_VARIANTS[layer])]
+            for index, layer in enumerate(layers)
+        ]
+    else:
+        variants = variant_pool or list(range(10))
     if not variants:
         raise ValueError("Choose at least one difficulty layer.")
     seen: set[str] = set()
@@ -60,7 +69,7 @@ def build_assessment(
         _unique_problem(
             family_ids[index % len(family_ids)],
             seed + index,
-            variants[index % len(variants)],
+            variants[index] if complexity_profile is not None else variants[index % len(variants)],
             seen,
         )
         for index in range(count)

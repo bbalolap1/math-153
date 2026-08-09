@@ -673,14 +673,15 @@
   {
     "family_id": "CH34-DIFFERENCE-QUOTIENT",
     "source_question": "Source evidence: sources/lectures/3.4.md",
-    "generated_question": "For $f(x)=2x^2+-2x+-2$, simplify $[f(x+h)-f(x)]/h$.",
+    "generated_question": "For $f(x)=2x+-2$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.",
     "seed": 15323,
     "difficulty": "L3",
-    "correct_answer": "4*x+2*h+(-2)",
+    "correct_answer": "2",
     "solution": [
-      "[f(x+h)-f(x)]/h",
-      "4*x+2*h+(-2)",
-      "Expanding the numerator confirms every remaining term."
+      "f(x+h)=2(x+h)+-2=2x+2h+-2",
+      "((2x+2h+-2)-(2x+-2))/h",
+      "2h/h=2",
+      "The quotient is constant because a linear function has constant rate of change."
     ],
     "validation_status": "passed",
     "source_refs": [

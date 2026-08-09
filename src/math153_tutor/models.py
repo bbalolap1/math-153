@@ -175,6 +175,20 @@ class PracticeProblem(BaseModel):
     source_refs: list[str]
     variant_reason: str
     reasoning_checkpoints: list[str]
+    complexity_level: DifficultyLayer
+    decision_count: int = Field(ge=1)
+    prerequisite_count: int = Field(ge=1)
+    estimated_solution_steps: int = Field(ge=1)
+    representation_type: str
+    structural_variant_type: str
+    structural_signature: str
+    application_context: str = "none"
+    requires_domain_check: bool = False
+    requires_extraneous_check: bool = False
+    requires_factoring: bool = False
+    requires_graph: bool = False
+    requires_interpretation: bool = False
+    requires_multiple_methods: bool = False
 
 
 class PracticeAttempt(BaseModel):

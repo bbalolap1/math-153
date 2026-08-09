@@ -812,25 +812,21 @@ def _assessment_launcher() -> None:
         help="Narrow the selected course groups to specific sections or topics.",
     )
     st.selectbox("Answer format", ["Multiple choice"], disabled=True)
-    difficulty = st.selectbox(
-        "Question progression",
+    complexity_profile = st.selectbox(
+        "Difficulty / Complexity",
         [
-            "Professor / timed / transfer (L5–L7)",
-            "Bridge progression (L2–L4)",
-            "Full progression (L0–L7)",
-            "Foundation / direct (L0–L1)",
+            "Foundation",
+            "Direct Practice",
+            "Mixed Practice",
+            "Professor Style",
+            "Test Review",
+            "Final Exam Challenge",
         ],
         help=(
-            "Professor/transfer questions reduce scaffolding or mix prerequisites. "
-            "Use Bridge progression when learning the representation first."
+            "Complexity changes reasoning depth, representation, prerequisites, method signaling, "
+            "and required checks independently of question count."
         ),
     )
-    variant_pools = {
-        "Professor / timed / transfer (L5–L7)": [8, 6, 7, 9],
-        "Bridge progression (L2–L4)": [2, 3, 4],
-        "Full progression (L0–L7)": list(range(10)),
-        "Foundation / direct (L0–L1)": [0, 1],
-    }
     length = st.selectbox(
         "Length",
         QUESTION_COUNT_OPTIONS,
@@ -845,7 +841,7 @@ def _assessment_launcher() -> None:
                 length,
                 seed=200,
                 family_ids=selected_families,
-                variant_pool=variant_pools[difficulty],
+                complexity_profile=complexity_profile,
             )
         except ValueError as error:
             st.error(str(error))
@@ -885,6 +881,13 @@ def _active_assessment() -> None:
     )
     st.progress(index / len(problems))
     st.markdown(f"## {problem.family_title}")
+    st.caption(
+        f"Difficulty: {problem.complexity_level.value} · "
+        f"{problem.decision_count} decision(s) · {problem.estimated_solution_steps} estimated steps"
+    )
+    st.markdown("**Skills required:** " + " • ".join(problem.required_skills))
+    if problem.application_context != "none":
+        st.caption(f"Application context: {problem.application_context.replace('_', ' ').title()}")
     _render_practice_problem(problem)
     st.caption("Fractions, exponents, radicals, roots, set notation, and symbols are rendered as mathematics—not programming syntax.")
     answer_key = f"assessment_answer_{index}"

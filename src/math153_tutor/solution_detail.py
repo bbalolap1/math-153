@@ -86,7 +86,9 @@ def _generic_steps(problem: PracticeProblem) -> list[ExecutionStep]:
 
 
 def teaching_solution(problem: PracticeProblem) -> TeachingSolution:
-    steps = _difference_quotient(problem) if problem.family_id == "CH34-DIFFERENCE-QUOTIENT" else _generic_steps(problem)
+    steps = _difference_quotient(problem) if problem.family_id == "CH34-DIFFERENCE-QUOTIENT" else []
+    if not steps:
+        steps = _generic_steps(problem)
     status = detailed_solution_status(steps)
     return TeachingSolution(
         recognize=problem.worked_solution.family_reason,
