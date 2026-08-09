@@ -1,0 +1,987 @@
+[
+  {
+    "family_id": "F0-REAL-NUMBERS",
+    "source_question": "Source evidence: sources/lectures/1.1.md",
+    "generated_question": "Select every real-number set that contains $-7$.",
+    "seed": 15300,
+    "difficulty": "L0",
+    "correct_answer": "integer,rational,real",
+    "solution": [
+      "Determine whether -7 is a terminating/repeating ratio or a non-rational constant/root.",
+      "Classification: integer,rational,real.",
+      "Each selected set contains the displayed value."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.4.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "F0-SIGNED-OPERATIONS",
+    "source_question": "Source evidence: sources/activities/Activity_3.md",
+    "generated_question": "Evaluate: $(-3) - (8) + (-2)$.",
+    "seed": 15301,
+    "difficulty": "L1",
+    "correct_answer": "-13",
+    "solution": [
+      "(-3) - (8) + (-2)",
+      "-3-8+-2=-13",
+      "Estimate the sign and magnitude."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ]
+  },
+  {
+    "family_id": "F0-FRACTIONS",
+    "source_question": "Source evidence: sources/lectures/1.4.md",
+    "generated_question": "Compute and simplify: $\\frac{4}{4} * \\frac{5}{6}$.",
+    "seed": 15302,
+    "difficulty": "L2",
+    "correct_answer": "5/6",
+    "solution": [
+      "4/4 * 5/6",
+      "Reduce the resulting fraction to 5/6.",
+      "Substitute decimal approximations to check."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1_Review.md"
+    ]
+  },
+  {
+    "family_id": "F0-ORDER-OPERATIONS",
+    "source_question": "Source evidence: sources/activities/Activity_3.md",
+    "generated_question": "Evaluate: $-2^2+5(3+2)$.",
+    "seed": 15303,
+    "difficulty": "L3",
+    "correct_answer": "21",
+    "solution": [
+      "Evaluate: $-2^2+5(3+2)$.",
+      "-2^2=-4",
+      "5(3+2)=25",
+      "Total=21",
+      "The negative is outside the exponent."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ]
+  },
+  {
+    "family_id": "F0-EXPONENT-RULES",
+    "source_question": "Convert to scientific notation: \\[ -0.00052. \\]",
+    "generated_question": "Simplify: $(x^2)^3$.",
+    "seed": 15304,
+    "difficulty": "L4",
+    "correct_answer": "x^6",
+    "solution": [
+      "Simplify: $(x^2)^3$.",
+      "x^6",
+      "Exponent laws preserve numeric checks for nonzero x."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "F0-ALGEBRA-VOCAB",
+    "source_question": "Source evidence: sources/activities/Activity_1.md",
+    "generated_question": "For $E=2x+0$, evaluate $E$ when $x=-4$.",
+    "seed": 15305,
+    "difficulty": "L5",
+    "correct_answer": "-8",
+    "solution": [
+      "E=2(-4)+0",
+      "E=-8",
+      "Re-evaluate multiplication before addition."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_3.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH12-EXPRESSIONS",
+    "source_question": "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+    "generated_question": "Simplify: $2(x+2)+2x+-1$.",
+    "seed": 15306,
+    "difficulty": "L6",
+    "correct_answer": "4*x+(3)",
+    "solution": [
+      "2x+4+2x+-1",
+      "4*x+(3)",
+      "Expand the simplified form to compare."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ]
+  },
+  {
+    "family_id": "CH12-LINEAR-EQUATIONS",
+    "source_question": "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+    "generated_question": "Solve: $2(x+1)=2x+3$.",
+    "seed": 15307,
+    "difficulty": "L7",
+    "correct_answer": "no solution",
+    "solution": [
+      "Distribute and subtract the variable terms.",
+      "2=3, which is false.",
+      "No x can repair a false constant equality."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ]
+  },
+  {
+    "family_id": "CH12-FACTORING",
+    "source_question": "Factor the polynomial \\[ x^6-27y^3. \\]",
+    "generated_question": "Factor completely: $x**2 + 6*x - 7$.",
+    "seed": 15308,
+    "difficulty": "L5",
+    "correct_answer": "(x-1)*(x+7)",
+    "solution": [
+      "x**2 + 6*x - 7",
+      "(x-1)*(x+7)",
+      "Expand the factors to recover the original polynomial."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_2.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/1.3.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/4.1.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_1.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "source_question": "Simplify the expression \\[\n`\\left`{=tex}(`\\frac{3x}{2yz}`{=tex}`\\right`{=tex})\\^2 `\\cdot`{=tex}\n`\\left`{=tex}(`\\frac{y^{-1}z}{x^5}`{=tex}`\\right`{=tex}) \\] and write\nyour answer with only positive exponents.",
+    "generated_question": "Simplify $\\frac{x^2-9}{x-3}$. State the original restriction in your paper work.",
+    "seed": 15309,
+    "difficulty": "L7",
+    "correct_answer": "x+3",
+    "solution": [
+      "(x-3)(x+3)/(x-3), x\\ne 3",
+      "x+3, x\\ne 3",
+      "The original denominator excludes x=3."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1_Review.md"
+    ]
+  },
+  {
+    "family_id": "CH12-RADICALS",
+    "source_question": "Simplify the expression \\[\n`\\sqrt[3]{16x^5y^3}`{=tex}`\\cdot`{=tex}`\\sqrt[3]{xy}`{=tex}. \\]",
+    "generated_question": "Simplify: $\\sqrt{12}$.",
+    "seed": 15310,
+    "difficulty": "L0",
+    "correct_answer": "2*sqrt(3)",
+    "solution": [
+      "sqrt(4*3)",
+      "2*sqrt(3)",
+      "(2*sqrt(3))^2=12."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "CH12-RADICAL-EQUATIONS",
+    "source_question": "Source evidence: sources/final exam review/Version_1_With_Solutions.md",
+    "generated_question": "Solve and check: $\\sqrt{x+1}=3$.",
+    "seed": 15311,
+    "difficulty": "L1",
+    "correct_answer": "8",
+    "solution": [
+      "x+1=9",
+      "x=8",
+      "sqrt(9)=3; valid."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "CH12-QUADRATICS",
+    "source_question": "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted.",
+    "generated_question": "Solve exactly: $x**2 + 5*x - 6=0$.",
+    "seed": 15312,
+    "difficulty": "L2",
+    "correct_answer": "-6,1",
+    "solution": [
+      "(x-(-6))(x-(1))=0",
+      "x=-6 or x=1",
+      "Substitute both roots in the original polynomial."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "CH12-COMPLEX",
+    "source_question": "Write as a single number of the form\n\n\\[ a+bi \\]\n\nwith (a) and (b) real:\n\n\\[ `\\boxed{\n\\frac{-3-2i}{5+2i}\n}`{=tex} \\]",
+    "generated_question": "Multiply: $(2+-1i)(-1+2i)$.",
+    "seed": 15313,
+    "difficulty": "L3",
+    "correct_answer": "0+(5)*I",
+    "solution": [
+      "ac+adi+bci+bd i^2",
+      "0+5i",
+      "Multiply using complex-number arithmetic."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.4.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "CH12-ABSOLUTE",
+    "source_question": "\\[ `\\frac{\\sqrt{a^4b^6}}`{=tex} {`\\sqrt{a^{12}b^8}`{=tex}} \\]\n\nCombine the radicals:\n\n\\[ `\\sqrt{a^{4-12}b^{6-8}}`{=tex} = `\\sqrt{a^{-8}b^{-2}}`{=tex}. \\]\n\nBecause this is an even root, absolute value is required:\n\n\\[ `\\boxed{|a^{-4}b^{-1}|}`{=tex}. \\]\n\nEquivalent forms given in the source include\n\n\\[ `\\boxed{a^{-4}|b^{-1}|}`{=tex} \\]\n\nand\n\n\\[ `\\boxed{\\frac1{a^4|b|}}`{=tex}. \\]",
+    "generated_question": "Solve: $|x-(5)|=4$.",
+    "seed": 15314,
+    "difficulty": "L4",
+    "correct_answer": "1,9",
+    "solution": [
+      "x-5=4 or x-5=-4",
+      "x=1,9",
+      "Both values are the required distance from the center."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md"
+    ]
+  },
+  {
+    "family_id": "CH12-INEQUALITIES",
+    "source_question": "9.   Solve the inequality, and express the solutions in terms of intervals whenever possible.   (2.6 #33)",
+    "generated_question": "Write in interval notation: $x>-1$ and $x\\le 3$.",
+    "seed": 15315,
+    "difficulty": "L5",
+    "correct_answer": "(-1,3]",
+    "solution": [
+      "-1<x<=3",
+      "(-1,3]",
+      "Check both endpoint symbols."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_4.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "CH34-COORDINATE",
+    "source_question": "An airplane flying north at **200 mi/hr** passed over a point on the\nground at **2:00 P.M.**\n\nAnother airplane at the same altitude passed over the same point at\n**2:30 P.M.**, flying east at **400 mi/hr**.",
+    "generated_question": "Find the midpoint of $(4,-3)$ and $(-2,1)$.",
+    "seed": 15316,
+    "difficulty": "L6",
+    "correct_answer": "(1,-1)",
+    "solution": [
+      "((4+-2)/2,(-3+1)/2)",
+      "(1,-1)",
+      "The midpoint is halfway in each coordinate."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/lectures/3.1(2).md",
+      "sources/quizzes/Quiz_4.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH34-LINES",
+    "source_question": "12. Sketch the graph y = x \u2212 4 , and label the x- and y-intercepts.                                        (3.2 #20)",
+    "generated_question": "Write the line with slope $2$ through $(0,-5)$ in slope-intercept form.",
+    "seed": 15317,
+    "difficulty": "L7",
+    "correct_answer": "y=2*x+(-5)",
+    "solution": [
+      "y--5=2(x-0)",
+      "y=2*x+(-5)",
+      "At x=0, y=-5."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/3.1(2).md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md"
+    ]
+  },
+  {
+    "family_id": "CH34-TABLES",
+    "source_question": "\\[ `\\frac{x(x-2)}{x+3}`{=tex}\\<0. \\]\n\nCritical values: \\[ -3,`\\quad0`{=tex},`\\quad2`{=tex}. \\]\n\nSign table:\n\n  Interval                   \\(x\\)   (x-2)   (x+3)   Expression\n  ------------------------ ------- ------- ------- ------------\n  ((-`\\infty`{=tex},-3))       (-)     (-)     (-)          (-)\n  ((-3,0))                     (-)     (-)     (+)          (+)\n  ((0,2))                      (+)     (-)     (+)          (-)\n  ((2,`\\infty`{=tex}))         (+)     (+)     (+)          (+)\n\nTherefore \\[ `\\boxed{(-\\infty,-3)\\cup(0,2)}`{=tex}. \\]",
+    "generated_question": "A table follows the rule $y=4x+4$. Find the missing value.\n\n| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| y | ? | 8 | 12 | 16 |",
+    "seed": 15318,
+    "difficulty": "L5",
+    "correct_answer": "4",
+    "solution": [
+      "For x=0, y=4(0)+4.",
+      "y=4",
+      "The y-values have constant difference equal to the slope."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.1(2).md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH34-CIRCLES",
+    "source_question": "13. For the given circle, find the x-intercepts.                                                           (3.2 #67)",
+    "generated_question": "Write the circle with center $(-4,-5)$ and radius $5$.",
+    "seed": 15319,
+    "difficulty": "L7",
+    "correct_answer": "(x-(-4))^2+(y-(-5))^2=25",
+    "solution": [
+      "h=-4, k=-5, r=5",
+      "(x-(-4))^2+(y-(-5))^2=25",
+      "The center signs reverse inside each squared binomial."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md"
+    ]
+  },
+  {
+    "family_id": "CH34-FUNCTIONS",
+    "source_question": "Rationalize the denominator of the expression shown on the sheet\ninvolving \\[ 2x,`\\quad `{=tex}2y,`\\quad `{=tex}`\\sqrt[3]{y^4}`{=tex}. \\]\n\n> The source extraction compresses the fraction layout on Q.6, so no\n> unsupported rearrangement has been inserted.",
+    "generated_question": "If $f(x)=2x+0$, find $f(3)$.",
+    "seed": 15320,
+    "difficulty": "L0",
+    "correct_answer": "6",
+    "solution": [
+      "f(3)=2(3)+0",
+      "6",
+      "Evaluate multiplication before addition."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH34-COMPOSITION",
+    "source_question": "Several values of two functions (f) and (g) are listed in the following\ntables.",
+    "generated_question": "Let $f(x)=5x+2$ and $g(x)=x^2$. Find $(f\\circ g)(5)$.",
+    "seed": 15321,
+    "difficulty": "L1",
+    "correct_answer": "127",
+    "solution": [
+      "g(5)=25; f(25)=5(25)+2",
+      "127",
+      "Composition order is f(g(input))."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_4.md",
+      "sources/lectures/3.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH34-INVERSES",
+    "source_question": "Find the inverses of the following functions.",
+    "generated_question": "Find $f^{-1}(x)$ for $f(x)=3x+-1$.",
+    "seed": 15322,
+    "difficulty": "L2",
+    "correct_answer": "(x-(-1))/3",
+    "solution": [
+      "x=3y+-1",
+      "y=(x-(-1))/3",
+      "Composing the inverse with f simplifies to x."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH34-DIFFERENCE-QUOTIENT",
+    "source_question": "Source evidence: sources/lectures/3.4.md",
+    "generated_question": "For $f(x)=2x^2+-2x+-2$, simplify $[f(x+h)-f(x)]/h$.",
+    "seed": 15323,
+    "difficulty": "L3",
+    "correct_answer": "4*x+2*h+(-2)",
+    "solution": [
+      "[f(x+h)-f(x)]/h",
+      "4*x+2*h+(-2)",
+      "Expanding the numerator confirms every remaining term."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/3.4.md"
+    ]
+  },
+  {
+    "family_id": "CH34-QUADRATIC-FUNCTIONS",
+    "source_question": "\\[ f(x)=2x\\^2+bx+c \\] is a quadratic function with unknown coefficients\n(b,c). Its vertex is \\[ (-1,-1). \\]\n\nFind (b) and (c).\n\n**Hint:** Start by setting up the vertex-form equation.",
+    "generated_question": "Find the vertex of $y=-1(x-(-4))^2+(2)$.",
+    "seed": 15324,
+    "difficulty": "L4",
+    "correct_answer": "(-4,2)",
+    "solution": [
+      "h=-4, k=2",
+      "(-4,2)",
+      "At x=h the squared term is zero."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ]
+  },
+  {
+    "family_id": "CH34-POLYNOMIALS",
+    "source_question": "19. Given f ( x) = x 3 + 2 x 2 \u2212 4 x \u2212 8 .                                      (4.1 #23)",
+    "generated_question": "Find all real zeros of $p(x)=x**2 - 4$.",
+    "seed": 15325,
+    "difficulty": "L5",
+    "correct_answer": "-2,2",
+    "solution": [
+      "p(x)=(x-(-2))(x-(2))",
+      "-2,2",
+      "Substitute both zeros."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_2.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.3.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/4.1.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH34-RATIONAL-FUNCTIONS",
+    "source_question": "22. Sketch the graphs and dash in the asymptotes.                                                       (5.3 #1)",
+    "generated_question": "State the domain exclusions of $R(x)=\\frac{x-6}{(x-6)(x-12)}$.",
+    "seed": 15326,
+    "difficulty": "L6",
+    "correct_answer": "6,12",
+    "solution": [
+      "(x-6)(x-12)=0",
+      "x\\ne 6,12",
+      "The canceled factor creates a hole, not a restored domain value."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-EXP-FUNCTIONS",
+    "source_question": "Source evidence: sources/final exam review/Version_1_Without_Solutions.md",
+    "generated_question": "Evaluate $f(x)=5^x$ at $x=3$.",
+    "seed": 15327,
+    "difficulty": "L7",
+    "correct_answer": "125",
+    "solution": [
+      "f(3)=5^3",
+      "125",
+      "Exponential outputs are positive."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-EXP-MODELS",
+    "source_question": "15. Childhood growth For children between ages 6 and 10, height y (in inches) is frequently a linear function",
+    "generated_question": "A quantity starts at 450 and grows 20% per year. Find its value after 3 years, rounded to the nearest hundredth.",
+    "seed": 15328,
+    "difficulty": "L5",
+    "correct_answer": "777.60",
+    "solution": [
+      "A=450(1+0.2)^3",
+      "A\u2248777.60",
+      "The result exceeds the initial value."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-COMPOUND-INTEREST",
+    "source_question": "An automobile dealer offers customers no-down-payment 3-year loans at an\ninterest rate of (10%). If a customer can afford to pay \\$500 per month,\nfind the price of the most expensive car that can be purchased.",
+    "generated_question": "Deposit $1300 at 6% annual interest compounded 12 times per year for 3 years. Find the amount to the nearest cent.",
+    "seed": 15329,
+    "difficulty": "L7",
+    "correct_answer": "1555.68",
+    "solution": [
+      "A=1300(1+0.06/12)^(12\u00b73)",
+      "A\u22481555.68",
+      "The amount exceeds principal; retain full calculator precision until rounding."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md"
+    ]
+  },
+  {
+    "family_id": "CH5-NATURAL-EXP",
+    "source_question": "Source evidence: sources/final exam review/Version_1_Without_Solutions.md",
+    "generated_question": "Evaluate $f(t)=2e^t$ at $t=4$, rounded to three decimals.",
+    "seed": 15330,
+    "difficulty": "L0",
+    "correct_answer": "109.196",
+    "solution": [
+      "f(4)=2e^4",
+      "\u2248109.196",
+      "Keep e unrounded until the final step."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-LOGARITHMS",
+    "source_question": "10 . Exact answers may contain rt or radicals or logarithms.",
+    "generated_question": "Evaluate exactly: $\\log_{3}(9)$.",
+    "seed": 15331,
+    "difficulty": "L1",
+    "correct_answer": "2",
+    "solution": [
+      "3^2=9",
+      "2",
+      "Convert back to exponential form."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-LOG-PROPERTIES",
+    "source_question": "For appropriate positive inputs, the notes give three main logarithm\nproperties.",
+    "generated_question": "Condense to one logarithm: $\\log(2x)+\\log(4)$.",
+    "seed": 15332,
+    "difficulty": "L2",
+    "correct_answer": "log(8*x)",
+    "solution": [
+      "log((2x)(4))",
+      "log(8*x)",
+      "Arguments multiply; they do not add."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-LOG-EQUATIONS-FULL",
+    "source_question": "24. Solve the compound interest formula A = P\uf0e71 + \uf0f7           for t using natural logarithms.",
+    "generated_question": "Solve and check the domain: $\\ln(x+3)=\\ln(8)$.",
+    "seed": 15333,
+    "difficulty": "L3",
+    "correct_answer": "5",
+    "solution": [
+      "x+3=8",
+      "x=5",
+      "5+3=8>0; valid."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  },
+  {
+    "family_id": "CH5-EXP-EQUATIONS-FULL",
+    "source_question": "Find all real solutions to\n\n\\[ `\\boxed{e^{x^2}=e^{7x-12}}`{=tex}. \\]",
+    "generated_question": "Solve exactly: $3^x=81$.",
+    "seed": 15334,
+    "difficulty": "L4",
+    "correct_answer": "4",
+    "solution": [
+      "3^x=3^4",
+      "x=4",
+      "3^4=81."
+    ],
+    "validation_status": "passed",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ]
+  }
+]

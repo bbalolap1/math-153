@@ -32,7 +32,7 @@ def test_every_family_has_ten_working_variants(family_id: str) -> None:
         assert problem.worked_solution.calculation
         assert problem.worked_solution.final_answer == problem.expected_answer
         assert problem.worked_solution.check
-        assert problem.source_type == "model_inference"
+        assert problem.source_type == "source_markdown_controlled_template"
         assert problem.source_refs
         assert problem.difficulty_layer.value in {f"L{index}" for index in range(8)}
         assert problem.representation
@@ -51,6 +51,11 @@ def test_ready_made_session_has_exact_requested_count(name: str) -> None:
 def test_session_selection_returns_requested_family() -> None:
     family_id = "CH34-TABLES"
     assert {p.family_id for p in build_session([family_id], 12)} == {family_id}
+
+
+def test_session_rejects_over_limit_count() -> None:
+    with pytest.raises(ValueError, match="between 1 and 50"):
+        build_session(["CH34-TABLES"], 51)
 
 
 def test_interval_validator_enforces_endpoint_types() -> None:

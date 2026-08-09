@@ -37,9 +37,10 @@ from math153_tutor.practice_catalog import (
     CHAPTER_5,
     FAMILY_SPECS,
     FOUNDATION,
+    family_source_refs,
     generate_practice_problem,
 )
-from math153_tutor.paths import content_root, learner_data_root, source_manifest_path
+from math153_tutor.paths import REPOSITORY_ROOT, content_root, learner_data_root, source_manifest_path
 from math153_tutor.source_manifest import read_manifest
 from math153_tutor.storage import (
     LearningRecordRepository,
@@ -47,6 +48,7 @@ from math153_tutor.storage import (
 )
 from math153_tutor.step_engine import check_step, solution_steps
 from math153_tutor.validation import validate_practice_answer
+from math153_tutor.config import QUESTION_COUNT_OPTIONS
 
 
 DATA_ROOT = learner_data_root()
@@ -274,14 +276,38 @@ def _course_review() -> None:
             )
         st.dataframe(catalog_rows, hide_index=True, width="stretch")
 
-    with st.expander("Source availability"):
+    with st.expander("Source Inspector"):
         manifest = read_manifest(source_manifest_path())
-        present = sum(item.binary_present for item in manifest)
-        st.write(f"{len(manifest)} inventoried source filenames · {present} binaries present")
-        st.caption(
-            "Inventory-only records establish filenames and likely source roles, not mathematical "
-            "content or professor verification."
-        )
+        st.write(f"{len(manifest)} source files · {sum(item.extraction_status == 'complete' for item in manifest)} read completely")
+        if manifest:
+            selected_path = st.selectbox("Open source", [item.actual_path for item in manifest])
+            selected = next(item for item in manifest if item.actual_path == selected_path)
+            st.markdown("### ORIGINAL SOURCE")
+            st.code((REPOSITORY_ROOT / selected.actual_path).read_text(encoding="utf-8"), language="markdown")
+            st.markdown("### EXTRACTED DATA")
+            st.write({
+                "questions": selected.question_count,
+                "solutions": selected.solution_count,
+                "formulas": selected.formula_count,
+                "topics": selected.topics,
+                "content_length": selected.content_length,
+            })
+            for record_type in ("question", "example", "formula", "solution"):
+                records = [record.model_dump() for record in selected.extracted_records if record.record_type == record_type]
+                if records:
+                    with st.expander(record_type.title() + "s"):
+                        st.write(records)
+            used_by = [family_id for family_id, refs in family_source_refs().items() if selected.actual_path in refs]
+            st.markdown("### USED BY")
+            st.write(used_by)
+            st.markdown("### GENERATED FROM THIS SOURCE")
+            generated = []
+            for family_id in used_by:
+                if family_id not in FAMILY_SPECS:
+                    continue
+                problem = generate_practice_problem(family_id, 153, 0)
+                generated.append({"family_id": family_id, "difficulty": problem.difficulty_layer.value, "seed": problem.parameter_seed, "prompt": problem.prompt})
+            st.write(generated)
 
     if st.button("Add Course Material", type="primary"):
         st.session_state.show_add_material = True
@@ -327,15 +353,16 @@ def _active_practice_problem() -> PracticeProblem:
 
 def _practice_solution(problem: PracticeProblem) -> None:
     solution = problem.worked_solution
-    st.markdown(f"**Rule:** {solution.rule}")
-    st.markdown("**Setup**")
+    st.markdown(f"**Recognize:** {solution.family_reason}")
+    st.markdown(f"**Decide:** {solution.rule}")
+    st.markdown("**Execute — setup**")
     st.latex(normalize_math_fragment(solution.setup))
-    st.markdown("**Calculation**")
+    st.markdown("**Execute — algebra**")
     for line in solution.calculation:
         st.latex(normalize_math_fragment(line))
-    st.markdown("**Final answer**")
+    st.markdown(f"**Verify:** {solution.check}")
+    st.markdown("**Present — final answer**")
     st.latex(answer_to_latex(solution.final_answer, problem.answer_type))
-    st.markdown(f"**Check:** {solution.check}")
 
 
 def _render_practice_problem(problem: PracticeProblem) -> None:
@@ -386,9 +413,8 @@ def _readable_answer_radio(
 ) -> str | None:
     presentations = display_choices(choices, problem.answer_type)
     st.markdown("**Answer choices**")
-    columns = st.columns(2)
-    for position, presentation in enumerate(presentations):
-        with columns[position % 2]:
+    for presentation in presentations:
+        with st.container(border=True):
             st.markdown(f"**{presentation.letter}.**")
             st.latex(presentation.latex)
     letter_by_answer = {item.raw_answer: item.letter for item in presentations}
@@ -773,7 +799,12 @@ def _assessment_launcher() -> None:
         "Full progression (L0–L7)": list(range(10)),
         "Foundation / direct (L0–L1)": [0, 1],
     }
-    length = st.selectbox("Length", [5, 10, 20], format_func=lambda value: f"{value} questions")
+    length = st.selectbox(
+        "Length",
+        QUESTION_COUNT_OPTIONS,
+        index=0,
+        format_func=lambda value: f"{value} questions",
+    )
     st.caption("Formula questions render with math notation. Graph questions use an interactive coordinate-plane contract rather than code-style coordinate text.")
     if st.button("Launch Assessment", type="primary"):
         try:

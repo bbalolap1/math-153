@@ -8,6 +8,23 @@ from .models import AssessmentQuestionResult, AssessmentRecord, PracticeProblem
 from .distractors import meaningful_distractors
 from .practice_catalog import FAMILY_SPECS, generate_practice_problem
 from .validation import validate_practice_answer
+from .config import validate_question_count
+
+
+def _unique_problem(
+    family_id: str, seed: int, variant: int, seen: set[str]
+) -> PracticeProblem:
+    """Generate a source-grounded problem whose visible prompt is unique in this set."""
+    for offset in range(200):
+        problem = generate_practice_problem(family_id, seed + offset * 997, variant)
+        signature = " ".join(problem.prompt.split()).casefold()
+        if signature not in seen:
+            seen.add(signature)
+            return problem
+    raise ValueError(
+        "The selected families do not have enough distinct controlled variations for this count. "
+        "Choose more families or a smaller question count."
+    )
 
 
 def assessment_choices(problem: PracticeProblem) -> list[str]:
@@ -34,14 +51,17 @@ def build_assessment(
     family_ids = eligible if family_ids is None else [item for item in family_ids if item in eligible]
     if not family_ids:
         raise ValueError("Choose at least one course scope with available questions.")
-    if count < 1:
-        raise ValueError("An assessment needs at least one question.")
+    validate_question_count(count)
     variants = variant_pool or list(range(10))
     if not variants:
         raise ValueError("Choose at least one difficulty layer.")
+    seen: set[str] = set()
     return [
-        generate_practice_problem(
-            family_ids[index % len(family_ids)], seed + index, variants[index % len(variants)]
+        _unique_problem(
+            family_ids[index % len(family_ids)],
+            seed + index,
+            variants[index % len(variants)],
+            seen,
         )
         for index in range(count)
     ]

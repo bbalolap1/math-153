@@ -17,5 +17,10 @@ def content_root() -> Path:
     return REPOSITORY_ROOT / "content"
 
 
+def sources_root() -> Path:
+    """Canonical professor/course Markdown corpus."""
+    return REPOSITORY_ROOT / "sources"
+
+
 def source_manifest_path() -> Path:
-    return REPOSITORY_ROOT / "data" / "derived" / "source_manifest.csv"
+    return REPOSITORY_ROOT / "data" / "derived" / "source_manifest.json"

@@ -4,6 +4,7 @@ import random
 from collections.abc import Callable
 
 from .models import DifficultyLayer, ErrorCategory, GeneratedProblem
+from .practice_catalog import family_source_refs
 
 FAMILIES = {
     "CH1-LINEAR-EQUATIONS": "Linear equations",
@@ -19,6 +20,13 @@ def _common(
     options = list(FAMILIES.values())
     rng = random.Random(seed)
     rng.shuffle(options)
+    catalog_family = {
+        "CH1-LINEAR-EQUATIONS": "CH12-LINEAR-EQUATIONS",
+        "CH4-FUNCTION-COMPOSITION": "CH34-COMPOSITION",
+        "CH5-EXP-EQUATIONS": "CH5-EXP-EQUATIONS-FULL",
+        "CH5-LOG-EQUATIONS": "CH5-LOG-EQUATIONS-FULL",
+    }[family_id]
+    source_refs = family_source_refs().get(catalog_family, [])
     return GeneratedProblem(
         problem_id=f"{family_id}-{seed}",
         family_id=family_id,
@@ -31,9 +39,9 @@ def _common(
         correct_recognition=FAMILIES[family_id],
         first_decision_options=[first, "Expand every expression", "Convert to a decimal"],
         correct_first_decision=first,
-        source_refs=["MODEL-INFERENCE-PENDING-SOURCE-REVIEW"],
-        source_construction_refs=["MODEL-INFERENCE-PENDING-SOURCE-REVIEW"],
-        source_concept_refs=["MODEL-INFERENCE-PENDING-SOURCE-REVIEW"],
+        source_refs=source_refs,
+        source_construction_refs=source_refs,
+        source_concept_refs=source_refs,
         parameter_seed=seed,
         required_skills=skills,
         variant_reason="Controlled parameter change for a related handwritten retry.",

@@ -1,12 +1,15 @@
+import pytest
+
 from math153_tutor.assessment import (
     assessment_choices,
     build_assessment,
     complete_assessment,
     grade_question,
 )
-from math153_tutor.practice_catalog import CHAPTERS_12
+from math153_tutor.practice_catalog import CHAPTERS_12, CHAPTERS_34, CHAPTER_5, FOUNDATION
 from math153_tutor.storage import LearningRecordRepository
 from math153_tutor.models import RepairRecord
+from math153_tutor.validation import validate_practice_answer
 
 
 def test_assessment_build_grade_complete_and_reload(tmp_path) -> None:
@@ -61,3 +64,28 @@ def test_repair_record_is_persistent(tmp_path) -> None:
     repository.add_repair(repair)
 
     assert repository.list_repairs() == [repair]
+
+
+@pytest.mark.parametrize("count", [1, 20, 21, 50])
+def test_assessment_accepts_supported_question_counts(count: int) -> None:
+    problems = build_assessment(
+        [FOUNDATION, CHAPTERS_12, CHAPTERS_34, CHAPTER_5], count=count, seed=700
+    )
+    assert len(problems) == count
+    assert len({problem.prompt for problem in problems}) == count
+    assert all(problem.source_refs for problem in problems)
+    assert all(validate_practice_answer(problem, problem.expected_answer).correct for problem in problems)
+    assert all(problem.worked_solution.calculation for problem in problems)
+
+
+def test_assessment_rejects_question_count_above_limit() -> None:
+    with pytest.raises(ValueError, match="between 1 and 50"):
+        build_assessment([CHAPTERS_12], count=51, seed=700)
+
+
+def test_choice_display_order_is_stable_abcd() -> None:
+    problem = build_assessment([CHAPTERS_12], count=1, seed=701)[0]
+    from math153_tutor.math_display import display_choices
+
+    displayed = display_choices(assessment_choices(problem), problem.answer_type)
+    assert [choice.letter for choice in displayed] == ["A", "B", "C", "D"]
