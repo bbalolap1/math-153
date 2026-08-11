@@ -11,6 +11,7 @@ if str(_SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(_SRC_ROOT))
 
 import random
+import re
 from datetime import UTC, datetime
 
 import streamlit as st
@@ -51,7 +52,7 @@ def _style() -> None:
         <style>
         .block-container {max-width: 1080px; padding-top: 1.5rem;}
         div[data-testid="stMetric"] {border:1px solid rgba(128,128,128,.20); padding:.7rem; border-radius:.55rem;}
-        .mn-question-text {font-size:1.15rem; line-height:1.7; margin:.35rem 0 .55rem 0;}
+        .mn-question-text {font-size:1.15rem; line-height:1.75; margin:.35rem 0 .65rem 0;}
         .mn-choice {font-size:1.05rem; line-height:1.55;}
         </style>
         """, unsafe_allow_html=True,
@@ -72,16 +73,42 @@ def _unit_label(unit_id: str) -> str:
 
 
 def _render_prompt(prompt: str) -> None:
-    for kind,content in prompt_parts(prompt):
-        if kind=="math": st.latex(content)
-        else: st.markdown(f"<div class='mn-question-text'>{content}</div>",unsafe_allow_html=True)
+    """
+    Human-facing question renderer.
+
+    * A short symbolic question such as ``Find all positive real solutions: $...$`` keeps
+      the instruction as prose and shows the equation as display math.
+    * A contextual/word problem stays one continuous paragraph with its math embedded
+      inline, so dollar amounts and small expressions do not get broken onto separate lines.
+    """
+    parts=prompt_parts(prompt)
+    if not parts:
+        return
+
+    text_words=sum(len(content.split()) for kind,content in parts if kind=="text")
+    sentence_count=len(re.findall(r"[.!?]", prompt))
+    contextual = text_words >= 12 or sentence_count >= 2
+
+    if contextual:
+        rendered=[]
+        for kind,content in parts:
+            if kind=="math":
+                rendered.append(f"${content}$")
+            else:
+                rendered.append(content)
+        line=" ".join(piece.strip() for piece in rendered if piece.strip())
+        st.markdown(f"<div class='mn-question-text'>{line}</div>",unsafe_allow_html=True)
+        return
+
+    for kind,content in parts:
+        if kind=="math":
+            st.latex(content)
+        else:
+            st.markdown(f"<div class='mn-question-text'>{content}</div>",unsafe_allow_html=True)
 
 
 def _render_answer_widget(problem: PracticeProblem, key: str, *, assessment_mode: bool = False) -> str:
-    """
-    Assessment mode is click-to-answer by default.  The problem keeps its true
-    mathematical answer type internally so validation/review remains exact.
-    """
+    """Quiz/Test/Exam are click-to-answer by default; only genuinely open responses require typing."""
     if problem.answer_type == "multi_select":
         choices=assessment_choices(problem)
         displayed=display_choices(choices,problem.answer_type)
@@ -99,7 +126,6 @@ def _render_answer_widget(problem: PracticeProblem, key: str, *, assessment_mode
         if chosen is None: return ""
         return displayed[labels.index(chosen)].raw_answer
 
-    # Only genuinely open/verbal responses fall back to typing.
     return st.text_area(
         "Answer",
         key=f"{key}-answer",
@@ -281,19 +307,14 @@ def _mistake_repair() -> None:
     if not wrong: st.info("No incorrect assessment items are stored yet."); return
     labels=[f"{record.assessment_type} · {result.problem.section} · {result.problem.family_title} · {record.completed_at:%Y-%m-%d}" for record,result in wrong]
     selected=st.selectbox("Choose a mistake",range(len(wrong)),format_func=lambda i:labels[i]); _,result=wrong[selected]; problem=result.problem
-    _render_prompt(problem.prompt); st.markdown("**Your answer**"); st.latex(answer_to_latex(result.selected_answer,problem.answer_type)) if result.selected_answer else st.write("No answer recorded.")
-    st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type))
-    st.markdown("### Common mistake patterns")
-    for item in PROBLEM_FAMILY_INDEX[problem.family_id].common_mistakes: st.markdown(f"- {item}")
-    _show_solution(problem)
+    _render_prompt(problem.prompt); st.markdown("**Your answer**"); st.latex(answer_to_latex(result.selected_answer,problem.answer_type))
+    st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type)); _show_solution(problem)
 
 
 def _progress() -> None:
     st.title("Progress")
     records=LearningRecordRepository(LEARNING_DB).list_assessments(); status=assessment_evidence_status(records)
-    c1,c2,c3,c4=st.columns(4)
-    c1.metric("Assessment items",status.get("attempts",0)); c2.metric("Accuracy",f"{status.get('accuracy',0):.0%}")
-    c3.metric("Distinct correct structures",status.get("distinct_correct_structures",0)); c4.metric("Professor+ correct",status.get("professor_or_higher_correct",0))
+    c1,c2,c3=st.columns(3); c1.metric("Assessment items",status.get("attempts",0)); c2.metric("Accuracy",f"{status.get('accuracy',0):.0%}"); c3.metric("Distinct correct structures",status.get("distinct_correct_structures",0))
     if records:
         rows=[{"type":r.assessment_type,"date":r.completed_at.isoformat(timespec="minutes"),"score":f"{r.correct_count}/{len(r.question_results)}","accuracy":round(r.accuracy,3)} for r in records]
         st.dataframe(rows,use_container_width=True)
