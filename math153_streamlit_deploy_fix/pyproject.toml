@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "math153-tutor"
+version = "0.2.1"
+description = "Source-grounded Math 153 Method Navigator"
+authors = ["Method Navigator"]
+readme = "README.md"
+packages = [
+    { include = "math153_tutor", from = "math153_complete_project_rebuild_with_sources/src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+streamlit = ">=1.61,<2.0"
+sympy = ">=1.14,<2.0"
+pydantic = ">=2.13,<3.0"
+pyyaml = ">=6.0,<7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0,<10.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
