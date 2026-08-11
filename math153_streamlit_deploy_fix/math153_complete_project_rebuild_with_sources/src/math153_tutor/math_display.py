@@ -16,16 +16,37 @@ class DisplayChoice:
     latex: str
 
 
-def normalize_math_fragment(value: str) -> str:
-    """Convert storage syntax to familiar mathematical typography without changing meaning."""
+def _repair_common_storage_math(value: str) -> str:
+    """Repair common generated/storage notation before display; never changes the intended operation."""
     text=value.strip()
-    text=text.replace("**","^")
-    text=text.replace("oo",r"\infty")
+    # Strip markdown emphasis markers that were accidentally used around variables/tokens.
+    text=text.replace("*", "")
+    text=text.replace("**", "^")
+    text=text.replace("−", "-")
+    # Normalize common function names.
+    text=re.sub(r"(?<!\\)\bln\b", r"\\ln", text)
+    text=re.sub(r"(?<!\\)\blog\b", r"\\log", text)
+    text=re.sub(r"(?<!\\)\bsqrt\b", r"\\sqrt", text)
+    # Repair the common flattened frac pattern: frac{a}{b} or fracab where braces survived poorly.
+    text=text.replace("\\frac", "frac")
+    text=re.sub(r"\bfrac\s*\{([^{}]+)\}\s*\{([^{}]+)\}", r"\\frac{\1}{\2}", text)
+    # Very conservative repair for patterns like frac1x and frac52.
+    text=re.sub(r"\bfrac\s*([A-Za-z0-9]+)\s*([A-Za-z])\b", r"\\frac{\1}{\2}", text)
+    text=re.sub(r"\bfrac\s*([0-9])\s*([0-9])\b", r"\\frac{\1}{\2}", text)
+    text=text.replace("oo", r"\infty")
     return text
 
 
+def normalize_math_fragment(value: str) -> str:
+    return _repair_common_storage_math(value)
+
+
 def _expression_latex(value: str) -> str:
-    expr=sympy.sympify(value.replace("^","**").replace("i","I"),locals={"log":sympy.log})
+    repaired=_repair_common_storage_math(value)
+    # SymPy expects Python syntax, not LaTeX. Only send plain algebraic strings through sympify.
+    if "\\" in repaired:
+        return repaired
+    expr=sympy.sympify(repaired.replace("^","**").replace("i","I"),locals={"ln":sympy.log,"log":sympy.log})
     return sympy.latex(expr)
 
 
@@ -34,7 +55,7 @@ def answer_to_latex(answer: str, answer_type: str) -> str:
     if raw.casefold() in TEXT_ANSWERS:
         return rf"\text{{{raw}}}"
     if answer_type in {"interval","domain","range"}:
-        return raw.replace("oo",r"\infty").replace(" U ",r"\cup ")
+        return _repair_common_storage_math(raw).replace(" U ",r"\cup ")
     if answer_type=="ordered_pair":
         return raw if raw.startswith("(") else f"({raw})"
     if answer_type=="ordered_pairs":
@@ -54,8 +75,7 @@ def answer_to_latex(answer: str, answer_type: str) -> str:
 
 
 def _looks_like_math(fragment: str) -> bool:
-    """Conservative test used to decide whether a prompt fragment should be rendered as LaTeX."""
-    value=fragment.strip()
+    value=_repair_common_storage_math(fragment)
     if not value:
         return False
     math_markers=("\\frac","\\sqrt","\\log","\\ln","\\left","\\right","\\circ","\\pm","\\le","\\ge","^","_","=","<",">")
@@ -63,17 +83,10 @@ def _looks_like_math(fragment: str) -> bool:
 
 
 def prompt_parts(prompt: str) -> list[tuple[str,str]]:
-    """
-    Split professor wording from mathematical notation.
-
-    Returns ordered (kind, content) pairs where kind is ``text`` or ``math``.
-    Existing $...$/$$...$$ regions are preserved as math.  A trailing expression after a
-    colon is also treated as math when it contains recognizable mathematical syntax.
-    """
-    text=re.sub(r"\s+"," ",prompt.replace("**","^")).strip()
+    """Split professor wording from mathematics and repair display-only storage notation."""
+    text=re.sub(r"\s+"," ",prompt).strip()
     if not text:
         return []
-
     parts: list[tuple[str,str]]=[]
     pattern=re.compile(r"(\$\$.*?\$\$|\$.*?\$)")
     cursor=0
@@ -83,7 +96,7 @@ def prompt_parts(prompt: str) -> list[tuple[str,str]]:
             parts.extend(_split_colon_math(before))
         token=match.group(0)
         content=token[2:-2] if token.startswith("$$") else token[1:-1]
-        parts.append(("math",content.strip()))
+        parts.append(("math",_repair_common_storage_math(content)))
         cursor=match.end()
     tail=text[cursor:].strip()
     if tail:
@@ -95,20 +108,16 @@ def _split_colon_math(text: str) -> list[tuple[str,str]]:
     if ":" in text:
         left,right=text.rsplit(":",1)
         if left.strip() and _looks_like_math(right):
-            return [("text",left.strip()+":"),("math",right.strip())]
+            return [("text",left.strip()+":"),("math",_repair_common_storage_math(right))]
     if _looks_like_math(text) and not re.search(r"[A-Za-z]{4,}\s+[A-Za-z]{4,}",text):
-        return [("math",text)]
-    return [("text",text)]
+        return [("math",_repair_common_storage_math(text))]
+    return [("text",text.replace("*", ""))]
 
 
 def readable_prompt(prompt: str) -> str:
-    """Plain-text fallback for logs/debugging. Student UI should use ``prompt_parts``."""
-    return re.sub(r"\s+"," ",prompt.replace("**","^")).strip()
+    return re.sub(r"\s+"," ",prompt.replace("*","")).strip()
 
 
 def display_choices(choices: list[str], answer_type: str) -> list[DisplayChoice]:
     letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    return [
-        DisplayChoice(letter=letters[i],raw_answer=choice,latex=answer_to_latex(choice,answer_type))
-        for i,choice in enumerate(choices)
-    ]
+    return [DisplayChoice(letter=letters[i],raw_answer=choice,latex=answer_to_latex(choice,answer_type)) for i,choice in enumerate(choices)]
