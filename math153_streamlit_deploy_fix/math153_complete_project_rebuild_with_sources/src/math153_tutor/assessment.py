@@ -22,6 +22,11 @@ from .validation import validate_practice_answer
 
 AssessmentType = Literal["Quiz", "Test", "Exam"]
 
+# Assessment UI policy: the internal answer type remains mathematically precise, but
+# Quiz/Test/Exam should be click-to-answer whenever the correct answer can be validated.
+# Only genuinely open verbal responses stay as text entry.
+OPEN_RESPONSE_TYPES = {"text", "table"}
+
 
 ASSESSMENT_PRESETS: dict[str, dict[str, tuple[str, ...]]] = {
     "Quiz": {
@@ -177,7 +182,6 @@ def _select(candidates: list[PracticeProblem], blueprint: AssessmentBlueprint,
             if len(selected)>=blueprint.question_count: break
             if acceptable(problem,True): take(problem)
 
-    # We only relax within-assessment structural uniqueness, never recent-session exclusions.
     if len(selected)<blueprint.question_count:
         for problem in candidates:
             if len(selected)>=blueprint.question_count: break
@@ -221,9 +225,17 @@ def build_assessment(scopes: list[str], count: int, seed: int,
     return problems
 
 
-def assessment_choices(problem: PracticeProblem) -> list[str]:
-    """For choice questions, always return exactly four unique validated A-D candidates."""
-    if problem.answer_type not in {"multiple_choice", "multi_select"} and not problem.choices:
+def should_use_multiple_choice(problem: PracticeProblem) -> bool:
+    """Assessments are click-to-answer unless the source genuinely calls for open verbal entry."""
+    if problem.answer_type == "multi_select":
+        return False
+    return problem.answer_type not in OPEN_RESPONSE_TYPES
+
+
+def assessment_choices(problem: PracticeProblem, *, force_multiple_choice: bool = False) -> list[str]:
+    """Return exactly four unique validated choices when the UI requests choice presentation."""
+    use_choice = force_multiple_choice or problem.answer_type == "multiple_choice" or bool(problem.choices)
+    if not use_choice:
         return []
     candidates = list(problem.choices)
     candidates.extend(d.answer for d in meaningful_distractors(problem))
