@@ -21,6 +21,7 @@ from math153_tutor.assessment import (
     build_assessment,
     complete_assessment,
     grade_question,
+    should_use_multiple_choice,
 )
 from math153_tutor.complexity import normalized_prompt_structure
 from math153_tutor.course_content import COURSE_UNITS, MATH153_COURSE, PROBLEM_FAMILY_INDEX, sections_for_unit
@@ -76,27 +77,41 @@ def _render_prompt(prompt: str) -> None:
         else: st.markdown(f"<div class='mn-question-text'>{content}</div>",unsafe_allow_html=True)
 
 
-def _render_answer_widget(problem: PracticeProblem, key: str) -> str:
-    choices=assessment_choices(problem)
-    if problem.answer_type in {"multiple_choice","multi_select"} or choices:
+def _render_answer_widget(problem: PracticeProblem, key: str, *, assessment_mode: bool = False) -> str:
+    """
+    Assessment mode is click-to-answer by default.  The problem keeps its true
+    mathematical answer type internally so validation/review remains exact.
+    """
+    if problem.answer_type == "multi_select":
+        choices=assessment_choices(problem)
         displayed=display_choices(choices,problem.answer_type)
-        # Streamlit radio labels support Markdown/LaTeX. Show A-D with rendered mathematics.
         labels=[f"**{c.letter}.**  ${c.latex}$" for c in displayed]
-        if problem.answer_type=="multi_select":
-            selected=st.multiselect("Choose all that apply",labels,key=f"{key}-multi")
-            raws=[displayed[labels.index(v)].raw_answer for v in selected]
-            return ",".join(raws)
+        selected=st.multiselect("Choose all that apply",labels,key=f"{key}-multi")
+        raws=[displayed[labels.index(v)].raw_answer for v in selected]
+        return ",".join(raws)
+
+    force_choice = assessment_mode and should_use_multiple_choice(problem)
+    choices=assessment_choices(problem,force_multiple_choice=force_choice)
+    if choices:
+        displayed=display_choices(choices,problem.answer_type)
+        labels=[f"**{c.letter}.**  ${c.latex}$" for c in displayed]
         chosen=st.radio("Choose an answer",labels,index=None,key=f"{key}-radio")
         if chosen is None: return ""
         return displayed[labels.index(chosen)].raw_answer
-    return st.text_input("Answer",key=f"{key}-answer",placeholder="Enter the requested answer.")
+
+    # Only genuinely open/verbal responses fall back to typing.
+    return st.text_area(
+        "Answer",
+        key=f"{key}-answer",
+        height=90,
+        placeholder="Type the short wording/explanation requested by the question.",
+    )
 
 
 def _render_solution_expression(expression: str) -> None:
     for kind,content in prompt_parts(expression):
         if kind=="math": st.latex(content)
         else:
-            # Pure algebraic storage strings often do not include $ delimiters.
             try: st.latex(answer_to_latex(content,"expression"))
             except Exception: st.write(content)
 
@@ -190,7 +205,7 @@ def _professor_mode() -> None:
     if st.button("New problem",type="primary"):
         st.session_state.prof_variant+=1; st.session_state.prof_seed+=7919; st.session_state.pop("prof_feedback",None)
     problem=generate_practice_problem(fid,st.session_state.prof_seed,st.session_state.prof_variant)
-    _render_prompt(problem.prompt); answer=_render_answer_widget(problem,f"prof-{problem.problem_id}")
+    _render_prompt(problem.prompt); answer=_render_answer_widget(problem,f"prof-{problem.problem_id}",assessment_mode=True)
     if st.button("Check answer",key=f"prof-submit-{problem.problem_id}",type="primary"):
         result=validate_practice_answer(problem,answer)
         PracticeAttemptRepository(PRACTICE_DB).add(PracticeAttempt(problem_id=problem.problem_id,family_id=problem.family_id,answer=answer,correct=result.correct,answer_type=problem.answer_type,shown_work=""))
@@ -253,7 +268,7 @@ def _assessment_page(kind: str, default_count: int) -> None:
             LearningRecordRepository(LEARNING_DB).add_assessment(record); st.session_state[f"{kind}-saved"]=True
         _assessment_review(kind,results); return
     problem=questions[index]; st.progress((index+1)/len(questions)); st.caption(f"Question {index+1} of {len(questions)}")
-    _render_prompt(problem.prompt); answer=_render_answer_widget(problem,f"{kind}-{problem.problem_id}")
+    _render_prompt(problem.prompt); answer=_render_answer_widget(problem,f"{kind}-{problem.problem_id}",assessment_mode=True)
     if st.button("Submit and continue",key=f"{kind}-submit-{problem.problem_id}",type="primary"):
         if not answer.strip(): st.warning("Select or enter an answer first."); return
         st.session_state[f"{kind}-results"].append(grade_question(problem,answer,shown_work="")); st.session_state[f"{kind}-index"]=index+1; st.rerun()
@@ -266,20 +281,31 @@ def _mistake_repair() -> None:
     if not wrong: st.info("No incorrect assessment items are stored yet."); return
     labels=[f"{record.assessment_type} · {result.problem.section} · {result.problem.family_title} · {record.completed_at:%Y-%m-%d}" for record,result in wrong]
     selected=st.selectbox("Choose a mistake",range(len(wrong)),format_func=lambda i:labels[i]); _,result=wrong[selected]; problem=result.problem
-    _render_prompt(problem.prompt); st.markdown("**Your answer**"); st.latex(answer_to_latex(result.selected_answer,problem.answer_type)); st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type)); _show_solution(problem)
+    _render_prompt(problem.prompt); st.markdown("**Your answer**"); st.latex(answer_to_latex(result.selected_answer,problem.answer_type)) if result.selected_answer else st.write("No answer recorded.")
+    st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type))
+    st.markdown("### Common mistake patterns")
+    for item in PROBLEM_FAMILY_INDEX[problem.family_id].common_mistakes: st.markdown(f"- {item}")
+    _show_solution(problem)
 
 
 def _progress() -> None:
     st.title("Progress")
     records=LearningRecordRepository(LEARNING_DB).list_assessments(); status=assessment_evidence_status(records)
     c1,c2,c3,c4=st.columns(4)
-    c1.metric("Assessment items",status.get("attempts",0)); c2.metric("Accuracy",f"{status.get('accuracy',0):.0%}"); c3.metric("Distinct correct structures",status.get("distinct_correct_structures",0)); c4.metric("Professor+ correct",status.get("professor_or_higher_correct",0)); st.info(status.get("message",""))
+    c1.metric("Assessment items",status.get("attempts",0)); c2.metric("Accuracy",f"{status.get('accuracy',0):.0%}")
+    c3.metric("Distinct correct structures",status.get("distinct_correct_structures",0)); c4.metric("Professor+ correct",status.get("professor_or_higher_correct",0))
+    if records:
+        rows=[{"type":r.assessment_type,"date":r.completed_at.isoformat(timespec="minutes"),"score":f"{r.correct_count}/{len(r.question_results)}","accuracy":round(r.accuracy,3)} for r in records]
+        st.dataframe(rows,use_container_width=True)
 
 
 def main() -> None:
     _style(); page=st.session_state.pop("page_override",None) or _sidebar()
-    handlers={"Dashboard":_dashboard,"Course Review":_course_review,"Professor Mode":_professor_mode,"Quiz":lambda:_assessment_page("Quiz",DEFAULT_QUIZ_COUNT),"Test":lambda:_assessment_page("Test",DEFAULT_TEST_COUNT),"Exam":lambda:_assessment_page("Exam",DEFAULT_EXAM_COUNT),"Mistake Repair":_mistake_repair,"Progress":_progress}
+    handlers={"Dashboard":_dashboard,"Course Review":_course_review,"Professor Mode":_professor_mode,
+              "Quiz":lambda:_assessment_page("Quiz",DEFAULT_QUIZ_COUNT),"Test":lambda:_assessment_page("Test",DEFAULT_TEST_COUNT),
+              "Exam":lambda:_assessment_page("Exam",DEFAULT_EXAM_COUNT),"Mistake Repair":_mistake_repair,"Progress":_progress}
     handlers[page]()
 
 
-if __name__=="__main__": main()
+if __name__=="__main__":
+    main()
