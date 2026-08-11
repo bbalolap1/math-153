@@ -26,7 +26,6 @@ def _strip_math_text(value: str) -> str:
 
 def _parse_expression(value: str):
     text=_strip_math_text(value)
-    # Pull the right side from strings such as A(x)=-x^2+20x.
     if "=" in text:
         text=text.split("=",1)[1]
     text=text.replace("^","**")
@@ -34,6 +33,85 @@ def _parse_expression(value: str):
         return sympy.expand(sympy.sympify(text,locals={"x":_X}))
     except Exception:
         return None
+
+
+def formula_hint(problem: PracticeProblem) -> tuple[str, str, str]:
+    """Return a non-answer-revealing (title, formula/rule, first cue) hint."""
+    text=" ".join((problem.family_id,problem.family_title,problem.prompt,problem.rule_or_formula)).casefold()
+
+    if "quadratic" in text and any(w in text for w in ("maximum","minimum","optimization","vertex")):
+        return (
+            "Vertex formula",
+            r"x_{\text{vertex}}=\frac{-b}{2a}",
+            "Rewrite the model as ax² + bx + c, identify a and b, then use the vertex x-value before evaluating the function.",
+        )
+    if "quadratic" in text:
+        return (
+            "Quadratic formula",
+            r"x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}",
+            "First put the equation in ax² + bx + c = 0 form. If it factors cleanly, factoring may be faster.",
+        )
+    if "difference quotient" in text:
+        return (
+            "Difference quotient",
+            r"\frac{f(x+h)-f(x)}{h}",
+            "Compute f(x+h) carefully first, then subtract f(x), combine, and simplify before canceling h.",
+        )
+    if "slope" in text or "line equation" in text or "parallel" in text or "perpendicular" in text:
+        return (
+            "Slope / line formulas",
+            r"m=\frac{y_2-y_1}{x_2-x_1},\qquad y-y_1=m(x-x_1)",
+            "Find the required slope first. For perpendicular lines, use the negative reciprocal slope.",
+        )
+    if "distance" in text or "midpoint" in text:
+        return (
+            "Coordinate formulas",
+            r"d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2},\qquad M=\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)",
+            "Identify the two points and substitute coordinates in the same order throughout.",
+        )
+    if "circle" in text:
+        return (
+            "Circle equation",
+            r"(x-h)^2+(y-k)^2=r^2",
+            "Identify the center (h,k) and radius r, or complete the square if the equation is expanded.",
+        )
+    if "composition" in text:
+        return (
+            "Function composition",
+            r"(f\circ g)(x)=f(g(x))",
+            "Evaluate or substitute into the inner function first, then use that result as the input of the outer function.",
+        )
+    if "exponential" in text or "interest" in text or "compound" in text:
+        return (
+            "Exponential model",
+            r"A=P\left(1+\frac{r}{n}\right)^{nt}\quad\text{or}\quad A=Pe^{rt}",
+            "Identify the initial amount, rate, compounding frequency, and time before choosing the model.",
+        )
+    if "log" in text:
+        return (
+            "Logarithm properties",
+            r"\log_b(MN)=\log_bM+\log_bN,\quad \log_b\left(\frac{M}{N}\right)=\log_bM-\log_bN,\quad p\log_bM=\log_b(M^p)",
+            "Match addition, subtraction, and coefficients to the product, quotient, and power rules. Keep log arguments positive.",
+        )
+    if "rational" in text and "equation" in text:
+        return (
+            "Rational-equation rule",
+            r"\text{LCD}\times(\text{both sides})",
+            "State excluded denominator values first, then multiply every term by the least common denominator.",
+        )
+    if "absolute" in text and "inequal" in text:
+        return (
+            "Absolute-value inequality",
+            r"|u|<a\Rightarrow -a<u<a,\qquad |u|>a\Rightarrow u<-a\text{ or }u>a",
+            "Isolate the absolute value first, then choose the AND or OR pattern from the inequality direction.",
+        )
+
+    rule=(problem.rule_or_formula or problem.worked_solution.rule or "Use the source-supported procedure for this problem family.").strip()
+    return (
+        "Rule / method cue",
+        rule,
+        problem.worked_solution.inference or "Identify the mathematical structure, then apply the matching procedure.",
+    )
 
 
 def _quadratic_optimization_steps(problem: PracticeProblem) -> list[ExecutionStep] | None:
@@ -65,7 +143,6 @@ def _quadratic_optimization_steps(problem: PracticeProblem) -> list[ExecutionSte
     direction="downward" if a < 0 else "upward"
     optimum="maximum" if a < 0 else "minimum"
 
-    # Prefer the named function used by the authored work, otherwise f(x).
     name_match=re.search(r"([A-Za-z])\s*\(x\)\s*=", source_line)
     fname=name_match.group(1) if name_match else "f"
     standard=f"{fname}(x)={sympy.sstr(expr).replace('**','^')}"
@@ -131,7 +208,6 @@ def _quadratic_optimization_steps(problem: PracticeProblem) -> list[ExecutionSte
 
 
 def _split_chain(value: str) -> list[str]:
-    """Split authored equality chains into visible intermediate lines when safe."""
     text=value.strip()
     if text.count("=") < 2:
         return [text]
@@ -167,13 +243,7 @@ def _generic_steps(problem: PracticeProblem) -> list[ExecutionStep]:
 
 
 def teaching_solution(problem: PracticeProblem) -> TeachingSolution:
-    """
-    Build a learner-facing solution that exposes the transitions the learner must reproduce.
-
-    Source-authored work remains authoritative, but common structures are expanded when the
-    authored calculation jumps over formula substitution or arithmetic that a learner needs
-    to see.  The review screen should teach the path, not merely restate the final lines.
-    """
+    """Build a learner-facing solution that exposes the transitions the learner must reproduce."""
     steps=_quadratic_optimization_steps(problem) or _generic_steps(problem)
     expected=max(1,problem.estimated_solution_steps)
     quality="detailed" if len(steps) >= expected else "insufficient_step_detail"
