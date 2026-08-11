@@ -31,7 +31,7 @@ from math153_tutor.mastery import assessment_evidence_status
 from math153_tutor.models import PracticeAttempt, PracticeProblem
 from math153_tutor.paths import learner_data_root
 from math153_tutor.practice_catalog import generate_practice_problem
-from math153_tutor.solution_detail import teaching_solution
+from math153_tutor.solution_detail import formula_hint, teaching_solution
 from math153_tutor.storage import LearningRecordRepository, PracticeAttemptRepository
 from math153_tutor.validation import validate_practice_answer
 from math153_tutor.config import DEFAULT_EXAM_COUNT, DEFAULT_QUIZ_COUNT, DEFAULT_TEST_COUNT, QUESTION_COUNT_OPTIONS
@@ -54,6 +54,7 @@ def _style() -> None:
         div[data-testid="stMetric"] {border:1px solid rgba(128,128,128,.20); padding:.7rem; border-radius:.55rem;}
         .mn-question-text {font-size:1.15rem; line-height:1.75; margin:.35rem 0 .65rem 0;}
         .mn-choice {font-size:1.05rem; line-height:1.55;}
+        .mn-step {border-left:3px solid rgba(128,128,128,.35); padding-left:1rem; margin:.7rem 0 1.2rem 0;}
         </style>
         """, unsafe_allow_html=True,
     )
@@ -73,14 +74,7 @@ def _unit_label(unit_id: str) -> str:
 
 
 def _render_prompt(prompt: str) -> None:
-    """
-    Human-facing question renderer.
-
-    * A short symbolic question such as ``Find all positive real solutions: $...$`` keeps
-      the instruction as prose and shows the equation as display math.
-    * A contextual/word problem stays one continuous paragraph with its math embedded
-      inline, so dollar amounts and small expressions do not get broken onto separate lines.
-    """
+    """Render short symbolic questions as display math and word problems as continuous prose."""
     parts=prompt_parts(prompt)
     if not parts:
         return
@@ -92,19 +86,14 @@ def _render_prompt(prompt: str) -> None:
     if contextual:
         rendered=[]
         for kind,content in parts:
-            if kind=="math":
-                rendered.append(f"${content}$")
-            else:
-                rendered.append(content)
+            rendered.append(f"${content}$" if kind=="math" else content)
         line=" ".join(piece.strip() for piece in rendered if piece.strip())
         st.markdown(f"<div class='mn-question-text'>{line}</div>",unsafe_allow_html=True)
         return
 
     for kind,content in parts:
-        if kind=="math":
-            st.latex(content)
-        else:
-            st.markdown(f"<div class='mn-question-text'>{content}</div>",unsafe_allow_html=True)
+        if kind=="math": st.latex(content)
+        else: st.markdown(f"<div class='mn-question-text'>{content}</div>",unsafe_allow_html=True)
 
 
 def _render_answer_widget(problem: PracticeProblem, key: str, *, assessment_mode: bool = False) -> str:
@@ -136,25 +125,78 @@ def _render_answer_widget(problem: PracticeProblem, key: str, *, assessment_mode
 
 def _render_solution_expression(expression: str) -> None:
     for kind,content in prompt_parts(expression):
-        if kind=="math": st.latex(content)
+        if kind=="math":
+            st.latex(content)
         else:
-            try: st.latex(answer_to_latex(content,"expression"))
-            except Exception: st.write(content)
+            try:
+                st.latex(answer_to_latex(content,"expression"))
+            except Exception:
+                st.write(content)
+
+
+def _render_rule_or_formula(value: str) -> None:
+    """Do not send prose through st.latex; render only actual mathematical notation as math."""
+    text=(value or "").strip()
+    if not text:
+        return
+    looks_math=(
+        "\\" in text
+        or "=" in text
+        or any(token in text for token in ("^","sqrt(","log(","ln(","/"))
+    )
+    if looks_math and len(text.split()) <= 16:
+        _render_solution_expression(text)
+    else:
+        st.write(text)
+
+
+def _question_help(problem: PracticeProblem) -> None:
+    """Formula/method help intentionally stops before substituting this question's numbers."""
+    title,formula,cue=formula_hint(problem)
+    with st.expander("💡 Help: formula / rule",expanded=False):
+        st.markdown(f"**{title}**")
+        _render_rule_or_formula(formula)
+        st.markdown("**First thing to do**")
+        st.write(cue)
+        st.caption("This help gives the method only. It does not reveal the answer or substitute the problem's numbers for you.")
 
 
 def _show_solution(problem: PracticeProblem) -> None:
     solution=teaching_solution(problem)
-    st.markdown("#### Worked solution")
-    if solution.recognize: st.markdown(f"**Recognize:** {solution.recognize}")
-    if solution.decide: st.markdown(f"**Method:** {solution.decide}")
+    st.markdown("#### Worked solution — step by step")
+
+    if solution.recognize:
+        st.markdown("**1. Recognize the problem type**")
+        st.write(solution.recognize)
+    if solution.decide:
+        st.markdown("**2. Decide what method applies**")
+        st.write(solution.decide)
     if solution.original_rule_or_formula:
-        st.markdown("**Rule / formula**"); _render_solution_expression(solution.original_rule_or_formula)
+        st.markdown("**3. Rule / formula**")
+        _render_rule_or_formula(solution.original_rule_or_formula)
+
+    st.markdown("**4. Execute the work one line at a time**")
     for i,step in enumerate(solution.execute,1):
-        st.markdown(f"**Step {i}: {step.step_title}**")
-        if step.why: st.caption(step.why)
-        _render_solution_expression(step.after_expression)
-    if solution.verify: st.markdown(f"**Check:** {solution.verify}")
-    st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type))
+        st.markdown(f"##### Work step {i}: {step.step_title}")
+        if step.before_expression:
+            st.markdown("**Start from:**")
+            _render_solution_expression(step.before_expression)
+        if step.operation:
+            st.markdown("**Do this:**")
+            _render_rule_or_formula(step.operation)
+        if step.after_expression:
+            st.markdown("**You get:**")
+            _render_solution_expression(step.after_expression)
+        if step.why:
+            st.markdown("**Why this step:**")
+            st.write(step.why)
+        st.divider()
+
+    if solution.verify:
+        st.markdown("**5. Check / interpret the result**")
+        st.write(solution.verify)
+    st.markdown("**Final answer**")
+    st.latex(answer_to_latex(problem.expected_answer,problem.answer_type))
 
 
 def _recent_assessment_exclusions() -> tuple[set[str],set[str],set[str]]:
@@ -231,7 +273,9 @@ def _professor_mode() -> None:
     if st.button("New problem",type="primary"):
         st.session_state.prof_variant+=1; st.session_state.prof_seed+=7919; st.session_state.pop("prof_feedback",None)
     problem=generate_practice_problem(fid,st.session_state.prof_seed,st.session_state.prof_variant)
-    _render_prompt(problem.prompt); answer=_render_answer_widget(problem,f"prof-{problem.problem_id}",assessment_mode=True)
+    _render_prompt(problem.prompt)
+    _question_help(problem)
+    answer=_render_answer_widget(problem,f"prof-{problem.problem_id}",assessment_mode=True)
     if st.button("Check answer",key=f"prof-submit-{problem.problem_id}",type="primary"):
         result=validate_practice_answer(problem,answer)
         PracticeAttemptRepository(PRACTICE_DB).add(PracticeAttempt(problem_id=problem.problem_id,family_id=problem.family_id,answer=answer,correct=result.correct,answer_type=problem.answer_type,shown_work=""))
@@ -253,13 +297,14 @@ def _assessment_review(kind: str, results) -> None:
     correct=sum(1 for r in results if r.correct); total=len(results)
     st.success(f"{kind} complete: {correct}/{total} ({correct/total:.0%})" if total else f"{kind} complete")
     st.markdown("## Review Answers")
+    st.caption("Open a question to retrace the entire method line by line. Incorrect questions open automatically.")
     for i,result in enumerate(results,1):
         problem=result.problem; status="✓ Correct" if result.correct else "✗ Incorrect"
         with st.expander(f"Question {i} — {status}",expanded=not result.correct):
             _render_prompt(problem.prompt)
             st.markdown("**Your answer**")
             st.latex(answer_to_latex(result.selected_answer,problem.answer_type)) if result.selected_answer else st.write("No answer recorded.")
-            st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type)); _show_solution(problem)
+            _show_solution(problem)
     if st.button("Start another",key=f"{kind}-again"):
         for k in (f"{kind}-questions",f"{kind}-index",f"{kind}-results",f"{kind}-start",f"{kind}-scopes",f"{kind}-saved"):
             st.session_state.pop(k,None)
@@ -294,7 +339,9 @@ def _assessment_page(kind: str, default_count: int) -> None:
             LearningRecordRepository(LEARNING_DB).add_assessment(record); st.session_state[f"{kind}-saved"]=True
         _assessment_review(kind,results); return
     problem=questions[index]; st.progress((index+1)/len(questions)); st.caption(f"Question {index+1} of {len(questions)}")
-    _render_prompt(problem.prompt); answer=_render_answer_widget(problem,f"{kind}-{problem.problem_id}",assessment_mode=True)
+    _render_prompt(problem.prompt)
+    _question_help(problem)
+    answer=_render_answer_widget(problem,f"{kind}-{problem.problem_id}",assessment_mode=True)
     if st.button("Submit and continue",key=f"{kind}-submit-{problem.problem_id}",type="primary"):
         if not answer.strip(): st.warning("Select or enter an answer first."); return
         st.session_state[f"{kind}-results"].append(grade_question(problem,answer,shown_work="")); st.session_state[f"{kind}-index"]=index+1; st.rerun()
@@ -308,7 +355,7 @@ def _mistake_repair() -> None:
     labels=[f"{record.assessment_type} · {result.problem.section} · {result.problem.family_title} · {record.completed_at:%Y-%m-%d}" for record,result in wrong]
     selected=st.selectbox("Choose a mistake",range(len(wrong)),format_func=lambda i:labels[i]); _,result=wrong[selected]; problem=result.problem
     _render_prompt(problem.prompt); st.markdown("**Your answer**"); st.latex(answer_to_latex(result.selected_answer,problem.answer_type))
-    st.markdown("**Correct answer**"); st.latex(answer_to_latex(problem.expected_answer,problem.answer_type)); _show_solution(problem)
+    _show_solution(problem)
 
 
 def _progress() -> None:
