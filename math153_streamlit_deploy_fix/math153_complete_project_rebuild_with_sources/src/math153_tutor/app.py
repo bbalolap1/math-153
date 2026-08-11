@@ -1,5 +1,15 @@
 from __future__ import annotations
 
+# Streamlit Cloud executes this file directly by path. In that launch mode Python
+# places this package directory on sys.path, not its parent ``src`` directory, so
+# absolute imports such as ``from math153_tutor...`` would otherwise fail.
+import sys
+from pathlib import Path
+
+_SRC_ROOT = Path(__file__).resolve().parents[1]
+if str(_SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(_SRC_ROOT))
+
 import random
 import time
 from datetime import UTC, datetime
