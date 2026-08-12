@@ -52,7 +52,6 @@ def _style() -> None:
         <style>
         .block-container {max-width: 1080px; padding-top: 1.5rem;}
         div[data-testid="stMetric"] {border:1px solid rgba(128,128,128,.20); padding:.7rem; border-radius:.55rem;}
-        .mn-question-text {font-size:1.15rem; line-height:1.75; margin:.35rem 0 .65rem 0;}
         .mn-choice {font-size:1.05rem; line-height:1.55;}
         .mn-step {border-left:3px solid rgba(128,128,128,.35); padding-left:1rem; margin:.7rem 0 1.2rem 0;}
         </style>
@@ -74,7 +73,11 @@ def _unit_label(unit_id: str) -> str:
 
 
 def _render_prompt(prompt: str) -> None:
-    """Render short symbolic questions as display math and word problems as continuous prose."""
+    """
+    Render professor wording as normal Markdown and mathematics through Streamlit's
+    native math renderer.  Do not wrap LaTeX inside raw HTML; KaTeX is not reliably
+    processed inside an unsafe-HTML block.
+    """
     parts=prompt_parts(prompt)
     if not parts:
         return
@@ -88,12 +91,14 @@ def _render_prompt(prompt: str) -> None:
         for kind,content in parts:
             rendered.append(f"${content}$" if kind=="math" else content)
         line=" ".join(piece.strip() for piece in rendered if piece.strip())
-        st.markdown(f"<div class='mn-question-text'>{line}</div>",unsafe_allow_html=True)
+        st.markdown(line)
         return
 
     for kind,content in parts:
-        if kind=="math": st.latex(content)
-        else: st.markdown(f"<div class='mn-question-text'>{content}</div>",unsafe_allow_html=True)
+        if kind=="math":
+            st.latex(content)
+        else:
+            st.markdown(content)
 
 
 def _render_answer_widget(problem: PracticeProblem, key: str, *, assessment_mode: bool = False) -> str:
