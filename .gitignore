@@ -6,3 +6,6 @@ __pycache__/
 *.py[cod]
 learner_data/
 *.sqlite3
+*.egg-info/
+build/
+dist/

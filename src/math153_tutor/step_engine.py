@@ -53,16 +53,20 @@ def check_step(problem: PracticeProblem, learner_line: str, step_index: int) -> 
             explanation="Enter one mathematical line before asking for a check.",
             next_guidance=steps[index],
         )
-    if "LOG" in problem.family_id and index == 0 and "restriction" in steps[index].casefold():
-        if not re.search(r">\s*0", learner_line):
-            return StepCheck(
-                valid=False,
-                step_index=index,
-                normalized_line=actual,
-                error_code="domain_check_missing",
-                explanation="A logarithm argument must be positive before transformations are used.",
-                next_guidance=steps[index],
-            )
+    if (
+        "LOG" in problem.family_id
+        and index == 0
+        and "restriction" in steps[index].casefold()
+        and not re.search(r">\s*0", learner_line)
+    ):
+        return StepCheck(
+            valid=False,
+            step_index=index,
+            normalized_line=actual,
+            error_code="domain_check_missing",
+            explanation="A logarithm argument must be positive before transformations are used.",
+            next_guidance=steps[index],
+        )
     try:
         valid = _equivalent(actual, expected)
     except (TypeError, ValueError, SyntaxError, sympy.SympifyError):

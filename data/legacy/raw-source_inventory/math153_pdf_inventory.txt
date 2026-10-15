@@ -1,0 +1,48 @@
+math153/
+math153/1.1.pdf
+math153/1.2.pdf
+math153/1.3.pdf
+math153/1.4.pdf
+math153/2.1.pdf
+math153/2.2.pdf
+math153/2.3.pdf
+math153/2.4.pdf
+math153/2.5.pdf
+math153/2.6.pdf
+math153/2.7.pdf
+math153/3.1.pdf
+math153/3.2.pdf
+math153/3.3.pdf
+math153/3.4-1.pdf
+math153/3.4.pdf
+math153/Activity_1-1.pdf
+math153/Activity_2.pdf
+math153/Activity_3.pdf
+math153/Activity_4.pdf
+math153/Completing_the_Square.pdf
+math153/Quiz_1 Solution-1.pdf
+math153/Quiz_1.pdf
+math153/Quiz_2 Solution.pdf
+math153/Quiz_2.pdf
+math153/Quiz_3 Solution.pdf
+math153/Quiz_3.pdf
+math153/Quiz_4 Solution.pdf
+math153/Quiz_4.pdf
+math153/Quiz_5-1.pdf
+math153/Quiz_5.pdf
+math153/Quiz_5_Solution-1.pdf
+math153/Quiz_5_Solution-2.pdf
+math153/Quiz_5_Solution.pdf
+math153/Quiz_6.pdf
+math153/Quiz_6_Solution.pdf
+math153/Test_1.pdf
+math153/Test_1_Review.pdf
+math153/Test_1_Solutions.pdf
+math153/Test_2_Review.pdf
+math153/Version 1 (With Solutions).pdf
+math153/Version 1 (Without Solutions).pdf
+math153/Version 2 (With Solutions).pdf
+math153/Version 2 (Without Solutions).pdf
+math153/Version 3 (With Solutions).pdf
+math153/Version 3 (Without Solutions)-1.pdf
+math153/Version 3 (Without Solutions).pdf

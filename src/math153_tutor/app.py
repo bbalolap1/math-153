@@ -1,5 +1,14 @@
 from __future__ import annotations
 
+# Imports below follow the direct-execution package path bootstrap.
+import sys
+from pathlib import Path
+
+# Support direct Streamlit execution with requirements.txt, without an editable install.
+_SRC_ROOT = Path(__file__).resolve().parents[1]
+if str(_SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(_SRC_ROOT))
+
 import re
 import time
 
@@ -11,43 +20,50 @@ from math153_tutor.assessment import (
     complete_assessment,
     grade_question,
 )
+from math153_tutor.config import QUESTION_COUNT_OPTIONS
 from math153_tutor.course_content import COURSE_LESSONS
 from math153_tutor.course_materials import (
     list_course_materials,
     save_course_material,
     search_course_materials,
 )
+from math153_tutor.graph_questions import (
+    INTERCEPT_QUESTION,
+    GraphPoint,
+    validate_graph_points,
+)
 from math153_tutor.markdown_loader import load_question_family
+from math153_tutor.mastery import assessment_evidence_status
 from math153_tutor.math_display import (
     answer_to_latex,
     display_choices,
     normalize_math_fragment,
     readable_prompt,
 )
-from math153_tutor.mastery import assessment_evidence_status
-from math153_tutor.graph_questions import (
-    INTERCEPT_QUESTION,
-    GraphPoint,
-    validate_graph_points,
-)
 from math153_tutor.models import PracticeAttempt, PracticeProblem, RepairRecord
+from math153_tutor.paths import (
+    REPOSITORY_ROOT,
+    content_root,
+    learner_data_root,
+    source_manifest_path,
+)
 from math153_tutor.practice_catalog import (
+    CHAPTER_5,
     CHAPTERS_12,
     CHAPTERS_34,
-    CHAPTER_5,
     FAMILY_SPECS,
     FOUNDATION,
+    family_source_refs,
     generate_practice_problem,
 )
-from math153_tutor.paths import content_root, learner_data_root, source_manifest_path
+from math153_tutor.solution_detail import teaching_solution
 from math153_tutor.source_manifest import read_manifest
+from math153_tutor.step_engine import check_step, solution_steps
 from math153_tutor.storage import (
     LearningRecordRepository,
     PracticeAttemptRepository,
 )
-from math153_tutor.step_engine import check_step, solution_steps
 from math153_tutor.validation import validate_practice_answer
-
 
 DATA_ROOT = learner_data_root()
 ADDED_MATERIALS = DATA_ROOT / "course_materials"
@@ -274,14 +290,38 @@ def _course_review() -> None:
             )
         st.dataframe(catalog_rows, hide_index=True, width="stretch")
 
-    with st.expander("Source availability"):
+    with st.expander("Source Inspector"):
         manifest = read_manifest(source_manifest_path())
-        present = sum(item.binary_present for item in manifest)
-        st.write(f"{len(manifest)} inventoried source filenames · {present} binaries present")
-        st.caption(
-            "Inventory-only records establish filenames and likely source roles, not mathematical "
-            "content or professor verification."
-        )
+        st.write(f"{len(manifest)} source files · {sum(item.extraction_status == 'complete' for item in manifest)} read completely")
+        if manifest:
+            selected_path = st.selectbox("Open source", [item.actual_path for item in manifest])
+            selected = next(item for item in manifest if item.actual_path == selected_path)
+            st.markdown("### ORIGINAL SOURCE")
+            st.code((REPOSITORY_ROOT / selected.actual_path).read_text(encoding="utf-8"), language="markdown")
+            st.markdown("### EXTRACTED DATA")
+            st.write({
+                "questions": selected.question_count,
+                "solutions": selected.solution_count,
+                "formulas": selected.formula_count,
+                "topics": selected.topics,
+                "content_length": selected.content_length,
+            })
+            for record_type in ("question", "example", "formula", "solution"):
+                records = [record.model_dump() for record in selected.extracted_records if record.record_type == record_type]
+                if records:
+                    with st.expander(record_type.title() + "s"):
+                        st.write(records)
+            used_by = [family_id for family_id, refs in family_source_refs().items() if selected.actual_path in refs]
+            st.markdown("### USED BY")
+            st.write(used_by)
+            st.markdown("### GENERATED FROM THIS SOURCE")
+            generated = []
+            for family_id in used_by:
+                if family_id not in FAMILY_SPECS:
+                    continue
+                problem = generate_practice_problem(family_id, 153, 0)
+                generated.append({"family_id": family_id, "difficulty": problem.difficulty_layer.value, "seed": problem.parameter_seed, "prompt": problem.prompt})
+            st.write(generated)
 
     if st.button("Add Course Material", type="primary"):
         st.session_state.show_add_material = True
@@ -294,8 +334,8 @@ def _add_course_material(default_group: str) -> None:
     st.markdown("## Add Course Material")
     st.write("Paste a lecture transcript, class notes, textbook notes, or other Math 153 material and keep it attached to the section where it belongs.")
     with st.form("add_course_material"):
-        title = st.text_input("Title", placeholder="Lecture transcript — Week 3")
-        body = st.text_area("Transcript or notes", height=220, placeholder="Paste lecture transcript, textbook notes, or your own notes…")
+        title = st.text_input("Title", key="material_title", placeholder="Lecture transcript — Week 3")
+        body = st.text_area("Transcript or notes", key="material_body", height=220, placeholder="Paste lecture transcript, textbook notes, or your own notes…")
         section = st.selectbox("Add to", list(COURSE_SCOPE), index=list(COURSE_SCOPE).index(default_group))
         topic = st.text_input("Topic", placeholder="Example: compound interest")
         source_type = st.selectbox("Source type", ["Transcript", "Notes", "Textbook", "Other"])
@@ -325,17 +365,41 @@ def _active_practice_problem() -> PracticeProblem:
     return st.session_state.practice_tool_problem
 
 
-def _practice_solution(problem: PracticeProblem) -> None:
+def _solution_expression(label: str, expression: str) -> None:
+    st.markdown(f"**{label}**")
+    if "$" in expression:
+        st.markdown(readable_prompt(expression))
+    else:
+        st.latex(normalize_math_fragment(expression))
+
+
+def _practice_solution(problem: PracticeProblem, mode: str = "teaching_solution") -> None:
     solution = problem.worked_solution
-    st.markdown(f"**Rule:** {solution.rule}")
-    st.markdown("**Setup**")
-    st.latex(normalize_math_fragment(solution.setup))
-    st.markdown("**Calculation**")
-    for line in solution.calculation:
-        st.latex(normalize_math_fragment(line))
-    st.markdown("**Final answer**")
-    st.latex(answer_to_latex(solution.final_answer, problem.answer_type))
-    st.markdown(f"**Check:** {solution.check}")
+    if mode == "key_steps":
+        st.markdown(f"**Recognize:** {solution.family_reason}")
+        st.markdown(f"**Decide:** {solution.rule}")
+        st.markdown("**Execute — key steps**")
+        st.latex(normalize_math_fragment(solution.setup))
+        for line in solution.calculation:
+            st.latex(normalize_math_fragment(line))
+        st.markdown(f"**Verify:** {solution.check}")
+        st.markdown("**Present — final answer**")
+        st.latex(answer_to_latex(solution.final_answer, problem.answer_type))
+        return
+    detailed = teaching_solution(problem)
+    st.markdown(f"**RECOGNIZE:** {detailed.recognize}")
+    st.markdown(f"**DECIDE:** {detailed.decide}")
+    st.markdown(f"**ORIGINAL RULE / FORMULA:** {detailed.original_rule_or_formula}")
+    st.markdown("### EXECUTE")
+    for index, step in enumerate(detailed.execute, 1):
+        st.markdown(f"#### Step {index} — {step.step_title}")
+        _solution_expression("Before", step.before_expression)
+        st.markdown(f"**Operation:** {step.operation}")
+        st.markdown(f"**Why allowed:** {step.why}")
+        _solution_expression("After", step.after_expression)
+    st.markdown(f"**VERIFY:** {detailed.verify}")
+    st.markdown("**PRESENT — FINAL ANSWER**")
+    st.latex(answer_to_latex(detailed.final_answer, problem.answer_type))
 
 
 def _render_practice_problem(problem: PracticeProblem) -> None:
@@ -386,9 +450,8 @@ def _readable_answer_radio(
 ) -> str | None:
     presentations = display_choices(choices, problem.answer_type)
     st.markdown("**Answer choices**")
-    columns = st.columns(2)
-    for position, presentation in enumerate(presentations):
-        with columns[position % 2]:
+    for presentation in presentations:
+        with st.container(border=True):
             st.markdown(f"**{presentation.letter}.**")
             st.latex(presentation.latex)
     letter_by_answer = {item.raw_answer: item.letter for item in presentations}
@@ -586,6 +649,14 @@ def _quiz_review() -> None:
         ),
     )
     record = next(item for item in assessments if item.assessment_id == selected_id)
+    solution_mode_label = st.radio(
+        "Solution detail",
+        ["Teaching solution", "Key steps"],
+        index=0,
+        horizontal=True,
+        help="Teaching solution shows every algebraic transformation and is the default for quiz and test review.",
+    )
+    solution_mode = "teaching_solution" if solution_mode_label == "Teaching solution" else "key_steps"
     st.metric(
         "Score",
         f"{record.accuracy:.0%}",
@@ -607,7 +678,7 @@ def _quiz_review() -> None:
                 st.latex(answer_to_latex(problem.expected_answer, problem.answer_type))
             if result.error_category:
                 st.write(f"Likely error pattern: **{result.error_category}**")
-            _practice_solution(problem)
+            _practice_solution(problem, mode=solution_mode)
             if not result.correct and st.button(
                 "Repair this mistake", key=f"repair_{record.assessment_id}_{problem.problem_id}"
             ):
@@ -754,26 +825,27 @@ def _assessment_launcher() -> None:
         help="Narrow the selected course groups to specific sections or topics.",
     )
     st.selectbox("Answer format", ["Multiple choice"], disabled=True)
-    difficulty = st.selectbox(
-        "Question progression",
+    complexity_profile = st.selectbox(
+        "Difficulty / Complexity",
         [
-            "Professor / timed / transfer (L5–L7)",
-            "Bridge progression (L2–L4)",
-            "Full progression (L0–L7)",
-            "Foundation / direct (L0–L1)",
+            "Foundation",
+            "Direct Practice",
+            "Mixed Practice",
+            "Professor Style",
+            "Test Review",
+            "Final Exam Challenge",
         ],
         help=(
-            "Professor/transfer questions reduce scaffolding or mix prerequisites. "
-            "Use Bridge progression when learning the representation first."
+            "Complexity changes reasoning depth, representation, prerequisites, method signaling, "
+            "and required checks independently of question count."
         ),
     )
-    variant_pools = {
-        "Professor / timed / transfer (L5–L7)": [8, 6, 7, 9],
-        "Bridge progression (L2–L4)": [2, 3, 4],
-        "Full progression (L0–L7)": list(range(10)),
-        "Foundation / direct (L0–L1)": [0, 1],
-    }
-    length = st.selectbox("Length", [5, 10, 20], format_func=lambda value: f"{value} questions")
+    length = st.selectbox(
+        "Length",
+        QUESTION_COUNT_OPTIONS,
+        index=0,
+        format_func=lambda value: f"{value} questions",
+    )
     st.caption("Formula questions render with math notation. Graph questions use an interactive coordinate-plane contract rather than code-style coordinate text.")
     if st.button("Launch Assessment", type="primary"):
         try:
@@ -782,7 +854,7 @@ def _assessment_launcher() -> None:
                 length,
                 seed=200,
                 family_ids=selected_families,
-                variant_pool=variant_pools[difficulty],
+                complexity_profile=complexity_profile,
             )
         except ValueError as error:
             st.error(str(error))
@@ -822,6 +894,13 @@ def _active_assessment() -> None:
     )
     st.progress(index / len(problems))
     st.markdown(f"## {problem.family_title}")
+    st.caption(
+        f"Difficulty: {problem.complexity_level.value} · "
+        f"{problem.decision_count} decision(s) · {problem.estimated_solution_steps} estimated steps"
+    )
+    st.markdown("**Skills required:** " + " • ".join(problem.required_skills))
+    if problem.application_context != "none":
+        st.caption(f"Application context: {problem.application_context.replace('_', ' ').title()}")
     _render_practice_problem(problem)
     st.caption("Fractions, exponents, radicals, roots, set notation, and symbols are rendered as mathematics—not programming syntax.")
     answer_key = f"assessment_answer_{index}"

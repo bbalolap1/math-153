@@ -1,0 +1,1600 @@
+[
+  {
+    "family_id": "F0-REAL-NUMBERS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 6,
+    "structural_variants": [
+      "select every real-number set that contains $#$.",
+      "select every real-number set that contains $#...$.",
+      "select every real-number set that contains $#/#$.",
+      "select every real-number set that contains $pi$.",
+      "select every real-number set that contains $sqrt(#)$.",
+      "select every real-number set that contains $sqrt(#)/#$."
+    ],
+    "source_support_for_each_variant": {
+      "select every real-number set that contains $#$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "select every real-number set that contains $#...$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "select every real-number set that contains $#/#$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "select every real-number set that contains $pi$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "select every real-number set that contains $sqrt(#)$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "select every real-number set that contains $sqrt(#)/#$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "F0-SIGNED-OPERATIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "evaluate: $(#) - (#) + (#)$."
+    ],
+    "source_support_for_each_variant": {
+      "evaluate: $(#) - (#) + (#)$.": [
+        "sources/activities/Activity_3.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md"
+      ]
+    }
+  },
+  {
+    "family_id": "F0-FRACTIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 4,
+    "structural_variants": [
+      "compute and simplify: $\\frac{#}{#} * \\frac{#}{#}$.",
+      "compute and simplify: $\\frac{#}{#} + \\frac{#}{#}$.",
+      "compute and simplify: $\\frac{#}{#} - \\frac{#}{#}$.",
+      "compute and simplify: $\\frac{#}{#} / \\frac{#}{#}$."
+    ],
+    "source_support_for_each_variant": {
+      "compute and simplify: $\\frac{#}{#} * \\frac{#}{#}$.": [
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1_Review.md"
+      ],
+      "compute and simplify: $\\frac{#}{#} + \\frac{#}{#}$.": [
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1_Review.md"
+      ],
+      "compute and simplify: $\\frac{#}{#} - \\frac{#}{#}$.": [
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1_Review.md"
+      ],
+      "compute and simplify: $\\frac{#}{#} / \\frac{#}{#}$.": [
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1_Review.md"
+      ]
+    }
+  },
+  {
+    "family_id": "F0-ORDER-OPERATIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "evaluate: $#^#+#(#+#)$."
+    ],
+    "source_support_for_each_variant": {
+      "evaluate: $#^#+#(#+#)$.": [
+        "sources/activities/Activity_3.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md"
+      ]
+    }
+  },
+  {
+    "family_id": "F0-EXPONENT-RULES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 3,
+    "structural_variants": [
+      "simplify: $(x^#)^#$.",
+      "simplify: $x^#/x^#$, with $x\\ne#$.",
+      "simplify: $x^#x^#$."
+    ],
+    "source_support_for_each_variant": {
+      "simplify: $(x^#)^#$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "simplify: $x^#/x^#$, with $x\\ne#$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "simplify: $x^#x^#$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "F0-ALGEBRA-VOCAB",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "for $e=#x+#$, evaluate $e$ when $x=#$."
+    ],
+    "source_support_for_each_variant": {
+      "for $e=#x+#$, evaluate $e$ when $x=#$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_3.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-EXPRESSIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "simplify: $#(x+#)+#x+#$."
+    ],
+    "source_support_for_each_variant": {
+      "simplify: $#(x+#)+#x+#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-LINEAR-EQUATIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": true,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 3,
+    "structural_variants": [
+      "a repair service charges a fixed setup fee of \\$# plus \\$# per replacement part. the bill is \\$#. how many replacement parts were used?",
+      "solve: $#(x+#)=#x+#$.",
+      "solve: $#x+#=#$."
+    ],
+    "source_support_for_each_variant": {
+      "a repair service charges a fixed setup fee of \\$# plus \\$# per replacement part. the bill is \\$#. how many replacement parts were used?": [
+        "sources/activities/Activity_3.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md"
+      ],
+      "solve: $#(x+#)=#x+#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md"
+      ],
+      "solve: $#x+#=#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-FACTORING",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 4,
+    "structural_variants": [
+      "factor completely: $x**# + #*x - #$.",
+      "factor completely: $x**# + x - #$.",
+      "factor completely: $x**# - #$.",
+      "factor completely: $x**# - #*x - #$."
+    ],
+    "source_support_for_each_variant": {
+      "factor completely: $x**# + #*x - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_1.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "factor completely: $x**# + x - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_1.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "factor completely: $x**# - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_1.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "factor completely: $x**# - #*x - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_1.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 2,
+    "structural_variants": [
+      "simplify $\\frac{x^##}{x#}$. state the original restriction in your paper work.",
+      "state every excluded value of $\\frac{x^##}{x#}$ before simplifying."
+    ],
+    "source_support_for_each_variant": {
+      "simplify $\\frac{x^##}{x#}$. state the original restriction in your paper work.": [
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1_Review.md"
+      ],
+      "state every excluded value of $\\frac{x^##}{x#}$ before simplifying.": [
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1_Review.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-RADICALS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "simplify: $\\sqrt{#}$."
+    ],
+    "source_support_for_each_variant": {
+      "simplify: $\\sqrt{#}$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-RADICAL-EQUATIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "solve and check: $\\sqrt{x+#}=#$."
+    ],
+    "source_support_for_each_variant": {
+      "solve and check: $\\sqrt{x+#}=#$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/quizzes/Quiz_1_Solution.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-QUADRATICS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 4,
+    "structural_variants": [
+      "solve exactly: $x**# + #*x - #=#$.",
+      "solve exactly: $x**# - #*x - #=#$.",
+      "solve exactly: $x**# - #=#$.",
+      "solve exactly: $x**# - x - #=#$."
+    ],
+    "source_support_for_each_variant": {
+      "solve exactly: $x**# + #*x - #=#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "solve exactly: $x**# - #*x - #=#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "solve exactly: $x**# - #=#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md"
+      ],
+      "solve exactly: $x**# - x - #=#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-COMPLEX",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "multiply: $(#+#i)(#+#i)$."
+    ],
+    "source_support_for_each_variant": {
+      "multiply: $(#+#i)(#+#i)$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.4.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-ABSOLUTE",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "solve: $|x-(#)|=#$."
+    ],
+    "source_support_for_each_variant": {
+      "solve: $|x-(#)|=#$.": [
+        "sources/lectures/1.1.md",
+        "sources/lectures/1.2.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH12-INEQUALITIES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "write in interval notation: $x>#$ and $x\\le #$."
+    ],
+    "source_support_for_each_variant": {
+      "write in interval notation: $x>#$ and $x\\le #$.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/1.1.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/quizzes/Quiz_4.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-COORDINATE",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "find the midpoint of $(#,#)$ and $(#,#)$."
+    ],
+    "source_support_for_each_variant": {
+      "find the midpoint of $(#,#)$ and $(#,#)$.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/lectures/3.1(2).md",
+        "sources/quizzes/Quiz_4.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-LINES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "write the line with slope $#$ through $(#,#)$ in slope-intercept form."
+    ],
+    "source_support_for_each_variant": {
+      "write the line with slope $#$ through $(#,#)$ in slope-intercept form.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/3.1(2).md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/3.4.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-TABLES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 4,
+    "structural_variants": [
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | # | # | # | ? |",
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | # | # | ? | # |",
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | # | ? | # | # |",
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | ? | # | # | # |"
+    ],
+    "source_support_for_each_variant": {
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | # | # | # | ? |": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.1(2).md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | # | # | ? | # |": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.1(2).md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | # | ? | # | # |": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.1(2).md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "a table follows the rule $y=#x+#$. find the missing value. | x | # | # | # | # | |---|---|---|---|---| | y | ? | # | # | # |": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.1(2).md",
+        "sources/lectures/3.3.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-CIRCLES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "write the circle with center $(#,#)$ and radius $#$."
+    ],
+    "source_support_for_each_variant": {
+      "write the circle with center $(#,#)$ and radius $#$.": [
+        "sources/activities/Activity_3.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/3.2.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/quizzes/Quiz_2_Solution.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-FUNCTIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "if $f(x)=#x+#$, find $f(#)$."
+    ],
+    "source_support_for_each_variant": {
+      "if $f(x)=#x+#$, find $f(#)$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-COMPOSITION",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "let $f(x)=#x+#$ and $g(x)=x^#$. find $(f\\circ g)(#)$."
+    ],
+    "source_support_for_each_variant": {
+      "let $f(x)=#x+#$ and $g(x)=x^#$. find $(f\\circ g)(#)$.": [
+        "sources/activities/Activity_4.md",
+        "sources/lectures/3.7.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-INVERSES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "find $f^{#}(x)$ for $f(x)=#x+#$."
+    ],
+    "source_support_for_each_variant": {
+      "find $f^{#}(x)$ for $f(x)=#x+#$.": [
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.4.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-DIFFERENCE-QUOTIENT",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 4,
+    "structural_variants": [
+      "for $f(x)=#x+#$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.",
+      "for $f(x)=#x^#+#x+#$, first find $f(x+h)$. then simplify $[f(x+h)-f(x)]/h$.",
+      "for $f(x)=#x^#+#x+#$, simplify $[f(x+h)-f(x)]/h$.",
+      "for $f(x)=x^#$, simplify $[f(x+h)-f(x)]/h$ for $h\\ne#$."
+    ],
+    "source_support_for_each_variant": {
+      "for $f(x)=#x+#$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.": [
+        "sources/lectures/3.4.md"
+      ],
+      "for $f(x)=#x^#+#x+#$, first find $f(x+h)$. then simplify $[f(x+h)-f(x)]/h$.": [
+        "sources/lectures/3.4.md"
+      ],
+      "for $f(x)=#x^#+#x+#$, simplify $[f(x+h)-f(x)]/h$.": [
+        "sources/lectures/3.4.md"
+      ],
+      "for $f(x)=x^#$, simplify $[f(x+h)-f(x)]/h$ for $h\\ne#$.": [
+        "sources/lectures/3.4.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-QUADRATIC-FUNCTIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "find the vertex of $y=#(x-(#))^#+(#)$."
+    ],
+    "source_support_for_each_variant": {
+      "find the vertex of $y=#(x-(#))^#+(#)$.": [
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.3.md",
+        "sources/lectures/2.4.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/5.6.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Solutions.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-POLYNOMIALS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": true,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "STRUCTURAL-VARIATION",
+    "structural_variant_count": 4,
+    "structural_variants": [
+      "find all real zeros of $p(x)=x**# + #*x - #$.",
+      "find all real zeros of $p(x)=x**# + x - #$.",
+      "find all real zeros of $p(x)=x**# - #$.",
+      "find all real zeros of $p(x)=x**# - #*x - #$."
+    ],
+    "source_support_for_each_variant": {
+      "find all real zeros of $p(x)=x**# + #*x - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "find all real zeros of $p(x)=x**# + x - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "find all real zeros of $p(x)=x**# - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ],
+      "find all real zeros of $p(x)=x**# - #*x - #$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_2.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/1.3.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/4.1.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/Completing_the_Square.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH34-RATIONAL-FUNCTIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "state the domain exclusions of $r(x)=\\frac{x#}{(x#)(x#)}$."
+    ],
+    "source_support_for_each_variant": {
+      "state the domain exclusions of $r(x)=\\frac{x#}{(x#)(x#)}$.": [
+        "sources/activities/Activity_1.md",
+        "sources/activities/Activity_4.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/1.4.md",
+        "sources/lectures/2.1.md",
+        "sources/lectures/2.5.md",
+        "sources/lectures/2.6.md",
+        "sources/lectures/2.7.md",
+        "sources/lectures/3.4.md",
+        "sources/lectures/3.7.md",
+        "sources/lectures/4.2.md",
+        "sources/lectures/5.1.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/quizzes/Quiz_3.md",
+        "sources/quizzes/Quiz_3_Solution.md",
+        "sources/quizzes/Quiz_4_Solution.md",
+        "sources/quizzes/Quiz_5.md",
+        "sources/quizzes/Quiz_5_Solution.md",
+        "sources/quizzes/Quiz_6.md",
+        "sources/quizzes/Quiz_6_Solution.md",
+        "sources/tests/Test_1.md",
+        "sources/tests/Test_1_Review.md",
+        "sources/tests/Test_1_Solutions.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-EXP-FUNCTIONS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "evaluate $f(x)=#^x$ at $x=#$."
+    ],
+    "source_support_for_each_variant": {
+      "evaluate $f(x)=#^x$ at $x=#$.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-EXP-MODELS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "a quantity starts at # and grows #% per year. find its value after # years, rounded to the nearest hundredth."
+    ],
+    "source_support_for_each_variant": {
+      "a quantity starts at # and grows #% per year. find its value after # years, rounded to the nearest hundredth.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-COMPOUND-INTEREST",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "deposit $# at #% annual interest compounded # times per year for # years. find the amount to the nearest cent."
+    ],
+    "source_support_for_each_variant": {
+      "deposit $# at #% annual interest compounded # times per year for # years. find the amount to the nearest cent.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-NATURAL-EXP",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "evaluate $f(t)=#e^t$ at $t=#$, rounded to three decimals."
+    ],
+    "source_support_for_each_variant": {
+      "evaluate $f(t)=#e^t$ at $t=#$, rounded to three decimals.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-LOGARITHMS",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "evaluate exactly: $\\log_{#}(#)$."
+    ],
+    "source_support_for_each_variant": {
+      "evaluate exactly: $\\log_{#}(#)$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/5.4.md",
+        "sources/lectures/5.5.md",
+        "sources/lectures/5.6.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-LOG-PROPERTIES",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": false,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "condense to one logarithm: $\\log(#x)+\\log(#)$."
+    ],
+    "source_support_for_each_variant": {
+      "condense to one logarithm: $\\log(#x)+\\log(#)$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/5.4.md",
+        "sources/lectures/5.5.md",
+        "sources/lectures/5.6.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-LOG-EQUATIONS-FULL",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "solve and check the domain: $\\ln(x+#)=\\ln(#)$."
+    ],
+    "source_support_for_each_variant": {
+      "solve and check the domain: $\\ln(x+#)=\\ln(#)$.": [
+        "sources/final exam review/Version_1_With_Solutions.md",
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/final exam review/Version_3_With_Solutions.md",
+        "sources/final exam review/Version_3_Without_Solutions-1.md",
+        "sources/final exam review/Version_3_Without_Solutions.md",
+        "sources/lectures/5.4.md",
+        "sources/lectures/5.5.md",
+        "sources/lectures/5.6.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  },
+  {
+    "family_id": "CH5-EXP-EQUATIONS-FULL",
+    "variation_dimensions_observed": {
+      "A_numbers": true,
+      "B_coefficients_constants": true,
+      "C_wording": false,
+      "D_representation": false,
+      "E_prerequisite_structure": true,
+      "F_reasoning_path": true,
+      "G_concept_combination": true
+    },
+    "diversity_status": "LOW-DIVERSITY",
+    "structural_variant_count": 1,
+    "structural_variants": [
+      "solve exactly: $#^x=#$."
+    ],
+    "source_support_for_each_variant": {
+      "solve exactly: $#^x=#$.": [
+        "sources/final exam review/Version_1_Without_Solutions.md",
+        "sources/final exam review/Version_2_With_Solutions.md",
+        "sources/final exam review/Version_2_Without_Solutions.md",
+        "sources/lectures/5.2.md",
+        "sources/lectures/5.3.md",
+        "sources/lectures/5.4.md",
+        "sources/lectures/5.6.md",
+        "sources/tests/Test_3_Review.md",
+        "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+      ]
+    }
+  }
+]

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from enum import Enum
 from datetime import UTC, datetime
+from enum import Enum
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -124,6 +124,24 @@ class WorkedSolution(BaseModel):
     family_reason: str = "The prompt uses the defining operation of this family."
 
 
+class ExecutionStep(BaseModel):
+    step_title: str
+    before_expression: str
+    operation: str
+    why: str
+    after_expression: str
+
+
+class TeachingSolution(BaseModel):
+    recognize: str
+    decide: str
+    original_rule_or_formula: str
+    execute: list[ExecutionStep]
+    verify: str
+    final_answer: str
+    quality_status: Literal["detailed", "insufficient_step_detail"] = "detailed"
+
+
 class PracticeProblem(BaseModel):
     """A selectable exam-review problem with validation and provenance."""
 
@@ -157,6 +175,20 @@ class PracticeProblem(BaseModel):
     source_refs: list[str]
     variant_reason: str
     reasoning_checkpoints: list[str]
+    complexity_level: DifficultyLayer
+    decision_count: int = Field(ge=1)
+    prerequisite_count: int = Field(ge=1)
+    estimated_solution_steps: int = Field(ge=1)
+    representation_type: str
+    structural_variant_type: str
+    structural_signature: str
+    application_context: str = "none"
+    requires_domain_check: bool = False
+    requires_extraneous_check: bool = False
+    requires_factoring: bool = False
+    requires_graph: bool = False
+    requires_interpretation: bool = False
+    requires_multiple_methods: bool = False
 
 
 class PracticeAttempt(BaseModel):

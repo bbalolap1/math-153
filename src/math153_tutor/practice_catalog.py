@@ -1,14 +1,19 @@
 # mypy: disable-error-code="assignment,return-value,arg-type,attr-defined"
 from __future__ import annotations
 
+import json
 import math
 import random
 from dataclasses import dataclass
 from fractions import Fraction
+from functools import lru_cache
 
 import sympy
 
+from .complexity import application_context, structural_signature
+from .config import validate_question_count
 from .models import DifficultyLayer, PracticeProblem, WorkedSolution
+from .paths import REPOSITORY_ROOT
 from .validation import validate_practice_answer
 
 FOUNDATION = "Foundation / Version 0.0"
@@ -34,7 +39,7 @@ class FamilySpec:
 
     @property
     def source_grounding(self) -> str:
-        return "model_inference_pending_source_review"
+        return "source_markdown_controlled_template"
 
     @property
     def mastery_rule(self) -> str:
@@ -219,6 +224,14 @@ _SPECS = [
     ),
 ]
 FAMILY_SPECS = {row[0]: FamilySpec(*row) for row in _SPECS}
+
+
+@lru_cache
+def family_source_refs() -> dict[str, list[str]]:
+    path = REPOSITORY_ROOT / "data" / "derived" / "family_source_map.json"
+    if not path.is_file():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _difficulty(variant: int) -> str:
@@ -479,9 +492,9 @@ def _build(
             setup_fee = r.randint(10, 45)
             total = setup_fee + rate * units
             return (
-                f"A repair service charges a fixed setup fee of \\${setup_fee} plus "
+                (f"A repair service charges a fixed setup fee of \\${setup_fee} plus "
                 f"\\${rate} per replacement part. The bill is \\${total}. "
-                "How many replacement parts were used?",
+                "How many replacement parts were used?"),
                 "solution_set",
                 str(units),
                 str((total - rate) // setup_fee),
@@ -816,9 +829,40 @@ def _build(
         )
     if fid == "CH34-DIFFERENCE-QUOTIENT":
         a, b, c = r.randint(1, 4), r.randint(-5, 5), r.randint(-4, 4)
+        if k in {3, 4}:
+            return (
+                f"For $f(x)={a}x+{b}$, find $f(x+h)$ and then simplify $[f(x+h)-f(x)]/h$.",
+                "expression",
+                str(a),
+                f"{a}*x",
+                [],
+                _solution(
+                    "Substitute x+h, subtract the original function, factor h, and cancel for h≠0.",
+                    f"f(x+h)={a}(x+h)+{b}={a}x+{a}h+{b}",
+                    [f"(({a}x+{a}h+{b})-({a}x+{b}))/h", f"{a}h/h={a}"],
+                    str(a),
+                    "The quotient is constant because a linear function has constant rate of change.",
+                ),
+            )
+        if k in {6, 7}:
+            return (
+                "For $f(x)=x^3$, simplify $[f(x+h)-f(x)]/h$ for $h\\ne0$.",
+                "expression",
+                "3*x^2+3*x*h+h^2",
+                "3*x^2+h^2",
+                [],
+                _solution(
+                    "Expand (x+h)^3, subtract x^3, factor h, and cancel for h≠0.",
+                    "((x+h)^3-x^3)/h",
+                    ["(3*x^2*h+3*x*h^2+h^3)/h", "3*x^2+3*x*h+h^2"],
+                    "3*x^2+3*x*h+h^2",
+                    "Multiplying the result by h recovers the simplified numerator.",
+                ),
+            )
         answer = f"{2 * a}*x+{a}*h+({b})"
+        lead = "First find $f(x+h)$. Then " if k in {5, 8, 9} else ""
         return (
-            f"For $f(x)={a}x^2+{b}x+{c}$, simplify $[f(x+h)-f(x)]/h$.",
+            f"For $f(x)={a}x^2+{b}x+{c}$, {lead}simplify $[f(x+h)-f(x)]/h$.",
             "expression",
             answer,
             f"{2 * a}*x+({b})",
@@ -1058,6 +1102,20 @@ def generate_practice_problem(
     else:
         wrong = authored_wrong
     difficulty = _difficulty(variant)
+    source_refs = family_source_refs().get(family_id, [])
+    layer = _difficulty_layer(variant)
+    representation = _representation(prompt, answer_type)
+    structural_variant, signature = structural_signature(
+        family_id, prompt, answer_type, representation
+    )
+    level_number = int(layer.value[1])
+    context = application_context(prompt)
+    requires_domain = (
+        "domain" in prompt.casefold()
+        or "excluded" in prompt.casefold()
+        or "LOG" in family_id
+        or "RATIONAL" in family_id
+    )
     problem = PracticeProblem(
         problem_id=f"{family_id}-{seed}-{variant}",
         group=spec.group,
@@ -1071,25 +1129,42 @@ def generate_practice_problem(
         expected_answer=expected,
         wrong_answer=wrong,
         choices=choices,
-        source_type="model_inference",
-        source_file="unavailable_course_binaries",
-        source_question_or_page="not_available",
+        source_type="source_markdown_controlled_template",
+        source_file=source_refs[0] if source_refs else "source_mapping_not_built",
+        source_question_or_page="extracted family evidence",
         construction_notes=(
-            "Controlled exam-review template; not claimed as copied or professor-verified. "
+            "Controlled exam-review template linked to extracted corpus evidence; not copied verbatim. "
             f"Variant {variant + 1}/10 changes parameters and difficulty layer."
         ),
         rule_or_formula=solution.rule,
         required_skills=list(spec.skills),
         worked_solution=solution,
         parameter_seed=seed,
-        difficulty_layer=_difficulty_layer(variant),
-        representation=_representation(prompt, answer_type),
-        source_refs=["MODEL-INFERENCE-PENDING-SOURCE-REVIEW"],
+        difficulty_layer=layer,
+        representation=representation,
+        source_refs=source_refs,
         variant_reason=(
             f"Controlled { _difficulty_layer(variant).value } variant {variant + 1}/10; "
             "changes only authored parameters, representation, or prerequisite mixture."
         ),
         reasoning_checkpoints=[solution.setup, *solution.calculation, solution.check],
+        complexity_level=layer,
+        decision_count=max(1, 1 + max(0, level_number - 2) // 2),
+        prerequisite_count=max(1, min(len(spec.skills), 1 + max(0, level_number - 2) // 2)),
+        estimated_solution_steps=max(
+            len(solution.calculation) + 3,
+            (4, 4, 5, 5, 6, 7, 8, 10)[level_number],
+        ),
+        representation_type=representation,
+        structural_variant_type=structural_variant,
+        structural_signature=signature,
+        application_context=context,
+        requires_domain_check=requires_domain,
+        requires_extraneous_check="RADICAL-EQUATIONS" in family_id,
+        requires_factoring="FACTOR" in family_id or "factor" in prompt.casefold(),
+        requires_graph=representation == "graph",
+        requires_interpretation=context != "none" or representation in {"graph", "table"},
+        requires_multiple_methods=level_number >= 4,
     )
     if validate_practice_answer(problem, problem.wrong_answer).correct:
         fallback = {
@@ -1126,12 +1201,15 @@ PRESET_SESSIONS: dict[str, tuple[int, list[str]]] = {
 
 def build_session(family_ids: list[str], count: int, seed: int = 153) -> list[PracticeProblem]:
     """Assemble a reproducible mixed or focused session with working problems."""
-    if not family_ids or count < 1:
-        raise ValueError("A session needs at least one family and one question.")
+    if not family_ids:
+        raise ValueError("A session needs at least one family.")
+    validate_question_count(count)
     unknown = set(family_ids) - FAMILY_SPECS.keys()
     if unknown:
         raise ValueError(f"Unknown families: {sorted(unknown)}")
-    return [
-        generate_practice_problem(family_ids[i % len(family_ids)], seed + i, i % 10)
-        for i in range(count)
-    ]
+    # Use assessment assembly so mixed and focused sessions share count, uniqueness, and
+    # source-grounding guarantees. Imported lazily to avoid an import cycle.
+    from .assessment import build_assessment
+
+    scopes = sorted({FAMILY_SPECS[family_id].group for family_id in family_ids})
+    return build_assessment(scopes, count, seed, family_ids=family_ids)

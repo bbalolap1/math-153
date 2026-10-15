@@ -1,3 +1,10 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [project]
 name = "math153-tutor"
 version = "0.0.0"
@@ -18,9 +25,11 @@ math153-tutor = "math153_tutor.app:main"
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "."]
+testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
+extend-exclude = ["math153_streamlit_deploy_fix"]
 
 [tool.mypy]
 ignore_missing_imports = true

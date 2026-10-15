@@ -7,7 +7,6 @@ import yaml
 
 from .models import QuestionFamily
 
-
 FRONT_MATTER = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 HEADING = re.compile(r"^# (.+?)\s*$", re.MULTILINE)
 

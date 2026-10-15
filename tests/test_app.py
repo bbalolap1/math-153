@@ -91,10 +91,11 @@ def test_added_course_material_is_saved_and_reopened(tmp_path: Path, monkeypatch
     app = _app(tmp_path, monkeypatch)
     _navigation(app).set_value("Course Review").run()
     next(button for button in app.button if button.label == "Add Course Material").click().run()
-    next(field for field in app.text_input if field.label == "Title").set_value("My lecture").run()
+    # Form fields are sent together when submitted; do not rerun between edits.
+    next(field for field in app.text_input if field.label == "Title").set_value("My lecture")
     next(area for area in app.text_area if area.label == "Transcript or notes").set_value(
         "## Fractions\n\nUse a common denominator."
-    ).run()
+    )
     next(button for button in app.button if button.label == "Add to Course Review").click().run()
 
     assert not app.exception
@@ -129,6 +130,9 @@ def test_review_routes_real_mistake_through_transfer_repair(tmp_path: Path, monk
     app = _app(tmp_path, monkeypatch)
     _navigation(app).set_value("Learning Tools").run()
     next(button for button in app.button if button.label == "Open Quiz Review").click().run()
+    solution_detail = next(radio for radio in app.radio if radio.label == "Solution detail")
+    assert solution_detail.value == "Teaching solution"
+    assert any("Step 1" in item.value for item in app.markdown)
     assert any(
         answer_to_latex(problem.expected_answer, problem.answer_type) in item.value
         for item in app.latex
@@ -175,6 +179,7 @@ def test_configured_assessment_completes_saves_and_opens_review(
     assert (tmp_path / "learner_data/learning_records.sqlite3").is_file()
     next(button for button in app.button if button.label == "Open Quiz Review").click().run()
     assert any(header.value == "Quiz / Test Review" for header in app.header)
+    assert next(radio for radio in app.radio if radio.label == "Solution detail").value == "Teaching solution"
     assert app.metric[0].value == "100%"
 
 

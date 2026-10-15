@@ -8,8 +8,9 @@ The app launches on a dashboard and provides a readable course binder, persisten
 Markdown materials, paper-answer practice, professor-style teaching support, bounded next-line
 coaching, configurable multiple-choice assessments, saved question-by-question review, mistake repair
 with a transfer check, and progress calculated from stored attempts. The controlled practice catalog
-covers 35 families across Foundation through Chapter 5. Runtime questions remain explicitly
-model-inferred until the absent professor/course binaries can be reviewed.
+covers 35 families across Foundation through Chapter 5. The source corpus and derived audit map controlled question families to the available course
+Markdown. Automated mapping and algebra checks are evidence of those checks; they do not establish
+independent visual verification against the original professor PDFs and screenshots.
 
 Question prompts, worked steps, and answer choices are rendered as learner-facing mathematics. Stored
 validator syntax such as `4*x+(-9)` remains internal and is displayed as conventional notation such as
@@ -58,11 +59,10 @@ pytest
 ruff check .
 ```
 
-Rebuild the filename-evidence source manifest with:
+Rebuild the Markdown source manifest and family mappings from the repository root with:
 
 ```bash
-PYTHONPATH=src python scripts/build_source_manifest.py \
-  data/source_registry data/derived/source_manifest.csv
+PYTHONPATH=src python scripts/build_source_manifest.py .
 ```
 
 See `docs/V0_AUDIT.md`, `docs/PROBLEM_COVERAGE_MATRIX.md`, and
@@ -71,8 +71,23 @@ and teaching-oriented explanation of each Python module.
 
 ## Source boundary and V0 limits
 
-Actual professor PDFs, screenshots, and transcripts named in the source inventories are not present, so
-professor fidelity is not verifiable. Professor Mode teaches from controlled runtime metadata and labels
-that limitation. Next-Line Coach validates equivalent symbolic lines along the authored worked-solution
+The 53 course Markdown files in `sources/` support the source mappings. Original PDFs and
+screenshots listed in the inventories remain unavailable for independent visual verification.
+Professor Mode retains the explicit source boundary. Historical audit metrics describe the checks
+performed by their scripts and are not a substitute for reviewing the original materials. Next-Line Coach validates equivalent symbolic lines along the authored worked-solution
 path; it is intentionally not an unrestricted proof engine. Graph practice provides a rendered
 coordinate plane plus a validated coordinate selection rather than free-form canvas clicking.
+
+## Integration layout
+
+The repository root is the active project. Launch `src/math153_tutor/app.py`; configure hosted
+Streamlit deployments with that same entry point and the root `requirements.txt`.
+The root package preserves Course Review, Paper Answer Mode, Next-Line Coach, Professor Mode,
+assessment review, mistake repair, and local learner records.
+
+`math153_streamlit_deploy_fix/` is retained as a historical rebuild snapshot, including later
+rendering and assessment experiments. It is not the active package or a second install target.
+Root packaging, pytest collection, and linting exclude that snapshot. Its UI replacement is not
+used because it omits original coaching workflows. Source-audit content, scripts, and derived
+artifacts from the last complete integrated revision (`66785dd`) are restored at their canonical
+root paths. No learner database migration is required.

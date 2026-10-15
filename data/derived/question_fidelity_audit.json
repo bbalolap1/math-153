@@ -1,0 +1,2402 @@
+[
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.1",
+    "question_text": "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.2",
+    "question_text": "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.3",
+    "question_text": "Convert to scientific notation: \\[ -0.00052. \\]",
+    "mathematical_structure": "exponent rules",
+    "required_method": "apply exponent laws and present the requested exponent form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "F0-EXPONENT-RULES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.4",
+    "question_text": "Simplify the expression \\[\n`\\left`{=tex}(`\\frac{3x}{2yz}`{=tex}`\\right`{=tex})\\^2 `\\cdot`{=tex}\n`\\left`{=tex}(`\\frac{y^{-1}z}{x^5}`{=tex}`\\right`{=tex}) \\] and write\nyour answer with only positive exponents.",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.5",
+    "question_text": "Simplify the expression \\[\n`\\sqrt[3]{16x^5y^3}`{=tex}`\\cdot`{=tex}`\\sqrt[3]{xy}`{=tex}. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.6",
+    "question_text": "Rationalize the denominator of the expression shown on the sheet\ninvolving \\[ 2x,`\\quad `{=tex}2y,`\\quad `{=tex}`\\sqrt[3]{y^4}`{=tex}. \\]\n\n> The source extraction compresses the fraction layout on Q.6, so no\n> unsupported rearrangement has been inserted.",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.7",
+    "question_text": "Factor the polynomial \\[ x^6-27y^3. \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.8",
+    "question_text": "Expand and simplify \\[ (3x-4y)(xy-6x\\^2). \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_1.md",
+    "question_number": "Q.9",
+    "question_text": "Express as a polynomial: \\[\n(`\\sqrt{x}`{=tex}+`\\sqrt{y}`{=tex})(`\\sqrt{x}`{=tex}-`\\sqrt{y}`{=tex}).\n\\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_2.md",
+    "question_number": "Q.1",
+    "question_text": "Fully factor the polynomial\n\n\\[ `\\boxed{9x^2+6x+1-y^2}`{=tex}. \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_2.md",
+    "question_number": "Q.2",
+    "question_text": "Rationalize the denominator:\n\n\\[ `\\boxed{\n\\frac{16x^2-y^2}{2\\sqrt{x}-\\sqrt{y}}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_2.md",
+    "question_number": "Q.3",
+    "question_text": "Simplify the following expression:\n\n\\[ `\\boxed{\n\\frac{\n(3x+2)^{1/2}(2x+3)^{-2/3}\n-\n(2x+3)^{1/3}(3x+2)^{-1/2}\n}{\n3x+2\n}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_2.md",
+    "question_number": "Q.4",
+    "question_text": "Express as a sum of terms of the form (ax\\^r), where (a) is a real\nnumber and (r) is a rational number:\n\n\\[ `\\boxed{\n\\frac{(\\sqrt{x}-3)^2}{x^3}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.1",
+    "question_text": "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.2 --- Lawn Mowing Rates",
+    "question_text": "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+    "mathematical_structure": "applied equation",
+    "required_method": "define the unknown, translate the relationships, solve, and check units",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.3",
+    "question_text": "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted.",
+    "mathematical_structure": "quadratic equation",
+    "required_method": "select factoring, square-root, completing-square, or formula method",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-QUADRATICS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.4",
+    "question_text": "Solve for (x) in terms of (y):\n\n\\[ `\\boxed{\n4x^2-4xy+1-y^2=0\n}`{=tex} \\]",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.5 --- Distance Between Airplanes",
+    "question_text": "An airplane flying north at **200 mi/hr** passed over a point on the\nground at **2:00 P.M.**\n\nAnother airplane at the same altitude passed over the same point at\n**2:30 P.M.**, flying east at **400 mi/hr**.",
+    "mathematical_structure": "coordinate geometry",
+    "required_method": "apply coordinate, distance, or midpoint relationships",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COORDINATE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.6",
+    "question_text": "Write as a single number of the form\n\n\\[ a+bi \\]\n\nwith (a) and (b) real:\n\n\\[ `\\boxed{\n\\frac{-3-2i}{5+2i}\n}`{=tex} \\]",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "complex_number",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_3.md",
+    "question_number": "Q.7",
+    "question_text": "Find all real values of (x) and (y) satisfying\n\n\\[ `\\boxed{\n(x-y)+3i=7+yi\n}`{=tex} \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_4.md",
+    "question_number": "Q.1 --- Finding Composite Function Values from Tables",
+    "question_text": "Several values of two functions (f) and (g) are listed in the following\ntables.",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_4.md",
+    "question_number": "Q.2 --- Volume of a Balloon Using a Composite Function",
+    "question_text": "The volume of a sphere of radius (r) is\n\n\\[ `\\boxed{\nV=\\frac{4\\pi r^3}{3}\n}`{=tex}. \\]\n\nA meteorologist is inflating a spherical balloon with helium gas.\n\nIf the radius of the balloon is changing at a rate of\n\n\\[ 1.5`\\text{ cm/sec}`{=tex}, \\]\n\nexpress the volume (V) of the balloon as a function of time (t), in\nseconds.",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_4.md",
+    "question_number": "Q.3 --- Find the Inverses",
+    "question_text": "Find the inverses of the following functions.",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/activities/Activity_4.md",
+    "question_number": "Q.4 --- Graph of an Inverse Function",
+    "question_text": "The graph of a one-to-one function (f) is shown in the source.",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "graph",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_With_Solutions.md",
+    "question_number": "question-10",
+    "question_text": "10 . Exact answers may contain rt or radicals or logarithms.",
+    "mathematical_structure": "logarithm",
+    "required_method": "convert or evaluate using the inverse exponential relationship",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOGARITHMS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-10",
+    "question_text": "10. Exact answers may contain \uf070 or radicals or logarithms.",
+    "mathematical_structure": "logarithm",
+    "required_method": "convert or evaluate using the inverse exponential relationship",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOGARITHMS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-13",
+    "question_text": "1.   Simplify.                                                                                           (1.2 #29)",
+    "mathematical_structure": "exponent rules",
+    "required_method": "apply the source section 1.2 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "F0-EXPONENT-RULES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-14",
+    "question_text": "2.   Factor the polynomial.                                                                              (1.3 #97)",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-15",
+    "question_text": "3.    Simplify the expression.                                                                           (1.4 #37)",
+    "mathematical_structure": "rational expressions",
+    "required_method": "apply the source section 1.4 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-16",
+    "question_text": "4.   Solve for the specified variable.                                                                   (2.1 #73)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-17",
+    "question_text": "5.   Movie attendance Six hundred people attended the premiere of a motion picture. Adult tickets cost $9,",
+    "mathematical_structure": "applied equation",
+    "required_method": "define the unknown, translate the relationships, solve, and check units",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-18",
+    "question_text": "6.   Fencing a region A farmer plans to enclose a rectangular region, using part of his barn for one side and",
+    "mathematical_structure": "applied equation",
+    "required_method": "define the unknown, translate the relationships, solve, and check units",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-19",
+    "question_text": "7.   Write the expression in the form a + bi , where a and b are real numbers.                               (2.4 #23)",
+    "mathematical_structure": "complex numbers",
+    "required_method": "apply the source section 2.4 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-20",
+    "question_text": "8.   Solve for the specified variable.                                                                       (2.5 #55)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-21",
+    "question_text": "9.   Solve the inequality, and express the solutions in terms of intervals whenever possible.   (2.6 #33)",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-22",
+    "question_text": "10. Solve the inequality. Express the solution in interval notation.                            (2.7 #37)",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-23",
+    "question_text": "11. Given the points A(4, \u2212 3) and B(6, 2).                                                      (3.1 #9)",
+    "mathematical_structure": "coordinate plane",
+    "required_method": "apply the source section 3.1 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COORDINATE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-24",
+    "question_text": "12. Sketch the graph y = x \u2212 4 , and label the x- and y-intercepts.                                        (3.2 #20)",
+    "mathematical_structure": "lines",
+    "required_method": "apply the source section 3.2 method and requested answer form",
+    "answer_type": "graph",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-25",
+    "question_text": "13. For the given circle, find the x-intercepts.                                                           (3.2 #67)",
+    "mathematical_structure": "circle equation",
+    "required_method": "complete both squares or use center-radius form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-CIRCLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-26",
+    "question_text": "14. Given the points A(3, \u2212 1) and B( \u22122, 6).      Find an equation (in slope-intercept form) for the perpendicular",
+    "mathematical_structure": "line",
+    "required_method": "identify slope and use the requested line form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-27",
+    "question_text": "15. Childhood growth For children between ages 6 and 10, height y (in inches) is frequently a linear function",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-28",
+    "question_text": "16. Determine whether f is even, odd, or neither even nor odd.                                             (3.5 #4)",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-29",
+    "question_text": "17. Height of a projectile An object is projected vertically upward from the top of a building with an initial",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-30",
+    "question_text": "18. Given f ( x ) =        and g ( x ) =     .                                   (3.7 #7)",
+    "mathematical_structure": "function composition",
+    "required_method": "apply the source section 3.7 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-31",
+    "question_text": "19. Given f ( x) = x 3 + 2 x 2 \u2212 4 x \u2212 8 .                                      (4.1 #23)",
+    "mathematical_structure": "polynomial functions",
+    "required_method": "apply the source section 4.1 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-32",
+    "question_text": "20. Find the quotient and the remainder if 3x 5 + 6 x 2 + 7 is divided x + 2.                (4.2 #25)",
+    "mathematical_structure": "polynomial functions",
+    "required_method": "apply the source section 4.2 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-33",
+    "question_text": "21. Given the one-to-one function f ( x) = 3 x + 1 , find the inverse function, f \u22121( x) .   (5.1 #37)",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-34",
+    "question_text": "22. Sketch the graphs and dash in the asymptotes.                                                       (5.3 #1)",
+    "mathematical_structure": "rational function",
+    "required_method": "factor and compare numerator/denominator zeros for holes and asymptotes",
+    "answer_type": "graph",
+    "mapped_family_id": "CH34-RATIONAL-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-35",
+    "question_text": "23. Radioactive iodine decay Radioactive iodine 131 I is frequently used in tracer studies involving the",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_1_Without_Solutions.md",
+    "question_number": "question-36",
+    "question_text": "24. Find the exact value for the solution of the equation.                                             (5.6 #19)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_With_Solutions.md",
+    "question_number": "question-10",
+    "question_text": "10. Exact answers may contain 7t or radicals or logarithms.",
+    "mathematical_structure": "logarithm",
+    "required_method": "convert or evaluate using the inverse exponential relationship",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOGARITHMS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-10",
+    "question_text": "10. Exact answers may contain \uf070 or radicals or logarithms.",
+    "mathematical_structure": "logarithm",
+    "required_method": "convert or evaluate using the inverse exponential relationship",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOGARITHMS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-13",
+    "question_text": "1.   Simplify the expression, assuming x and y may be negative.                                          (1.2 #83)",
+    "mathematical_structure": "exponent rules",
+    "required_method": "apply the source section 1.2 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "F0-EXPONENT-RULES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-14",
+    "question_text": "2.   Express as a polynomial.                                                                            (1.3 #35)",
+    "mathematical_structure": "factoring",
+    "required_method": "apply the source section 1.3 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-15",
+    "question_text": "3.    Simplify the expression.                                                                           (1.4 #73)",
+    "mathematical_structure": "rational expressions",
+    "required_method": "apply the source section 1.4 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-16",
+    "question_text": "4.   Solve for the specified variable.                                                                   (2.1 #41)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-17",
+    "question_text": "5.   Delivering Newspapers It takes a girl 45 minutes to deliver the newspapers on her route; however, if her",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-18",
+    "question_text": "6.   Solve for the specified variable.                                                                (2.3 #53)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-19",
+    "question_text": "7.   Find the solutions of the equation.                                                              (2.4 #56)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-20",
+    "question_text": "8.   Solve the equation.                                                                                (2.5 #5)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-21",
+    "question_text": "9.   Solve the inequality, and express the solutions in terms of intervals whenever possible.         (2.6 #65)",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-22",
+    "question_text": "9.                                (4)",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-23",
+    "question_text": "10. Solve the inequality, and express the solutions in terms of intervals whenever possible.          (2.7 #31)",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-24",
+    "question_text": "11. Given the points A( \u22124, \u2212 3) and B(6,1). Find a formula that expresses the fact that an arbitrary point",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-25",
+    "question_text": "12. Sketch the graph x = \u2212 y 2 + 3 , and label the x- and y-intercepts.                               (3.2 #11)",
+    "mathematical_structure": "lines",
+    "required_method": "apply the source section 3.2 method and requested answer form",
+    "answer_type": "graph",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-26",
+    "question_text": "13. Find an equation of the circle with center C (\u22124, 6) and passing through the point P (1, 2) .     (3.2 #39)",
+    "mathematical_structure": "circle equation",
+    "required_method": "complete both squares or use center-radius form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-CIRCLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-27",
+    "question_text": "13.                                     (4)",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-28",
+    "question_text": "14. Find a general form of an equation of the line through the point A(7, \u2212 3) that is perpendicular to the line",
+    "mathematical_structure": "line",
+    "required_method": "identify slope and use the requested line form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-29",
+    "question_text": "15. Given f ( x) = x 2 \u2212 x + 3 . If a and h are real numbers, find                      , if h \uf0b9 0 .           (3.4 #9)",
+    "mathematical_structure": "functions",
+    "required_method": "apply the source section 3.4 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-30",
+    "question_text": "16. Sketch the graph of f ( x) = \uf0ed x3 if \u2212 1 \uf03c x \uf03c 1                                                   (3.5 #51)",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "graph",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-31",
+    "question_text": "17. Express f ( x) = \u22123x 2 \u2212 6 x \u2212 5 in the form f ( x) = a( x \u2212 h)2 + k                                       (3.6 #9)",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-32",
+    "question_text": "17.                         (4)",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-33",
+    "question_text": "18. Given f ( x ) =        and g ( x ) =     .                                                     (3.7 #33)",
+    "mathematical_structure": "function composition",
+    "required_method": "apply the source section 3.7 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-34",
+    "question_text": "19. Find the quotient and the remainder if f ( x) = 3x 3 + 2 x \u2212 4 is divided p( x) = 2 x 2 + 1.    (4.2 #3)",
+    "mathematical_structure": "polynomial functions",
+    "required_method": "apply the source section 4.2 method and requested answer form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-35",
+    "question_text": "20. Determine whether f ( x) = x 2 \u2212 9 is one-to-one.                                              (5.1 #7)",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-36",
+    "question_text": "21. Sketch the graphs and dash in the asymptotes.                                        (5.2 #11g and 5.4 #40)",
+    "mathematical_structure": "rational function",
+    "required_method": "factor and compare numerator/denominator zeros for holes and asymptotes",
+    "answer_type": "graph",
+    "mapped_family_id": "CH34-RATIONAL-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-37",
+    "question_text": "22. U.S. population growth The population N (t ) (in millions) of the United States t years after 1980 may",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-38",
+    "question_text": "23. Solve the equation.                                                                                (5.5 #23)",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_2_Without_Solutions.md",
+    "question_number": "question-39",
+    "question_text": "24. Solve the compound interest formula A = P\uf0e71 + \uf0f7           for t using natural logarithms.",
+    "mathematical_structure": "logarithmic equation",
+    "required_method": "apply log properties, solve, and check argument domains",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-LOG-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/final exam review/Version_3_With_Solutions.md",
+    "question_number": "question-10",
+    "question_text": "10. Exact answers may contain 1t or radicals or logarithms.",
+    "mathematical_structure": "logarithm",
+    "required_method": "convert or evaluate using the inverse exponential relationship",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOGARITHMS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/1.1.md",
+    "question_number": "1.1 \u2014 Complex Numbers and Major Operations on Real Numbers",
+    "question_text": "> Converted from the handwritten source PDF. The wording, examples, and mathematical relationships are preserved as closely as possible in Markdown.\n\n---",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/1.2.md",
+    "question_number": "1.2 --- Exponents and Radicals",
+    "question_text": "> One-for-one Markdown conversion of the handwritten lecture notes.\n> Content is kept in source order.\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/1.3.md",
+    "question_number": "1.3 --- Polynomials and Factoring",
+    "question_text": "> One-for-one Markdown conversion of the handwritten lecture notes.\n> Content is kept in source order.\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/1.4.md",
+    "question_number": "1.4 --- Fractional Expressions",
+    "question_text": "> One-for-one human-readable Markdown conversion of the scanned lecture\n> notes. Material is preserved in source order.",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.1.md",
+    "question_number": "2.1 --- Equations",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.2.md",
+    "question_number": "2.2 --- Applied Problems",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+    "mathematical_structure": "linear equations",
+    "required_method": "recognize the linear equations structure and apply its source-supported rule",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.3.md",
+    "question_number": "2.3 --- Quadratic Equations",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+    "mathematical_structure": "quadratic equation",
+    "required_method": "select factoring, square-root, completing-square, or formula method",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-QUADRATICS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.4.md",
+    "question_number": "2.4 --- Complex Numbers",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.5.md",
+    "question_number": "2.5 --- Other Types of Equations",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes.\n> Content is preserved in source order.",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.6.md",
+    "question_number": "2.6 --- Inequalities",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes.\n> Content is preserved in source order.",
+    "mathematical_structure": "inequalities",
+    "required_method": "recognize the inequalities structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/2.7.md",
+    "question_number": "2.7 --- More on Inequalities",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes.\n> Content is preserved in source order.",
+    "mathematical_structure": "inequalities",
+    "required_method": "recognize the inequalities structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/3.1(2).md",
+    "question_number": "3.1 --- Rectangular Coordinate Systems",
+    "question_text": "> Human-readable Markdown conversion of the scanned lecture notes.\n> Content is preserved in source order, including the meaning of the\n> diagrams.",
+    "mathematical_structure": "coordinate geometry",
+    "required_method": "apply coordinate, distance, or midpoint relationships",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COORDINATE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/3.2.md",
+    "question_number": "3.2 --- Graphs of Equations",
+    "question_text": "3.2 --- Graphs of Equations",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "graph",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/3.3.md",
+    "question_number": "3.3 --- Lines",
+    "question_text": "3.3 --- Lines",
+    "mathematical_structure": "lines",
+    "required_method": "recognize the lines structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/3.4.md",
+    "question_number": "3.4 --- Functions",
+    "question_text": "3.4 --- Functions",
+    "mathematical_structure": "functions",
+    "required_method": "recognize the functions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/3.7.md",
+    "question_number": "3.7 - Operations on Functions and Composite Functions",
+    "question_text": "> Source-faithful transcription. Mathematical expressions are written in\n> readable display notation.",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/4.1.md",
+    "question_number": "4.1 --- Properties of Division",
+    "question_text": "4.1 --- Properties of Division",
+    "mathematical_structure": "polynomial functions",
+    "required_method": "recognize the polynomial functions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/4.2.md",
+    "question_number": "4.2 --- Polynomials of Degree Greater Than 2",
+    "question_text": "4.2 --- Polynomials of Degree Greater Than 2",
+    "mathematical_structure": "polynomial functions",
+    "required_method": "recognize the polynomial functions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.1.md",
+    "question_number": "5.1 - Inverse Functions",
+    "question_text": "5.1 - Inverse Functions",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.2.md",
+    "question_number": "5.2 - Exponential Functions",
+    "question_text": "5.2 - Exponential Functions",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.3.md",
+    "question_number": "5.3 - Natural Exponential Function",
+    "question_text": "5.3 - Natural Exponential Function",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.4.md",
+    "question_number": "5.4 --- Logarithmic Functions",
+    "question_text": "5.4 --- Logarithmic Functions",
+    "mathematical_structure": "logarithm",
+    "required_method": "convert or evaluate using the inverse exponential relationship",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOGARITHMS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.5.md",
+    "question_number": "5.5 --- Properties of Logarithms",
+    "question_text": "For appropriate positive inputs, the notes give three main logarithm\nproperties.",
+    "mathematical_structure": "logarithm properties",
+    "required_method": "apply product, quotient, and power rules in the requested direction",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOG-PROPERTIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.5.md",
+    "question_number": "1. Product Rule",
+    "question_text": "\\[ `\\boxed{\\log_a(xy)=\\log_a(x)+\\log_a(y)}`{=tex} \\]",
+    "mathematical_structure": "logarithm properties",
+    "required_method": "recognize the logarithm properties structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOG-PROPERTIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.5.md",
+    "question_number": "2. Quotient Rule",
+    "question_text": "\\[ `\\boxed{\n\\log_a\\left(\\frac{x}{y}\\right)\n=\n\\log_a(x)-\\log_a(y)\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.5.md",
+    "question_number": "3. Power Rule",
+    "question_text": "\\[ `\\boxed{\n\\log_a(x^n)=n\\log_a(x)\n}`{=tex} \\]\n\nThe notes specify\n\n\\[ x,y\\>0 \\]\n\nand real values of (n).",
+    "mathematical_structure": "logarithm properties",
+    "required_method": "recognize the logarithm properties structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-LOG-PROPERTIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/5.6.md",
+    "question_number": "5.6 --- Exponential and Logarithmic Equations",
+    "question_text": "5.6 --- Exponential and Logarithmic Equations",
+    "mathematical_structure": "logarithmic equation",
+    "required_method": "apply log properties, solve, and check argument domains",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-LOG-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/Completing_the_Square.md",
+    "question_number": "question-1",
+    "question_text": "3`\\left`{=tex}(x\\^2-5x+`\\frac{25}{4}`{=tex}`\\right`{=tex})+d \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/Completing_the_Square.md",
+    "question_number": "question-2",
+    "question_text": "3\\left(x-\\frac52\\right)^2+\\frac54",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/lectures/Completing_the_Square.md",
+    "question_number": "question-3",
+    "question_text": "3`\\left`{=tex}(x-`\\frac52`{=tex}`\\right`{=tex})\\^2+`\\frac54`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1.md",
+    "question_number": "Q.1 --- 5 points",
+    "question_text": "Simplify:\n\n\\[ `\\boxed{\\sqrt[3]{3a^2b^3}\\cdot\\sqrt[3]{6a^5b}}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1.md",
+    "question_number": "Q.2 --- 5 points",
+    "question_text": "Simplify:\n\n\\[ `\\boxed{\n\\left[\\frac{x-2y}{5z+1}\\right]\n\\div\n\\left[\\frac{3x-6y}{-z-(2+9z)}\\right]\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1.md",
+    "question_number": "Q.3 --- 5 points",
+    "question_text": "Fully factor:\n\n\\[ `\\boxed{x^2y+3x^2-4y-12}`{=tex} \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1.md",
+    "question_number": "Q.4 --- 5 points",
+    "question_text": "Fully factor:\n\n\\[ `\\boxed{-3x^2-4x+15}`{=tex} \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1_Solution.md",
+    "question_number": "Q.1",
+    "question_text": "Simplify:\n\n\\[ `\\sqrt[3]{3a^2b^3}`{=tex}`\\cdot`{=tex}`\\sqrt[3]{6a^5b}`{=tex} \\]\n\nCombine the radicals:\n\n\\[ `\\sqrt[3]{3a^2b^3\\cdot6a^5b}`{=tex} = `\\sqrt[3]{18a^7b^4}`{=tex}. \\]\n\nPull out complete cubes:\n\n\\[ a^7=a^6a,`\\qquad `{=tex}b^4=b^3b. \\]\n\nTherefore\n\n\\[ `\\boxed{a^2b\\sqrt[3]{18ab}}`{=tex}. \\]\n\n> The parsed solution text appears to lose some superscripts during\n> extraction. The expression above follows the mathematical\n> simplification of the printed quiz expression.",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1_Solution.md",
+    "question_number": "Q.2",
+    "question_text": "\\[ `\\left[\\frac{x-2y}{5z+1}\\right]`{=tex}`\\div`{=tex}\n`\\left[\\frac{3x-6y}{-z-(2+9z)}\\right]`{=tex}\\]\n\nFirst,\n\n\\[ -z-(2+9z)=-10z-2. \\]\n\nConvert division to multiplication:\n\n\\[ `\\frac{x-2y}{5z+1}`{=tex} `\\cdot`{=tex} `\\frac{-10z-2}{3x-6y}`{=tex}.\n\\]\n\nFactor:\n\n\\[ -10z-2=-2(5z+1) \\]\n\nand\n\n\\[ 3x-6y=3(x-2y). \\]\n\nCancel common factors:\n\n\\[ `\\boxed{-\\frac23}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1_Solution.md",
+    "question_number": "Q.3",
+    "question_text": "\\[ x^2y+3x^2-4y-12 \\]\n\nGroup:\n\n\\[ x\\^2(y+3)-4(y+3). \\]\n\nFactor:\n\n\\[ (x\\^2-4)(y+3). \\]\n\nUse the difference of squares:\n\n\\[ `\\boxed{(x-2)(x+2)(y+3)}`{=tex}. \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_1_Solution.md",
+    "question_number": "Q.4",
+    "question_text": "\\[ -3x\\^2-4x+15. \\]\n\nHere\n\n\\[ a=-3,`\\qquad `{=tex}b=-4,`\\qquad `{=tex}c=15 \\]\n\nso\n\n\\[ ac=-45. \\]\n\nUse\n\n\\[ -9+5=-4,`\\qquad `{=tex}(-9)(5)=-45. \\]\n\nSplit the middle term:\n\n\\[ -3x\\^2-9x+5x+15. \\]\n\nGroup:\n\n\\[ -3x(x+3)+5(x+3). \\]\n\nTherefore\n\n\\[ `\\boxed{(-3x+5)(x+3)}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2.md",
+    "question_number": "Q.1 --- 5 points",
+    "question_text": "Simplify, where (a) and (b) can be any real numbers:\n\n\\[ `\\boxed{\n\\frac{\\sqrt{a^4b^6}}\n{\\sqrt{a^{12}b^8}}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2.md",
+    "question_number": "Q.2 --- 5 points",
+    "question_text": "Fully factor:\n\n\\[ x^2-y^2-6x-9. \\]\n\n**Source correction:** The quiz explicitly states:\n\n> TYPO IN QUESTION --- should have been\n\n\\[ `\\boxed{x^2-y^2-6y-9}`{=tex} \\]\n\nand the question was cancelled.",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2.md",
+    "question_number": "Q.3 --- 5 points",
+    "question_text": "Simplify:\n\n\\[ `\\boxed{\n\\frac{x^3-2x^2}\n{x^2-3x-10}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2.md",
+    "question_number": "Q.4 --- 5 points",
+    "question_text": "Simplify:\n\n\\[ `\\boxed{\n\\frac1{x+1}\n-\n\\frac1{x+2}\n+\n\\frac3{(x+1)(x+2)}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2_Solution.md",
+    "question_number": "Q.1",
+    "question_text": "\\[ `\\frac{\\sqrt{a^4b^6}}`{=tex} {`\\sqrt{a^{12}b^8}`{=tex}} \\]\n\nCombine the radicals:\n\n\\[ `\\sqrt{a^{4-12}b^{6-8}}`{=tex} = `\\sqrt{a^{-8}b^{-2}}`{=tex}. \\]\n\nBecause this is an even root, absolute value is required:\n\n\\[ `\\boxed{|a^{-4}b^{-1}|}`{=tex}. \\]\n\nEquivalent forms given in the source include\n\n\\[ `\\boxed{a^{-4}|b^{-1}|}`{=tex} \\]\n\nand\n\n\\[ `\\boxed{\\frac1{a^4|b|}}`{=tex}. \\]",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2_Solution.md",
+    "question_number": "Q.2",
+    "question_text": "The printed question\n\n\\[ x^2-y^2-6x-9 \\]\n\ncontains a typo and was cancelled.\n\nThe intended question was\n\n\\[ x^2-y^2-6y-9. \\]\n\nComplete the square in (y):\n\n\\[ x^2-(y^2+6y+9) \\]\n\n\\[ =x^2-(y+3)^2. \\]\n\nDifference of squares:\n\n\\[ `\\boxed{(x-y-3)(x+y+3)}`{=tex}. \\]",
+    "mathematical_structure": "quadratic equation",
+    "required_method": "select factoring, square-root, completing-square, or formula method",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-QUADRATICS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2_Solution.md",
+    "question_number": "Q.3",
+    "question_text": "\\[ `\\frac{x^3-2x^2}`{=tex} {x\\^2-3x-10}. \\]\n\nFactor the numerator:\n\n\\[ x^3-2x^2=x\\^2(x-2). \\]\n\nFactor the denominator:\n\n\\[ x\\^2-3x-10 = x\\^2-5x+2x-10 \\]\n\n\\[ =x(x-5)+2(x-5) \\]\n\n\\[ =(x+2)(x-5). \\]\n\nThus\n\n\\[ `\\boxed{\n\\frac{x^2(x-2)}\n{(x+2)(x-5)}\n}`{=tex} \\]\n\nwith no common factor to cancel.",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_2_Solution.md",
+    "question_number": "Q.4",
+    "question_text": "\\[ `\\frac1{x+1}`{=tex} - `\\frac1{x+2}`{=tex} +\n`\\frac3{(x+1)(x+2)}`{=tex}. \\]\n\nLCD:\n\n\\[ (x+1)(x+2). \\]\n\nRewrite:\n\n\\[ `\\frac{x+2}{(x+1)(x+2)}`{=tex} - `\\frac{x+1}{(x+1)(x+2)}`{=tex} +\n`\\frac3{(x+1)(x+2)}`{=tex}. \\]\n\nCombine:\n\n\\[ `\\frac{x+2-(x+1)+3}`{=tex} {(x+1)(x+2)} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3.md",
+    "question_number": "Q.1",
+    "question_text": "Express \\[ `\\boxed{4x^2+8x+5}`{=tex} \\] in completed-square form, i.e.\n\\[ a(x+b)\\^2+c, \\] where (a,b,c) are constants.",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3.md",
+    "question_number": "Q.2",
+    "question_text": "Two children own two-way radios with a maximum range of **2 miles**.\n\nOne leaves a certain point at **1:00 P.M.**, walking due north at \\[\n4`\\text{ mi/hr}`{=tex}. \\]\n\nThe other leaves the same point at **1:15 P.M.**, traveling due south at\n\\[ 6`\\text{ mi/hr}`{=tex}. \\]\n\nWhen will they be unable to communicate with one another?",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3.md",
+    "question_number": "Q.3",
+    "question_text": "Express \\[ `\\boxed{\\frac{3+5i}{1+i}}`{=tex} \\] as a single complex\nnumber of the form \\[ a+bi, \\] where (a,b) are real.",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "complex_number",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3.md",
+    "question_number": "Q.4",
+    "question_text": "Find all real solutions to \\[ `\\boxed{2|5x+2|-1=5}`{=tex}. \\]",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3_Solution.md",
+    "question_number": "Q.1 --- Completing the Square",
+    "question_text": "Express\n\n\\[ 4x\\^2+8x+5 \\]\n\nin completed-square form.\n\nFactor (4) from the (x)-terms:\n\n\\[ 4x\\^2+8x+5 = 4(x\\^2+2x)+5. \\]\n\nSince\n\n\\[ x^2+2x+1=(x+1)^2, \\]\n\nadd and subtract (1):\n\n\\[ 4(x\\^2+2x+1-1)+5. \\]\n\nThus\n\n\\[ 4((x+1)\\^2-1)+5 \\]\n\n\\[ =4(x+1)\\^2-4+5 \\]\n\n\\[ `\\boxed{4(x+1)^2+1}`{=tex}. \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3_Solution.md",
+    "question_number": "Q.2 --- Two-Way Radios",
+    "question_text": "Two children have radios with a maximum range of\n\n\\[ 2`\\text{ miles}`{=tex}. \\]\n\nOne leaves at 1:00 P.M., walking north at\n\n\\[ 4`\\text{ mi/hr}`{=tex}. \\]\n\nThe other leaves the same point at 1:15 P.M., traveling south at\n\n\\[ 6`\\text{ mi/hr}`{=tex}. \\]\n\nThe first child has a 15-minute head start:\n\n\\[ 15`\\text{ min}`{=tex}=0.25`\\text{ hr}`{=tex}. \\]\n\nDistance covered during the head start:\n\n\\[ (4)(0.25)=1`\\text{ mile}`{=tex}. \\]\n\nLet (t) be the number of hours after 1:15 P.M.\n\nTheir separation is\n\n\\[ (4t+1)+6t=10t+1. \\]\n\nSet the separation equal to the radio range:\n\n\\[ 10t+1=2. \\]\n\nThen\n\n\\[ 10t=1 \\]\n\n\\[ t=0.1`\\text{ hr}`{=tex}. \\]\n\nConvert to minutes:\n\n\\[ 0.1(60)=6`\\text{ minutes}`{=tex}. \\]\n\nTherefore they reach maximum range at\n\n\\[ `\\boxed{1:21\\text{ P.M.}}`{=tex} \\]\n\nThe diagram on page 1 shows the first child north of the starting point\nwith the 1-mile head start, moving north at (4) mi/hr, while the second\nchild moves south at (6) mi/hr.",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3_Solution.md",
+    "question_number": "Q.3 --- Complex Fraction",
+    "question_text": "Express\n\n\\[ `\\frac{3+5i}{1+i}`{=tex} \\]\n\nas (a+bi).\n\nMultiply by the conjugate:\n\n\\[ `\\frac{3+5i}{1+i}`{=tex} `\\cdot`{=tex} `\\frac{1-i}{1-i}`{=tex}. \\]\n\nThen\n\n\\[ `\\frac{(3+5i)(1-i)}`{=tex} {(1+i)(1-i)} \\]",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "complex_number",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_3_Solution.md",
+    "question_number": "Q.4 --- Absolute Value Equation",
+    "question_text": "Solve\n\n\\[ 2\\|5x+2\\|-1=5. \\]\n\nAdd (1):\n\n\\[ 2\\|5x+2\\|=6. \\]\n\nDivide by (2):\n\n\\[ \\|5x+2\\|=3. \\]\n\nTherefore\n\n\\[ 5x+2=3 \\]\n\nor\n\n\\[ 5x+2=-3. \\]\n\nFirst case:\n\n\\[ 5x=1 \\]\n\n\\[ x=`\\frac15`{=tex}. \\]\n\nSecond case:\n\n\\[ 5x=-5 \\]\n\n\\[ x=-1. \\]\n\nThus\n\n\\[ `\\boxed{x=\\frac15\\text{ or }x=-1}`{=tex}. \\]",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4.md",
+    "question_number": "Q.1",
+    "question_text": "Solve \\[ `\\boxed{3|3x-1|-2\\ge4}`{=tex} \\] and write the answer in\ninterval notation.",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4.md",
+    "question_number": "Q.2",
+    "question_text": "Solve \\[ `\\boxed{\\frac8{x+3}<2}`{=tex} \\] and write the answer in\ninterval notation.\n\n**Hint:** Start by getting (0) on one side of the inequality.",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4.md",
+    "question_number": "Q.3",
+    "question_text": "Write the general formula for the midpoint of \\[ P_1(x_1,y_1) \\] and \\[\nP_2(x_2,y_2). \\]\n\nThen use the formula to find the midpoint of \\[ A(-1,7) \\] and \\[\nB(5,3). \\]",
+    "mathematical_structure": "coordinate geometry",
+    "required_method": "apply coordinate, distance, or midpoint relationships",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COORDINATE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4.md",
+    "question_number": "Q.4",
+    "question_text": "Determine, with working, whether \\[ C(4,8) \\] lies on the perpendicular\nbisector of the line segment from \\[ A(-1,7) \\] to \\[ B(5,3). \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4_Solution.md",
+    "question_number": "Q.1",
+    "question_text": "\\[ 3\\|3x-1\\|-2`\\ge4`{=tex} \\]\n\nIsolate the absolute value: \\[ 3\\|3x-1\\|`\\ge6`{=tex} \\] \\[\n\\|3x-1\\|`\\ge2`{=tex}. \\]\n\nThus \\[ 3x-1`\\ge2`{=tex} \\] or \\[ 3x-1`\\le-2`{=tex}. \\]\n\nTherefore \\[ x`\\ge1`{=tex} \\] or \\[ x`\\le`{=tex}-`\\frac13`{=tex}. \\]\n\nFinal answer: \\[ `\\boxed{(-\\infty,-\\tfrac13]\\cup[1,\\infty)}`{=tex}. \\]",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4_Solution.md",
+    "question_number": "Q.2",
+    "question_text": "\\[ `\\frac8{x+3}`{=tex}\\<2. \\]\n\nDomain restriction: \\[ x`\\ne-3`{=tex}. \\]\n\nMove everything to one side: \\[ `\\frac8{x+3}`{=tex}-2\\<0 \\] \\[\n`\\frac{8-2(x+3)}{x+3}`{=tex}\\<0 \\] \\[ `\\frac{2-2x}{x+3}`{=tex}\\<0. \\]\n\nCritical values: \\[ x=-3,`\\qquad `{=tex}x=1. \\]\n\nSign table:\n\n  Interval                   (2-2x)   (x+3)   Quotient\n  ------------------------ -------- ------- ----------\n  ((-`\\infty`{=tex},-3))        (+)     (-)        (-)\n  ((-3,1))                      (+)     (+)        (+)\n  ((1,`\\infty`{=tex}))          (-)     (+)        (-)\n\nFinal answer: \\[ `\\boxed{(-\\infty,-3)\\cup(1,\\infty)}`{=tex}. \\]",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "domain",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4_Solution.md",
+    "question_number": "Q.3",
+    "question_text": "General midpoint formula: \\[ `\\boxed{\nMP=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)\n}`{=tex}. \\]\n\nFor \\[ A(-1,7),`\\qquad `{=tex}B(5,3): \\]\n\n\\[ MP = `\\left`{=tex}( `\\frac{-1+5}{2}`{=tex}, `\\frac{7+3}{2}`{=tex}\n`\\right`{=tex}) \\]\n\n\\[ `\\boxed{MP=(2,5)}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_4_Solution.md",
+    "question_number": "Q.4",
+    "question_text": "A point lies on the perpendicular bisector of a segment exactly when it\nis equidistant from the segment's endpoints.\n\nDistance formula: \\[ d(P_1,P_2) =\n`\\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}`{=tex}. \\]\n\nFor (C(4,8)) and (A(-1,7)): \\[ d(C,A) =\n`\\sqrt{(4-(-1))^2+(8-7)^2}`{=tex} \\] \\[ =`\\sqrt{25+1}`{=tex}\n=`\\sqrt{26}`{=tex}. \\]\n\nFor (C(4,8)) and (B(5,3)): \\[ d(C,B) = `\\sqrt{(4-5)^2+(8-3)^2}`{=tex} \\]\n\\[ =`\\sqrt{1+25}`{=tex} =`\\sqrt{26}`{=tex}. \\]\n\nTherefore \\[ d(C,A)=d(C,B). \\]\n\nSo \\[\n`\\boxed{\\text{Yes, }C\\text{ lies on the perpendicular bisector of }\\overline{AB}.}`{=tex}\n\\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5.md",
+    "question_number": "Q.1",
+    "question_text": "Write the general equation of a circle with center \\[ C(h,k) \\] and\nradius (r).\n\nThe following is the equation of a circle in the (x-y) plane: \\[\n`\\boxed{x^2-4x+y^2=5}`{=tex}. \\]\n\nWith working, find its center and radius.\n\n**Hint:** Start by completing the squares for the (x)-terms and\n(y)-terms separately.",
+    "mathematical_structure": "circle equation",
+    "required_method": "complete both squares or use center-radius form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-CIRCLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5.md",
+    "question_number": "Q.2",
+    "question_text": "A line (l) in the (x-y) plane is perpendicular to \\[ y=1-x \\] and passes\nthrough \\[ (-1,4). \\]\n\nWhat is the slope-intercept form of (l)?\n\n**Hint:** Start by setting up the point-slope form of (l).",
+    "mathematical_structure": "line",
+    "required_method": "identify slope and use the requested line form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5.md",
+    "question_number": "Q.3",
+    "question_text": "Find the domain of \\[ `\\boxed{f(x)=\\frac{\\sqrt{x+1}}{2x}}`{=tex}. \\]\n\nExplain all restrictions clearly and write the final answer in interval\nnotation.",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "domain",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5.md",
+    "question_number": "Q.4 --- Graph Question",
+    "question_text": "The source graph consists of two line segments:\n\n-   an increasing segment from the **closed** point \\[ (-3,-4) \\] to the\n    **open** point \\[ (-1,-2); \\]\n-   a decreasing segment from the **closed** point \\[ (-1,1) \\] to the\n    **open** point \\[ (2,-2). \\]\n\nState:\n\n1.  the domain of (f(x));\n2.  the range of (f(x));\n3.  the interval(s) on which (f(x)) is increasing;\n4.  the interval(s) on which (f(x)) is decreasing.\n\nWrite all answers in interval notation.",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5_Solution.md",
+    "question_number": "Q.1 --- Circle",
+    "question_text": "General equation: \\[ `\\boxed{(x-h)^2+(y-k)^2=r^2}`{=tex}. \\]\n\nGiven: \\[ x^2-4x+y^2=5. \\]\n\nComplete the square: \\[ (x^2-4x)+y^2=5 \\] \\[ (x-2)^2-4+y^2=5 \\] \\[\n(x-2)^2+y^2=9 \\] \\[ `\\boxed{(x-2)^2+(y-0)^2=3^2}`{=tex}. \\]\n\nCenter: \\[ `\\boxed{(2,0)}`{=tex} \\]\n\nRadius: \\[ `\\boxed{3}`{=tex}. \\]",
+    "mathematical_structure": "circle equation",
+    "required_method": "complete both squares or use center-radius form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-CIRCLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5_Solution.md",
+    "question_number": "Q.2 --- Perpendicular Line",
+    "question_text": "The given line \\[ y=1-x \\] has slope \\[ -1. \\]\n\nA perpendicular line has slope \\[ m=1. \\]\n\nPoint-slope form through ((-1,4)): \\[ y-4=1(x+1). \\]\n\nSolve for (y): \\[ `\\boxed{y=x+5}`{=tex}. \\]",
+    "mathematical_structure": "line",
+    "required_method": "identify slope and use the requested line form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-LINES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5_Solution.md",
+    "question_number": "Q.3 --- Domain",
+    "question_text": "\\[ f(x)=`\\frac{\\sqrt{x+1}}{2x}`{=tex}. \\]\n\nSquare-root restriction: \\[ x+1`\\ge0`{=tex} \\] so \\[ x`\\ge-1`{=tex}. \\]\n\nDenominator restriction: \\[ 2x`\\ne0`{=tex} \\] so \\[ x`\\ne0`{=tex}. \\]\n\nTherefore \\[ `\\boxed{[-1,0)\\cup(0,\\infty)}`{=tex}. \\]",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "domain",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_5_Solution.md",
+    "question_number": "Q.4 --- Graph",
+    "question_text": "The graph on page 3 shows:\n\n-   a closed point at ((-3,-4));\n-   an open point at ((-1,-2)) on the increasing segment;\n-   a closed point at ((-1,1)) on the decreasing segment;\n-   an open point at ((2,-2)).",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "graph",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6.md",
+    "question_number": "Q.1",
+    "question_text": "\\[ f(x)=2x\\^2+bx+c \\] is a quadratic function with unknown coefficients\n(b,c). Its vertex is \\[ (-1,-1). \\]\n\nFind (b) and (c).\n\n**Hint:** Start by setting up the vertex-form equation.",
+    "mathematical_structure": "quadratic function",
+    "required_method": "find vertex/intercepts and interpret or graph",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-QUADRATIC-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6.md",
+    "question_number": "Q.2",
+    "question_text": "Find all (x)-intercepts of the circle with center \\[ (4,2) \\] and radius\n\\[ 2. \\]\n\n**Hint:** Start by setting up the equation of the circle.",
+    "mathematical_structure": "circle equation",
+    "required_method": "complete both squares or use center-radius form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-CIRCLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6.md",
+    "question_number": "Q.3",
+    "question_text": "Suppose \\[ f(x)=x\\^2-2x+1 \\] and \\[ g(x)=x-1. \\]\n\nFirst state the domain of \\[ `\\frac{f(x)}{g(x)}`{=tex} \\] and then\nsimplify the rational expression.",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "domain",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6.md",
+    "question_number": "Q.4",
+    "question_text": "Suppose \\[ f(x)=`\\sqrt{x}`{=tex} \\] and \\[ g(x)=2x+4. \\]\n\nCompute \\[ (f`\\circ `{=tex}g)(x) \\] and state the domain of the\ncomposite function in interval notation.",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "interval",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6_Solution.md",
+    "question_number": "Q.1",
+    "question_text": "Given \\[ f(x)=2x\\^2+bx+c \\] with vertex \\[ (-1,-1). \\]\n\nVertex form is \\[ f(x)=a(x-h)\\^2+k. \\]\n\nHere \\[ a=2,`\\qquad `{=tex}h=-1,`\\qquad `{=tex}k=-1. \\]\n\nTherefore \\[ f(x)=2(x+1)\\^2-1 \\] \\[ =2(x\\^2+2x+1)-1 \\] \\[ =2x\\^2+4x+1.\n\\]\n\nComparing with \\[ 2x\\^2+bx+c, \\] we obtain \\[\n`\\boxed{b=4,\\qquad c=1}`{=tex}. \\]",
+    "mathematical_structure": "quadratic function",
+    "required_method": "find vertex/intercepts and interpret or graph",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-QUADRATIC-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6_Solution.md",
+    "question_number": "Q.2",
+    "question_text": "The equation of a circle with center ((h,k)) and radius (r) is \\[\n(x-h)^2+(y-k)^2=r\\^2. \\]\n\nFor center ((4,2)) and radius (2): \\[ (x-4)^2+(y-2)^2=4. \\]\n\nAt an (x)-intercept, \\[ y=0. \\]\n\nThus \\[ (x-4)^2+(0-2)^2=4 \\] \\[ (x-4)\\^2+4=4 \\] \\[ (x-4)\\^2=0 \\] \\[ x=4.\n\\]\n\nSo the circle has one (x)-intercept: \\[ `\\boxed{(4,0)}`{=tex}. \\]",
+    "mathematical_structure": "circle equation",
+    "required_method": "complete both squares or use center-radius form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH34-CIRCLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6_Solution.md",
+    "question_number": "Q.3",
+    "question_text": "\\[ `\\frac{f(x)}{g(x)}`{=tex} = `\\frac{x^2-2x+1}{x-1}`{=tex}. \\]\n\nThe denominator cannot equal zero: \\[ x-1`\\ne0`{=tex} \\] so \\[\n`\\boxed{x\\ne1}`{=tex}. \\]\n\nFactor the numerator: \\[ x^2-2x+1=(x-1)^2. \\]\n\nThen, over the original domain, \\[ `\\frac{(x-1)^2}{x-1}`{=tex}=x-1. \\]\n\nTherefore \\[ `\\boxed{\\frac{f(x)}{g(x)}=x-1,\\qquad x\\ne1}`{=tex}. \\]",
+    "mathematical_structure": "function domain or range",
+    "required_method": "identify excluded inputs or attainable outputs from the representation",
+    "answer_type": "domain",
+    "mapped_family_id": "CH34-FUNCTIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/quizzes/Quiz_6_Solution.md",
+    "question_number": "Q.4",
+    "question_text": "\\[ (f`\\circ `{=tex}g)(x)=f(g(x)). \\]\n\nSince \\[ g(x)=2x+4, \\] we get \\[ (f`\\circ `{=tex}g)(x) = f(2x+4) =\n`\\sqrt{2x+4}`{=tex}. \\]\n\nFor a real square root: \\[ 2x+4`\\ge0`{=tex} \\] \\[ x`\\ge-2`{=tex}. \\]\n\nTherefore \\[ `\\boxed{(f\\circ g)(x)=\\sqrt{2x+4}}`{=tex} \\] with domain \\[\n`\\boxed{[-2,\\infty)}`{=tex}. \\]",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.1",
+    "question_text": "Simplify: \\[ `\\boxed{\n\\left(\\frac{a^2a^5}{b^{-2}}\\right)^2b^4\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.2",
+    "question_text": "Simplify, where (a,b) may be any real numbers: \\[ `\\boxed{\n\\sqrt{a^3b^2}\\,\\sqrt{a^7b^4}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.3",
+    "question_text": "Simplify and rationalize the denominator: \\[ `\\boxed{\n\\frac{x^2y}{\\sqrt[3]{y^5}}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.4",
+    "question_text": "Rationalize the numerator: \\[ `\\boxed{\n\\frac{5+\\sqrt{x}}{5-\\sqrt{x}}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.5",
+    "question_text": "Simplify and fully factor the numerator and denominator: \\[ `\\boxed{\n\\frac3{x-2}-\\frac6{x^2+x-6}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.6",
+    "question_text": "Simplify and fully factor: \\[ `\\boxed{\n\\frac{-2x^2+14x-20}{x-2}\n\\div\n\\frac{x^2-25}{3x}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.7",
+    "question_text": "Find all real solutions: \\[ `\\boxed{(2x-2)^2=(4x+2)(x-4)}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.8 --- Film Premiere",
+    "question_text": "550 people attended a film premiere. Each adult ticket cost **\\$10** and\neach child ticket cost **\\$5**. Total box-office revenue was\n**\\$5,000**.\n\nHow many adults and children attended?",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.9",
+    "question_text": "Simplify into (a+bi): \\[ `\\boxed{\\frac{4-3i}{1-2i}}`{=tex}. \\]",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "complex_number",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.10",
+    "question_text": "State the quadratic formula for \\[ ax\\^2+bx+c=0. \\]\n\nThen use it to find all complex solutions of \\[\n`\\boxed{-4x^2+8x-5=0}`{=tex}. \\]",
+    "mathematical_structure": "quadratic equation",
+    "required_method": "select factoring, square-root, completing-square, or formula method",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-QUADRATICS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.11 --- Alice and Bob",
+    "question_text": "Alice runs at **5 mi/hr**. Bob starts from the same point **20 minutes\nlater** at **8 mi/hr**.\n\nHow many minutes after Bob starts will he catch Alice?",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.12",
+    "question_text": "Use the zero-factor theorem to solve: \\[\n`\\boxed{2x^3-3x^2-8x+12=0}`{=tex}. \\]",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.13 --- Weighted Grade",
+    "question_text": "Dina's grade is determined by three equally weighted midterms and one\nfinal exam. The final is worth half the total grade.\n\nHer midterm scores are \\[ 94%,`\\quad83`{=tex}%,`\\quad87`{=tex}%. \\]\n\nWhat final-exam percentage gives her an overall grade of exactly (90%)?",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.14",
+    "question_text": "Find all real solutions: \\[ `\\boxed{x^4-x^2-12=0}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.15",
+    "question_text": "Find all real solutions and check them in the original equation: \\[\n`\\boxed{x-1=-\\sqrt{7-x}}`{=tex}. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.16",
+    "question_text": "Find all real solutions: \\[ `\\boxed{\\sqrt[3]{x^2-6x}=-2}`{=tex}. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.17 --- Simple Interest",
+    "question_text": "Given \\[ A=P+Prt, \\] express (P) in terms of (A,r,t).",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.18",
+    "question_text": "Solve and write the answer in interval notation: \\[\n`\\boxed{-5\\le-3x+1<10}`{=tex}. \\]",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.19",
+    "question_text": "State the domain, then solve: \\[ `\\boxed{\\frac4{|x+1|}>1}`{=tex}. \\]\n\nWrite the answer in interval notation.",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1.md",
+    "question_number": "Q.20",
+    "question_text": "Solve: \\[ `\\boxed{\n\\frac{x(x-2)}{x+3}<0\n}`{=tex}. \\]\n\nWrite the answer in interval notation.",
+    "mathematical_structure": "inequality",
+    "required_method": "solve with sign/endpoint checks and present intervals",
+    "answer_type": "interval",
+    "mapped_family_id": "CH12-INEQUALITIES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.1",
+    "question_text": "Simplify and then rationalize the denominator: \\[ `\\boxed{\n\\frac{\\sqrt[5]{8x^3y^4}}\n{\\sqrt[5]{4x^4y^2}}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.2",
+    "question_text": "Rationalize the numerator: \\[ `\\boxed{\n\\frac{\\sqrt{x}}\n{\\sqrt[5]{y^3}}\n}`{=tex} \\]\n\n> The source page is visually typeset; this transcription preserves the\n> readable radical structure visible in the review.",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.3",
+    "question_text": "Factor \\[ `\\boxed{12x^2-x-6}`{=tex} \\] and then solve \\[ 12x\\^2-x-6=0.\n\\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.4",
+    "question_text": "Factor \\[ `\\boxed{3x^3-4x^2-27x+36}`{=tex} \\] and then solve \\[\n3x^3-4x^2-27x+36=0. \\]",
+    "mathematical_structure": "factoring",
+    "required_method": "identify the factoring pattern and factor completely",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-FACTORING",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.5",
+    "question_text": "Simplify into one rational expression: \\[ `\\boxed{\n\\frac{t}{t+3}\n+\n\\frac{4t}{t-3}\n-\n\\frac{18}{t^2-9}\n}`{=tex} \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.6",
+    "question_text": "Rationalize the denominator: \\[ `\\boxed{\n\\frac{\\sqrt{t}-4}{\\sqrt{t}+4}\n}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.7 --- Filling a Swimming Pool",
+    "question_text": "With water from one hose, a swimming pool can be filled in **8 hours**.\n\nA second, larger hose used alone can fill the pool in **5 hours**.\n\nHow long would it take to fill the pool if both hoses were used\nsimultaneously?",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.8 --- Preparing an Alloy",
+    "question_text": "British sterling silver is a copper-silver alloy that is **7.5% copper\nby weight**.\n\nHow many grams of pure copper and how many grams of British sterling\nsilver should be used to prepare **200 grams** of a copper-silver alloy\nthat is **10% copper by weight**?",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.9",
+    "question_text": "Simplify \\[ `\\boxed{\n\\frac{1-7i}{6-2i}\n}`{=tex} \\] into a single complex number of the form \\[ a+bi, \\] where\n(a,b) are real.",
+    "mathematical_structure": "complex-number operation",
+    "required_method": "perform the operation and present a+bi form",
+    "answer_type": "complex_number",
+    "mapped_family_id": "CH12-COMPLEX",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.10",
+    "question_text": "Find all real numbers (x,y) satisfying \\[ `\\boxed{\n8+(3x+y)i=2x-4i\n}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.11",
+    "question_text": "Find all real numbers satisfying \\[ `\\boxed{1<|x|<4}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.12",
+    "question_text": "Find all real numbers satisfying \\[ `\\boxed{\n6u^{-1/2}-13u^{-1/4}+6=0\n}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.13",
+    "question_text": "Find all real numbers satisfying \\[ `\\boxed{(x-4)^2>x(x+12)}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Review.md",
+    "question_number": "Q.14",
+    "question_text": "Find all real numbers satisfying \\[ `\\boxed{\n\\frac{x^2-x-2}{x^2+4x+3}\\ge0\n}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.1",
+    "question_text": "\\[ `\\left`{=tex}(`\\frac{a^2a^5}{b^{-2}}`{=tex}`\\right`{=tex})^2b^4 =\n`\\left`{=tex}(`\\frac{a^7}{b^{-2}}`{=tex}`\\right`{=tex})^2b^4 =\na^{14}b^4b\\^4 \\] \\[ `\\boxed{a^{14}b^8}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.2",
+    "question_text": "\\[ `\\sqrt{a^3b^2}`{=tex}`\\sqrt{a^7b^4}`{=tex} =\n`\\sqrt{a^{10}b^6}`{=tex}. \\]\n\nBecause (a,b) may be any real numbers and this is a principal square\nroot: \\[ `\\boxed{|a^5b^3|}`{=tex}. \\]\n\nEquivalent forms include \\[ \\|a\\|^5\\|b\\|^3. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.3",
+    "question_text": "\\[ `\\frac{x^2y}{\\sqrt[3]{y^5}}`{=tex} =\n`\\frac{x^2}{\\sqrt[3]{y^2}}`{=tex}. \\]\n\nMultiply numerator and denominator by (`\\sqrt[3]{y}`{=tex}): \\[ `\\boxed{\n\\frac{x^2\\sqrt[3]{y}}{y}\n}`{=tex}. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.4",
+    "question_text": "\\[ `\\frac{5+\\sqrt{x}}{5-\\sqrt{x}}`{=tex} `\\cdot`{=tex}\n`\\frac{5-\\sqrt{x}}{5-\\sqrt{x}}`{=tex} \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.5",
+    "question_text": "Factor: \\[ x\\^2+x-6=(x-2)(x+3). \\]\n\nThen \\[ `\\frac3{x-2}`{=tex}-`\\frac6{(x-2)(x+3)}`{=tex} =\n`\\frac{3(x+3)-6}{(x-2)(x+3)}`{=tex} \\]\n\n\\[ `\\boxed{\n\\frac{3(x+1)}{(x-2)(x+3)}\n}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.6",
+    "question_text": "\\[ -2x\\^2+14x-20=-2(x-5)(x-2) \\] and \\[ x\\^2-25=(x-5)(x+5). \\]\n\nTherefore \\[ `\\frac{-2(x-5)(x-2)}{x-2}`{=tex} `\\div`{=tex}\n`\\frac{(x-5)(x+5)}{3x}`{=tex} \\]\n\n\\[ `\\boxed{-\\frac{6x}{x+5}}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.7",
+    "question_text": "Expand: \\[ (2x-2)\\^2=(4x+2)(x-4). \\]\n\nThe (4x\\^2) terms cancel: \\[ -8x+4=-14x-8 \\] \\[ 6x=-12 \\] \\[\n`\\boxed{x=-2}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.8",
+    "question_text": "Let (x) be adults and (y) children: \\[ x+y=550 \\] \\[ 10x+5y=5000. \\]\n\nDivide the second equation by (5): \\[ 2x+y=1000. \\]\n\nSubtract: \\[ x=450. \\]\n\nThen \\[ y=100. \\]\n\n\\[ `\\boxed{450\\text{ adults and }100\\text{ children}}`{=tex}. \\]",
+    "mathematical_structure": "equation",
+    "required_method": "apply reversible algebraic operations and check",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.9",
+    "question_text": "Multiply by the conjugate: \\[ `\\frac{4-3i}{1-2i}`{=tex} `\\cdot`{=tex}\n`\\frac{1+2i}{1+2i}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.10",
+    "question_text": "Quadratic formula: \\[ `\\boxed{x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}}`{=tex}.\n\\]\n\nFor \\[ -4x\\^2+8x-5=0: \\]\n\n\\[ x= `\\frac{-8\\pm\\sqrt{64-80}}{-8}`{=tex} = `\\frac{-8\\pm4i}{-8}`{=tex}.\n\\]\n\nThus \\[ `\\boxed{x=1\\pm\\frac{i}{2}}`{=tex}. \\]",
+    "mathematical_structure": "quadratic equation",
+    "required_method": "select factoring, square-root, completing-square, or formula method",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-QUADRATICS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.11",
+    "question_text": "Alice's 20-minute head start is \\[\n5`\\left`{=tex}(`\\frac13`{=tex}`\\right`{=tex})=`\\frac53`{=tex}`\\text{ miles}`{=tex}.\n\\]\n\nLet (t) be hours after Bob starts: \\[ `\\frac53`{=tex}+5t=8t. \\]\n\n\\[ t=`\\frac59`{=tex}`\\text{ hr}`{=tex}. \\]\n\nConvert to minutes: \\[\n`\\frac59`{=tex}(60)=`\\frac{100}{3}`{=tex}`\\text{ min}`{=tex}. \\]\n\n\\[ `\\boxed{\\frac{100}{3}\\text{ minutes}\\approx33\\text{ minutes}}`{=tex}.\n\\]\n\nThe source solution includes a hand-drawn diagram on page 10 showing\nAlice ahead of Bob when Bob begins running.",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.12",
+    "question_text": "\\[ 2x^3-3x^2-8x+12=0 \\]\n\nGroup: \\[ x\\^2(2x-3)-4(2x-3)=0 \\]\n\n\\[ (x\\^2-4)(2x-3)=0 \\]\n\n\\[ (x-2)(x+2)(2x-3)=0. \\]\n\nTherefore \\[ `\\boxed{x=2,\\,-2,\\,\\frac32}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.13",
+    "question_text": "Average midterm score: \\[ `\\frac{94+83+87}{3}`{=tex}=88. \\]\n\nSince the midterm average and final are equally weighted: \\[\n`\\frac{88+x}{2}`{=tex}=90. \\]\n\n\\[ x=92. \\]\n\n\\[ `\\boxed{92\\%}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.14",
+    "question_text": "Let \\[ u=x\\^2. \\]\n\nThen \\[ u\\^2-u-12=0 \\]\n\n\\[ (u-4)(u+3)=0. \\]\n\nThus \\[ u=4`\\quad`{=tex}`\\text{or}`{=tex}`\\quad `{=tex}u=-3. \\]\n\nOnly (u=4) gives real (x): \\[ `\\boxed{x=\\pm2}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.15",
+    "question_text": "\\[ x-1=-`\\sqrt{7-x}`{=tex}. \\]\n\nSquare both sides: \\[ (x-1)\\^2=7-x \\]\n\n\\[ x\\^2-x-6=0 \\]\n\n\\[ (x-3)(x+2)=0. \\]\n\nCandidates: \\[ x=3,,-2. \\]\n\nChecking the original equation shows (x=3) is extraneous and (x=-2)\nworks.\n\n\\[ `\\boxed{x=-2}`{=tex}. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.16",
+    "question_text": "\\[ `\\sqrt[3]{x^2-6x}`{=tex}=-2. \\]\n\nCube both sides: \\[ x\\^2-6x=-8 \\]\n\n\\[ x\\^2-6x+8=0 \\]\n\n\\[ (x-4)(x-2)=0. \\]\n\n\\[ `\\boxed{x=2,4}`{=tex}. \\]",
+    "mathematical_structure": "radical expression",
+    "required_method": "simplify using radical/exponent rules and required form",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RADICALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.17",
+    "question_text": "\\[ A=P+Prt. \\]\n\nFactor (P): \\[ A=P(1+rt). \\]\n\nTherefore \\[ `\\boxed{P=\\frac{A}{1+rt}}`{=tex}. \\]",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.18",
+    "question_text": "\\[ -5`\\le`{=tex}-3x+1\\<10 \\]\n\n\\[ -6`\\le`{=tex}-3x\\<9. \\]\n\nDivide by (-3) and reverse the inequalities: \\[ 2`\\ge `{=tex}x\\>-3. \\]\n\nThus \\[ `\\boxed{(-3,2]}`{=tex}. \\]",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.19",
+    "question_text": "Domain restriction: \\[ \\|x+1\\|`\\ne0`{=tex} \\] so \\[ x`\\ne-1`{=tex}. \\]\n\nSolve: \\[ `\\frac4{|x+1|}`{=tex}\\>1 \\]\n\n\\[ 4\\>\\|x+1\\| \\]\n\n\\[ \\|x+1\\|\\<4 \\]\n\n\\[ -4\\<x+1\\<4 \\]\n\n\\[ -5\\<x\\<3. \\]\n\nExclude (x=-1): \\[ `\\boxed{(-5,-1)\\cup(-1,3)}`{=tex}. \\]",
+    "mathematical_structure": "absolute-value equation or inequality",
+    "required_method": "split into the required cases and verify",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-ABSOLUTE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_1_Solutions.md",
+    "question_number": "Q.20",
+    "question_text": "\\[ `\\frac{x(x-2)}{x+3}`{=tex}\\<0. \\]\n\nCritical values: \\[ -3,`\\quad0`{=tex},`\\quad2`{=tex}. \\]\n\nSign table:\n\n  Interval                   \\(x\\)   (x-2)   (x+3)   Expression\n  ------------------------ ------- ------- ------- ------------\n  ((-`\\infty`{=tex},-3))       (-)     (-)     (-)          (-)\n  ((-3,0))                     (-)     (-)     (+)          (+)\n  ((0,2))                      (+)     (-)     (+)          (-)\n  ((2,`\\infty`{=tex}))         (+)     (+)     (+)          (+)\n\nTherefore \\[ `\\boxed{(-\\infty,-3)\\cup(0,2)}`{=tex}. \\]",
+    "mathematical_structure": "function table",
+    "required_method": "follow the table mapping or pattern",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-TABLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.1 - Composite Functions",
+    "question_text": "Find (a) ((f`\\circ `{=tex}g)(x)) and the domain of (f`\\circ `{=tex}g),\nand (b) ((g`\\circ `{=tex}f)(x)) and the domain of (g`\\circ `{=tex}f).",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.2 - Cable Corrosion",
+    "question_text": "A 100-foot-long cable of diameter 4 inches is submerged in seawater.\nBecause of corrosion, the surface area of the cable decreases at the\nrate of\n\n\\[ 750`\\text{ in}`{=tex}\\^2`\\text{ per year}`{=tex}. \\]\n\nExpress the diameter (d) of the cable as a function of time (t) (in\nyears). Disregard corrosion at the ends of the cable.",
+    "mathematical_structure": "applied equation",
+    "required_method": "define the unknown, translate the relationships, solve, and check units",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH12-LINEAR-EQUATIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.3 - Domain and Range",
+    "question_text": "The function\n\n\\[ f(x)=`\\frac{2x-7}{9x+1}`{=tex} \\]\n\nis one-to-one. Find its domain. Find its range.\n\n**Hint:** For the second part, remember that the range of (f(x)) is the\ndomain of (f\\^{-1}(x)).",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.4 - Car Loan",
+    "question_text": "An automobile dealer offers customers no-down-payment 3-year loans at an\ninterest rate of (10%). If a customer can afford to pay \\$500 per month,\nfind the price of the most expensive car that can be purchased.",
+    "mathematical_structure": "compound-interest model",
+    "required_method": "identify compounding variables and evaluate the financial model",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-COMPOUND-INTEREST",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.5 - Consumer Price Index",
+    "question_text": "The CPI is the most widely used measure of inflation. In 1970, the CPI\nwas (37.8), and in 2000, the CPI was (168.8). This means that an urban\nconsumer who paid \\$37.80 for a market basket of consumer goods and\nservices in 1970 would have needed \\$168.80 for similar goods and\nservices in 2000.\n\nFind a simple exponential function of the form\n\n\\[ y=ab\\^t \\]\n\nthat models the CPI for 1970-2000, and predict its value for 2010.",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.6 - Exponential Equation",
+    "question_text": "Find all real solutions to\n\n\\[ `\\boxed{e^{x^2}=e^{7x-12}}`{=tex}. \\]",
+    "mathematical_structure": "exponential equation",
+    "required_method": "use a common base or logarithms and solve",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-EXP-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.7 - Zeroes / Roots",
+    "question_text": "Find all zeroes/roots of\n\n\\[ `\\boxed{f(x)=4x^3e^{4x}+3x^2e^{4x}}`{=tex}. \\]",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.8",
+    "question_text": "The original review contains Q.8 as an embedded source image rather than\nextractable PDF text. The original page is preserved in the\n`source_pages` folder of this batch so the question is not discarded or\nguessed.",
+    "mathematical_structure": "function table",
+    "required_method": "follow the table mapping or pattern",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-TABLES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.9 - Logarithmic Equation",
+    "question_text": "Find all real solutions to\n\n\\[ `\\boxed{\\log_3(x+3)+\\log_3(x+5)=1}`{=tex} \\]\n\nand check that they all make sense.",
+    "mathematical_structure": "logarithmic equation",
+    "required_method": "apply log properties, solve, and check argument domains",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-LOG-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.10 - Exponential Equation",
+    "question_text": "Find all real solutions to\n\n\\[ `\\boxed{3^{\\,2-3x}=4^{\\,2x+1}}`{=tex}. \\]",
+    "mathematical_structure": "exponential equation",
+    "required_method": "use a common base or logarithms and solve",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-EXP-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.11 - Graphing",
+    "question_text": "Sketch the graph of\n\n\\[ `\\boxed{y=-x^3+3x^2+10x}`{=tex} \\]\n\non the grid provided in the original review.",
+    "mathematical_structure": "algebraic expressions",
+    "required_method": "recognize the algebraic expressions structure and apply its source-supported rule",
+    "answer_type": "graph",
+    "mapped_family_id": "CH12-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.12 - Polynomial Roots",
+    "question_text": "\\(k\\) is some unknown constant. If one zero/root of\n\n\\[ f(x)=x^3-2x^2-16x+16k \\]\n\nis\n\n\\[ x=2, \\]\n\nfind all of (f(x))'s roots.\n\n**Hint:** First find (k).",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.13 - Polynomial Division",
+    "question_text": "Find the quotient and remainder if\n\n\\[ 2x^3-10x^2+x-2 \\]\n\nis divided by\n\n\\[ 2x\\^2+1. \\]",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review.md",
+    "question_number": "Q.14 - Factor Theorem",
+    "question_text": "Show that\n\n\\[ x-3 \\]\n\ndivides\n\n\\[ 3x^3-10x^2+7x-12 \\]\n\nwithout doing polynomial long division.",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.1 --- Composite Functions",
+    "question_text": "**Exercises 21--34:** Find:\n\n1.  ((f `\\circ `{=tex}g)(x)) and the domain of (f `\\circ `{=tex}g)\n2.  ((g `\\circ `{=tex}f)(x)) and the domain of (g `\\circ `{=tex}f)",
+    "mathematical_structure": "function composition",
+    "required_method": "evaluate or substitute the inner function first",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-COMPOSITION",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.2 --- Cable Corrosion",
+    "question_text": "A 100-foot-long cable of diameter 4 inches is submerged in seawater.\nBecause of corrosion, the surface area of the cable decreases at the\nrate of (750`\\text{ in}`{=tex}\\^2) per year.\n\nExpress the diameter (d) of the cable as a function of time (t) (in\nyears).\n\n*Disregard corrosion at the ends of the cable.*\n\n**Human-readable mathematical information**\n\n\\[\nL=100`\\text{ ft}`{=tex},`\\qquad `{=tex}d(0)=4`\\text{ in}`{=tex},`\\qquad`{=tex}\n`\\frac{\\Delta S}{\\Delta t}`{=tex}=-750`\\text{ in}`{=tex}\\^2/`\\text{year}`{=tex}\n\\]\n\n**Computer-readable (LaTeX)**\n\n``` latex\nL=100\\text{ ft},\\qquad d(0)=4\\text{ in},\\qquad\n\\frac{\\Delta S}{\\Delta t}=-750\\text{ in}^2/\\text{year}\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "rational expression",
+    "required_method": "factor, state restrictions, and simplify using the LCD",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.3 --- Domain and Range",
+    "question_text": "The function\n\n\\[ f(x)=`\\frac{2x-7}{9x+1}`{=tex} \\]\n\nis one-to-one.\n\n1.  Find its domain.\n2.  Find its range.\n\n**Hint:** For the second part, remember that the range of (f(x)) is the\ndomain of (f\\^{-1}(x)).\n\n**Computer-readable (LaTeX)**\n\n``` latex\nf(x)=\\frac{2x-7}{9x+1}\n\n\\operatorname{range}(f)=\\operatorname{domain}(f^{-1})\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "inverse function",
+    "required_method": "interchange input/output and solve, then check domains",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-INVERSES",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.4 --- Car Loan",
+    "question_text": "An automobile dealer offers customers no-down-payment 3-year loans at an\ninterest rate of 10%.\n\nIf a customer can afford to pay **\\$500 per month**, find the price of\nthe most expensive car that can be purchased.\n\n**Human-readable mathematical information**\n\n\\[ `\\text{Loan term}`{=tex}=3`\\text{ years}`{=tex},`\\qquad`{=tex}\nr=10%,`\\qquad`{=tex} `\\text{monthly payment}`{=tex}=\\$500 \\]\n\n**Computer-readable (LaTeX)**\n\n``` latex\n\\text{Loan term}=3\\text{ years},\\qquad\nr=10\\%,\\qquad\n\\text{monthly payment}=\\$500\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "compound-interest model",
+    "required_method": "identify compounding variables and evaluate the financial model",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-COMPOUND-INTEREST",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.5 --- Consumer Price Index",
+    "question_text": "The CPI is the most widely used measure of inflation.\n\nIn 1970, the CPI was 37.8, and in 2000, the CPI was 168.8. This means\nthat an urban consumer who paid \\$37.80 for a market basket of consumer\ngoods and services in 1970 would have needed \\$168.80 for similar goods\nand services in 2000.\n\nFind a simple exponential function of the form\n\n\\[ y=ab\\^t \\]\n\nthat models the CPI for 1970--2000, and predict its value for 2010.\n\n**Computer-readable (LaTeX)**\n\n``` latex\ny=ab^t\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.6 --- Exponential Equation",
+    "question_text": "Find all real solutions to the equation\n\n\\[ e^{x^2}=e\\^{7x-12}. \\]\n\n**Computer-readable (LaTeX)**\n\n``` latex\ne^{x^2}=e^{7x-12}\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "exponential equation",
+    "required_method": "use a common base or logarithms and solve",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-EXP-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.7 --- Zeroes / Roots",
+    "question_text": "Find all zeroes/roots of the function\n\n\\[ f(x)=4x^3e^{4x}+3x^2e^{4x}. \\]\n\n**Computer-readable (LaTeX)**\n\n``` latex\nf(x)=4x^3e^{4x}+3x^2e^{4x}\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.8 --- Radioactive Iodine Decay",
+    "question_text": "Radioactive iodine (\\^{131}`\\mathrm{I}`{=tex}) is frequently used in\ntracer studies involving the thyroid gland.\n\nThe substance decays according to the formula\n\n\\[ A(t)=A_0a\\^{-t}, \\]\n\nwhere (A_0) is the initial dose and (t) is the time in days.\n\nFind (a), assuming the half-life of (\\^{131}`\\mathrm{I}`{=tex}) is 8\ndays.\n\n**Computer-readable (LaTeX)**\n\n``` latex\nA(t)=A_0a^{-t}\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "exponential model",
+    "required_method": "determine initial value and growth/decay factor",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH5-EXP-MODELS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.9 --- Logarithmic Equation",
+    "question_text": "Find all real solutions to the equation\n\n\\[ `\\log`{=tex}\\_3(x+3)+`\\log`{=tex}\\_3(x+5)=1 \\]\n\nand check that they all make sense.\n\n**Computer-readable (LaTeX)**\n\n``` latex\n\\log_3(x+3)+\\log_3(x+5)=1\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "logarithmic equation",
+    "required_method": "apply log properties, solve, and check argument domains",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-LOG-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.10 --- Exponential Equation",
+    "question_text": "Find all real solutions to the equation\n\n\\[ 3^{2-3x}=4^{2x+1}. \\]\n\n**Computer-readable (LaTeX)**\n\n``` latex\n3^{2-3x}=4^{2x+1}\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "exponential equation",
+    "required_method": "use a common base or logarithms and solve",
+    "answer_type": "solution_set",
+    "mapped_family_id": "CH5-EXP-EQUATIONS-FULL",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.11 --- Graphing",
+    "question_text": "Sketch the graph of\n\n\\[ y=-x^3+3x^2+10x \\]\n\non a coordinate grid.\n\n**Computer-readable (LaTeX)**\n\n``` latex\ny=-x^3+3x^2+10x\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "coordinate geometry",
+    "required_method": "apply coordinate, distance, or midpoint relationships",
+    "answer_type": "graph",
+    "mapped_family_id": "CH34-COORDINATE",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.12 --- Polynomial Roots",
+    "question_text": "\\(k\\) is some unknown constant.\n\nIf one zero/root of\n\n\\[ f(x)=x^3-2x^2-16x+16k \\]\n\nis (x=2), find all of (f(x))'s roots.\n\n**Hint:** First find (k).\n\n**Computer-readable (LaTeX)**\n\n``` latex\nf(x)=x^3-2x^2-16x+16k,\\qquad x=2\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.13 --- Polynomial Division",
+    "question_text": "Find the quotient and remainder if\n\n\\[ 2x^3-10x^2+x-2 \\]\n\nis divided by\n\n\\[ 2x\\^2+1. \\]\n\n**Computer-readable (LaTeX)**\n\n``` latex\n\\frac{2x^3-10x^2+x-2}{2x^2+1}\n```\n\n------------------------------------------------------------------------",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  },
+  {
+    "source_path": "sources/tests/Test_3_Review_Human_Readable_Complete.md",
+    "question_number": "Q.14 --- Factor Theorem",
+    "question_text": "Show that (x-3) divides the polynomial\n\n\\[ 3x^3-10x^2+7x-12 \\]\n\nwithout doing polynomial long division.\n\n**Computer-readable (LaTeX)**\n\n``` latex\nx-3\\ \\text{ divides }\\ 3x^3-10x^2+7x-12\n```",
+    "mathematical_structure": "polynomial zeros or division",
+    "required_method": "use division/factor theorems and verify roots",
+    "answer_type": "exact_expression_or_value",
+    "mapped_family_id": "CH34-POLYNOMIALS",
+    "mapping_status": "CORRECT FAMILY"
+  }
+]

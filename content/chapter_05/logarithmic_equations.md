@@ -3,18 +3,23 @@ family_id: CH5-LOG-EQUATIONS
 chapter: 5
 section: "5.5-5.6"
 title: Logarithmic equations with domain checking
-status: model_inference_pending_source_review
+status: source_grounded
 source_refs:
-  - MODEL-INFERENCE-PENDING-SOURCE-REVIEW
+  - sources/lectures/5.4.md
+  - sources/lectures/5.5.md
+  - sources/lectures/5.6.md
+  - sources/tests/Test_3_Review.md
+  - sources/tests/Test_3_Review_Human_Readable_Complete.md
+  - sources/final exam review/Version_3_With_Solutions.md
 ---
 
 # Purpose
 
-Bridge direct lecture-shaped examples to independently recognized handwritten solutions. This seed is internal mathematical interpretation pending review of the absent course sources.
+Lectures 5.4–5.6 develop logarithms as inverses, the logarithm properties, and equation-solving methods. Test 3 review and the practice final supply cumulative prompts and solution evidence.
 
 # Professor Surface Construction
 
-The verified professor construction is not yet available. The milestone uses a short equation/function prompt with no displayed method; this must be replaced or confirmed after visual source review.
+The assessment evidence mixes expanding or condensing logarithms with equation solving. Argument positivity remains a required condition even when the algebra produces plausible candidates.
 
 # Underlying Mathematical Structure
 
@@ -56,7 +61,7 @@ Recheck the result in the original prompt. Apply domain restrictions whenever an
 
 # Variation Dimensions
 
-Change one controlled dimension at a time: coefficients, notation, representation, then prerequisite mixture. Do not claim professor fidelity until sources are reviewed.
+Change one controlled dimension at a time: coefficients, notation, representation, then prerequisite mixture. Use only variations supported by the attached lecture and assessment sources.
 
 # Difficulty Ladder
 
@@ -76,7 +81,7 @@ Use a table, verbal statement, or alternate notation when source-supported.
 Combine the family with one older algebra skill.
 
 ## L5 Professor Style
-Use reviewed source-like information order and guidance density; currently blocked on source review.
+Use the information order and guidance density visible in the attached assessment and review sources.
 
 ## L6 Timed
 Mix with adjacent families without hints.
@@ -90,7 +95,7 @@ Misrecognition; an invalid first decision; arithmetic or algebra execution error
 
 # Professor Traps
 
-Model-inferred V0 traps: changed information order, a hidden prerequisite, an invalid inverse operation, and omission of the required check. These are not attributed to the professor until source binaries are reviewed.
+Source-observed traps are using a log property across addition, dropping coefficients during condensation, accepting a nonpositive argument, and presenting a decimal when exact form is requested.
 
 # Professor-Style Templates
 

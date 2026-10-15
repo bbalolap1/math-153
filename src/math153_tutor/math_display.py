@@ -5,7 +5,6 @@ from dataclasses import dataclass
 
 import sympy
 
-
 TEXT_ANSWERS = {"no solution", "all real numbers", "none of these"}
 
 

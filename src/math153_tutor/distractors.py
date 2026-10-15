@@ -93,7 +93,10 @@ def meaningful_distractors(problem: PracticeProblem) -> list[Distractor]:
         )
     unique: list[Distractor] = []
     for candidate in candidates:
-        if candidate.answer and all(item.answer != candidate.answer for item in unique):
-            if not validate_practice_answer(problem, candidate.answer).correct:
-                unique.append(candidate)
+        if (
+            candidate.answer
+            and all(item.answer != candidate.answer for item in unique)
+            and not validate_practice_answer(problem, candidate.answer).correct
+        ):
+            unique.append(candidate)
     return unique[:3]

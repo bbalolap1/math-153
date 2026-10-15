@@ -99,9 +99,7 @@ def search_course_materials(
     for material in materials:
         if section is not None and material.section != section:
             continue
-        haystack = " ".join(
-            [material.title, material.section, material.topic, material.source_type, material.body]
-        ).casefold()
+        haystack = f"{material.title} {material.section} {material.topic} {material.source_type} {material.body}".casefold()
         if not tokens or all(token in haystack for token in tokens):
             matches.append(material)
     return matches
