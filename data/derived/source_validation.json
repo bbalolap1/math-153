@@ -1,0 +1,21 @@
+{
+  "markdown_sources_discovered": 53,
+  "markdown_sources_read": 53,
+  "markdown_sources_failed": 0,
+  "markdown_sources_unused": 0,
+  "questions_extracted": 240,
+  "solutions_extracted": 47,
+  "formulas_extracted": 1486,
+  "topics_extracted": 22,
+  "question_families_created": 35,
+  "question_families_with_source_refs": 35,
+  "empty_derived_files": 0,
+  "heading_only_templates": 0,
+  "chapters_detected": [
+    "1.x",
+    "2.x",
+    "3.x",
+    "4.x",
+    "5.x"
+  ]
+}

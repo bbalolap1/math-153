@@ -1,0 +1,2683 @@
+[
+  {
+    "family_id": "F0-REAL-NUMBERS",
+    "title": "Real-number classification",
+    "chapter_or_section": "0.1",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.4.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Real-number classification using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "complex numbers",
+      "equations",
+      "factoring",
+      "functions",
+      "inequalities",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "number sets"
+    ],
+    "hidden_prerequisites": [
+      "number sets"
+    ],
+    "first_decision": "Recognize the Real-number classification structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "> Converted from the handwritten source PDF. The wording, examples, and mathematical relationships are preserved as closely as possible in Markdown.\n\n---",
+      "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+      "Simplify and then rationalize the denominator: \\[ `\\boxed{\n\\frac{\\sqrt[5]{8x^3y^4}}\n{\\sqrt[5]{4x^4y^2}}\n}`{=tex} \\]"
+    ]
+  },
+  {
+    "family_id": "F0-SIGNED-OPERATIONS",
+    "title": "Signed-number operations",
+    "chapter_or_section": "0.2",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "purpose": "Practice Signed-number operations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "signed arithmetic"
+    ],
+    "hidden_prerequisites": [
+      "signed arithmetic"
+    ],
+    "first_decision": "Recognize the Signed-number operations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+      "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+      "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted."
+    ]
+  },
+  {
+    "family_id": "F0-FRACTIONS",
+    "title": "Fractions",
+    "chapter_or_section": "0.3",
+    "source_refs": [
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1_Review.md"
+    ],
+    "purpose": "Practice Fractions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "complex numbers",
+      "equations",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "fraction arithmetic"
+    ],
+    "hidden_prerequisites": [
+      "fraction arithmetic"
+    ],
+    "first_decision": "Recognize the Fractions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "> One-for-one human-readable Markdown conversion of the scanned lecture\n> notes. Material is preserved in source order.",
+      "\\[ `\\frac{12-y}{\\sqrt[3]{x}-4}`{=tex} \\]",
+      "\\[ `\\frac{x^2+5x-3y}{y^3-x^2}`{=tex} \\]\n\nProblems involving rational expressions usually ask you to add,\nsubtract, multiply, or divide them and/or simplify by cancelling common\nfactors from the numerator and denominator.\n\n------------------------------------------------------------------------"
+    ]
+  },
+  {
+    "family_id": "F0-ORDER-OPERATIONS",
+    "title": "Order of operations",
+    "chapter_or_section": "0.4",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "purpose": "Practice Order of operations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "order of operations"
+    ],
+    "hidden_prerequisites": [
+      "order of operations"
+    ],
+    "first_decision": "Recognize the Order of operations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+      "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+      "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted."
+    ]
+  },
+  {
+    "family_id": "F0-EXPONENT-RULES",
+    "title": "Exponent rules",
+    "chapter_or_section": "0.5",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Exponent rules using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "exponent laws"
+    ],
+    "hidden_prerequisites": [
+      "exponent laws"
+    ],
+    "first_decision": "Recognize the Exponent rules structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10. Exact answers may contain \uf070 or radicals or logarithms."
+    ]
+  },
+  {
+    "family_id": "F0-ALGEBRA-VOCAB",
+    "title": "Algebra vocabulary and evaluation",
+    "chapter_or_section": "0.6",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_3.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Algebra vocabulary and evaluation using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "difference quotient",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "algebra language",
+      "substitution"
+    ],
+    "hidden_prerequisites": [
+      "algebra language",
+      "substitution"
+    ],
+    "first_decision": "Recognize the Algebra vocabulary and evaluation structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+      "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+      "Convert to scientific notation: \\[ -0.00052. \\]"
+    ]
+  },
+  {
+    "family_id": "CH12-EXPRESSIONS",
+    "title": "Algebraic expressions",
+    "chapter_or_section": "1.1",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "purpose": "Practice Algebraic expressions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "distribution",
+      "like terms"
+    ],
+    "hidden_prerequisites": [
+      "distribution",
+      "like terms"
+    ],
+    "first_decision": "Recognize the Algebraic expressions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+      "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+      "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted."
+    ]
+  },
+  {
+    "family_id": "CH12-LINEAR-EQUATIONS",
+    "title": "Linear equations",
+    "chapter_or_section": "1.2",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md"
+    ],
+    "purpose": "Practice Linear equations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "applied problems",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "equation solving"
+    ],
+    "hidden_prerequisites": [
+      "equation solving"
+    ],
+    "first_decision": "Recognize the Linear equations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+      "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+      "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted."
+    ]
+  },
+  {
+    "family_id": "CH12-FACTORING",
+    "title": "Factoring",
+    "chapter_or_section": "1.3",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_2.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/1.3.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/4.1.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_1.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Factoring using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "difference quotient",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "factoring"
+    ],
+    "hidden_prerequisites": [
+      "factoring"
+    ],
+    "first_decision": "Recognize the Factoring structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+      "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+      "Convert to scientific notation: \\[ -0.00052. \\]"
+    ]
+  },
+  {
+    "family_id": "CH12-RATIONAL-EXPRESSIONS",
+    "title": "Rational expressions",
+    "chapter_or_section": "1.4",
+    "source_refs": [
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1_Review.md"
+    ],
+    "purpose": "Practice Rational expressions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "complex numbers",
+      "equations",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "factoring",
+      "restrictions"
+    ],
+    "hidden_prerequisites": [
+      "factoring",
+      "restrictions"
+    ],
+    "first_decision": "Recognize the Rational expressions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "> One-for-one human-readable Markdown conversion of the scanned lecture\n> notes. Material is preserved in source order.",
+      "\\[ `\\frac{12-y}{\\sqrt[3]{x}-4}`{=tex} \\]",
+      "\\[ `\\frac{x^2+5x-3y}{y^3-x^2}`{=tex} \\]\n\nProblems involving rational expressions usually ask you to add,\nsubtract, multiply, or divide them and/or simplify by cancelling common\nfactors from the numerator and denominator.\n\n------------------------------------------------------------------------"
+    ]
+  },
+  {
+    "family_id": "CH12-RADICALS",
+    "title": "Radicals and rational exponents",
+    "chapter_or_section": "2.1",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Radicals and rational exponents using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "radical rules"
+    ],
+    "hidden_prerequisites": [
+      "radical rules"
+    ],
+    "first_decision": "Recognize the Radicals and rational exponents structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10. Exact answers may contain \uf070 or radicals or logarithms."
+    ]
+  },
+  {
+    "family_id": "CH12-RADICAL-EQUATIONS",
+    "title": "Radical equations",
+    "chapter_or_section": "2.2",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/quizzes/Quiz_1_Solution.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Radical equations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "radicals",
+      "extraneous checks"
+    ],
+    "hidden_prerequisites": [
+      "radicals",
+      "extraneous checks"
+    ],
+    "first_decision": "Recognize the Radical equations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10. Exact answers may contain \uf070 or radicals or logarithms."
+    ]
+  },
+  {
+    "family_id": "CH12-QUADRATICS",
+    "title": "Quadratic equations",
+    "chapter_or_section": "2.3",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Quadratic equations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "equations",
+      "exponential equations",
+      "factoring",
+      "functions",
+      "inequalities",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "quadratic methods"
+    ],
+    "hidden_prerequisites": [
+      "quadratic methods"
+    ],
+    "first_decision": "Recognize the Quadratic equations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+      "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+      "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted."
+    ]
+  },
+  {
+    "family_id": "CH12-COMPLEX",
+    "title": "Complex numbers",
+    "chapter_or_section": "2.4",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.4.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Complex numbers using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "complex numbers",
+      "equations",
+      "factoring",
+      "functions",
+      "inequalities",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "complex arithmetic"
+    ],
+    "hidden_prerequisites": [
+      "complex arithmetic"
+    ],
+    "first_decision": "Recognize the Complex numbers structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "> Converted from the handwritten source PDF. The wording, examples, and mathematical relationships are preserved as closely as possible in Markdown.\n\n---",
+      "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+      "Simplify and then rationalize the denominator: \\[ `\\boxed{\n\\frac{\\sqrt[5]{8x^3y^4}}\n{\\sqrt[5]{4x^4y^2}}\n}`{=tex} \\]"
+    ]
+  },
+  {
+    "family_id": "CH12-ABSOLUTE",
+    "title": "Absolute value",
+    "chapter_or_section": "2.5",
+    "source_refs": [
+      "sources/lectures/1.1.md",
+      "sources/lectures/1.2.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md"
+    ],
+    "purpose": "Practice Absolute value using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "coordinate plane",
+      "equations",
+      "factoring",
+      "functions",
+      "inequalities",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "absolute value",
+      "intervals"
+    ],
+    "hidden_prerequisites": [
+      "absolute value",
+      "intervals"
+    ],
+    "first_decision": "Recognize the Absolute value structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "> Converted from the handwritten source PDF. The wording, examples, and mathematical relationships are preserved as closely as possible in Markdown.\n\n---",
+      "> One-for-one Markdown conversion of the handwritten lecture notes.\n> Content is kept in source order.\n\n------------------------------------------------------------------------",
+      "\\[ 3\\^1=3 \\]\n\n\\[ 3\\^2=3`\\cdot3`{=tex}=9 \\]\n\n\\[ 3\\^3=3`\\cdot3`{=tex}`\\cdot3`{=tex}=27 \\]\n\n\\[ 3\\^0=1 \\]\n\n\\[ 3\\^{-1}=`\\frac{1}{3^1}`{=tex}=`\\frac13`{=tex} \\]\n\n\\[ 3\\^{-2}=`\\frac{1}{3^2}`{=tex}=`\\frac19`{=tex} \\]\n\n------------------------------------------------------------------------"
+    ]
+  },
+  {
+    "family_id": "CH12-INEQUALITIES",
+    "title": "Inequalities",
+    "chapter_or_section": "2.6",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.1.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/quizzes/Quiz_4.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Inequalities using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "inequality solving",
+      "interval notation"
+    ],
+    "hidden_prerequisites": [
+      "inequality solving",
+      "interval notation"
+    ],
+    "first_decision": "Recognize the Inequalities structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH34-COORDINATE",
+    "title": "Coordinate plane",
+    "chapter_or_section": "3.1",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/lectures/3.1(2).md",
+      "sources/quizzes/Quiz_4.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Coordinate plane using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "compound interest",
+      "coordinate plane",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "coordinates",
+      "distance/midpoint"
+    ],
+    "hidden_prerequisites": [
+      "coordinates",
+      "distance/midpoint"
+    ],
+    "first_decision": "Recognize the Coordinate plane structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH34-LINES",
+    "title": "Lines",
+    "chapter_or_section": "3.2",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/3.1(2).md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md"
+    ],
+    "purpose": "Practice Lines using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "completing the square",
+      "compound interest",
+      "coordinate plane",
+      "difference quotient",
+      "equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "slope",
+      "line equations"
+    ],
+    "hidden_prerequisites": [
+      "slope",
+      "line equations"
+    ],
+    "first_decision": "Recognize the Lines structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH34-TABLES",
+    "title": "Tables and missing values",
+    "chapter_or_section": "3.3",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.1(2).md",
+      "sources/lectures/3.3.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Tables and missing values using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "difference quotient",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "table patterns"
+    ],
+    "hidden_prerequisites": [
+      "table patterns"
+    ],
+    "first_decision": "Recognize the Tables and missing values structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+      "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+      "Convert to scientific notation: \\[ -0.00052. \\]"
+    ]
+  },
+  {
+    "family_id": "CH34-CIRCLES",
+    "title": "Circles",
+    "chapter_or_section": "3.4",
+    "source_refs": [
+      "sources/activities/Activity_3.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/3.2.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/quizzes/Quiz_2_Solution.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md"
+    ],
+    "purpose": "Practice Circles using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "equations",
+      "factoring",
+      "functions",
+      "inequalities",
+      "lines",
+      "polynomials",
+      "quadratic equations",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "circle equations",
+      "completing square"
+    ],
+    "hidden_prerequisites": [
+      "circle equations",
+      "completing square"
+    ],
+    "first_decision": "Recognize the Circles structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Solve the equation:\n\n\\[ `\\boxed{\n\\frac{3}{7x-2}\n=\n\\frac{9}{3x+1}\n}`{=tex} \\]",
+      "It takes a boy **90 minutes** to mow the lawn, but his sister can mow it\nin **60 minutes**.\n\nHow long would it take them to mow the lawn if they worked together,\nusing two lawn mowers?",
+      "Complete the square:\n\n\\[ `\\boxed{4x^2-12-11}`{=tex} \\]\n\n> The source itself visibly prints the expression this way; no missing\n> variable has been inserted."
+    ]
+  },
+  {
+    "family_id": "CH34-FUNCTIONS",
+    "title": "Functions",
+    "chapter_or_section": "4.1",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Functions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "difference quotient",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "function notation",
+      "domain/range"
+    ],
+    "hidden_prerequisites": [
+      "function notation",
+      "domain/range"
+    ],
+    "first_decision": "Recognize the Functions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+      "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+      "Convert to scientific notation: \\[ -0.00052. \\]"
+    ]
+  },
+  {
+    "family_id": "CH34-COMPOSITION",
+    "title": "Function composition",
+    "chapter_or_section": "4.2",
+    "source_refs": [
+      "sources/activities/Activity_4.md",
+      "sources/lectures/3.7.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Function composition using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "coordinate plane",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "composition order",
+      "substitution"
+    ],
+    "hidden_prerequisites": [
+      "composition order",
+      "substitution"
+    ],
+    "first_decision": "Recognize the Function composition structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Several values of two functions (f) and (g) are listed in the following\ntables.",
+      "The volume of a sphere of radius (r) is\n\n\\[ `\\boxed{\nV=\\frac{4\\pi r^3}{3}\n}`{=tex}. \\]\n\nA meteorologist is inflating a spherical balloon with helium gas.\n\nIf the radius of the balloon is changing at a rate of\n\n\\[ 1.5`\\text{ cm/sec}`{=tex}, \\]\n\nexpress the volume (V) of the balloon as a function of time (t), in\nseconds.",
+      "Find the inverses of the following functions."
+    ]
+  },
+  {
+    "family_id": "CH34-INVERSES",
+    "title": "Inverse functions",
+    "chapter_or_section": "4.3",
+    "source_refs": [
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Inverse functions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "inverse operations"
+    ],
+    "hidden_prerequisites": [
+      "inverse operations"
+    ],
+    "first_decision": "Recognize the Inverse functions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Several values of two functions (f) and (g) are listed in the following\ntables.",
+      "The volume of a sphere of radius (r) is\n\n\\[ `\\boxed{\nV=\\frac{4\\pi r^3}{3}\n}`{=tex}. \\]\n\nA meteorologist is inflating a spherical balloon with helium gas.\n\nIf the radius of the balloon is changing at a rate of\n\n\\[ 1.5`\\text{ cm/sec}`{=tex}, \\]\n\nexpress the volume (V) of the balloon as a function of time (t), in\nseconds.",
+      "Find the inverses of the following functions."
+    ]
+  },
+  {
+    "family_id": "CH34-DIFFERENCE-QUOTIENT",
+    "title": "Difference quotient",
+    "chapter_or_section": "4.4",
+    "source_refs": [
+      "sources/lectures/3.4.md"
+    ],
+    "purpose": "Practice Difference quotient using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "difference quotient",
+      "factoring",
+      "functions",
+      "lines"
+    ],
+    "underlying_structure": [
+      "substitution",
+      "factoring"
+    ],
+    "hidden_prerequisites": [
+      "substitution",
+      "factoring"
+    ],
+    "first_decision": "Recognize the Difference quotient structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Given \\[ f(x)=x\\^2+6x-4, \\] find \\[ `\\frac{f(x+h)-f(x)}{h}`{=tex}. \\]\n\nSubstitute: \\[ `\\frac{(x+h)^2+6(x+h)-4-(x^2+6x-4)}{h}`{=tex}. \\]\n\nExpand and cancel: \\[ `\\frac{2xh+h^2+6h}{h}`{=tex}. \\]\n\nFactor: \\[ `\\frac{h(2x+h+6)}{h}`{=tex}. \\]\n\nTherefore: \\[ `\\boxed{2x+h+6}`{=tex}. \\]"
+    ]
+  },
+  {
+    "family_id": "CH34-QUADRATIC-FUNCTIONS",
+    "title": "Quadratic functions and graphs",
+    "chapter_or_section": "4.5",
+    "source_refs": [
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.3.md",
+      "sources/lectures/2.4.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/5.6.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Solutions.md"
+    ],
+    "purpose": "Practice Quadratic functions and graphs using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "equations",
+      "exponential equations",
+      "factoring",
+      "functions",
+      "inequalities",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "vertex",
+      "intercepts"
+    ],
+    "hidden_prerequisites": [
+      "vertex",
+      "intercepts"
+    ],
+    "first_decision": "Recognize the Quadratic functions and graphs structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order.",
+      "\\[ (3x-2)\\^2=(x-5)(9x+4) \\]\n\nThe notes expand both sides and solve the resulting equation, obtaining\n\n\\[ `\\boxed{x=-\\frac{24}{29}}`{=tex} \\]",
+      "> Human-readable Markdown conversion of the scanned lecture notes,\n> preserved in source order."
+    ]
+  },
+  {
+    "family_id": "CH34-POLYNOMIALS",
+    "title": "Polynomial functions",
+    "chapter_or_section": "4.6",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_2.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.3.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/4.1.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/Completing_the_Square.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Polynomial functions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "completing the square",
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "zeros",
+      "end behavior",
+      "division"
+    ],
+    "hidden_prerequisites": [
+      "zeros",
+      "end behavior",
+      "division"
+    ],
+    "first_decision": "Recognize the Polynomial functions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+      "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+      "Convert to scientific notation: \\[ -0.00052. \\]"
+    ]
+  },
+  {
+    "family_id": "CH34-RATIONAL-FUNCTIONS",
+    "title": "Rational functions",
+    "chapter_or_section": "4.7",
+    "source_refs": [
+      "sources/activities/Activity_1.md",
+      "sources/activities/Activity_4.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/1.4.md",
+      "sources/lectures/2.1.md",
+      "sources/lectures/2.5.md",
+      "sources/lectures/2.6.md",
+      "sources/lectures/2.7.md",
+      "sources/lectures/3.4.md",
+      "sources/lectures/3.7.md",
+      "sources/lectures/4.2.md",
+      "sources/lectures/5.1.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/quizzes/Quiz_3.md",
+      "sources/quizzes/Quiz_3_Solution.md",
+      "sources/quizzes/Quiz_4_Solution.md",
+      "sources/quizzes/Quiz_5.md",
+      "sources/quizzes/Quiz_5_Solution.md",
+      "sources/quizzes/Quiz_6.md",
+      "sources/quizzes/Quiz_6_Solution.md",
+      "sources/tests/Test_1.md",
+      "sources/tests/Test_1_Review.md",
+      "sources/tests/Test_1_Solutions.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Rational functions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "absolute value",
+      "completing the square",
+      "complex numbers",
+      "compound interest",
+      "coordinate plane",
+      "difference quotient",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals",
+      "rational expressions"
+    ],
+    "underlying_structure": [
+      "asymptotes",
+      "holes",
+      "domain"
+    ],
+    "hidden_prerequisites": [
+      "asymptotes",
+      "holes",
+      "domain"
+    ],
+    "first_decision": "Recognize the Rational functions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "Simplify the expression \\[ 5x-\\[3-4(x-2)\\]. \\]",
+      "Simplify the expression shown on the activity sheet involving \\[\n3x,`\\quad 2`{=tex},`\\quad `{=tex}10y,`\\quad `{=tex}5y,`\\quad `{=tex}6x\n\\] and division signs.\n\n> The source extraction does not preserve the fraction layout clearly\n> enough to reconstruct Q.2 one-for-one without guessing, so the\n> ambiguous layout is explicitly retained rather than silently\n> corrected.",
+      "Convert to scientific notation: \\[ -0.00052. \\]"
+    ]
+  },
+  {
+    "family_id": "CH5-EXP-FUNCTIONS",
+    "title": "Exponential functions",
+    "chapter_or_section": "5.1",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Exponential functions using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "exponential behavior"
+    ],
+    "hidden_prerequisites": [
+      "exponential behavior"
+    ],
+    "first_decision": "Recognize the Exponential functions structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH5-EXP-MODELS",
+    "title": "Exponential models",
+    "chapter_or_section": "5.2",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Exponential models using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "growth/decay translation"
+    ],
+    "hidden_prerequisites": [
+      "growth/decay translation"
+    ],
+    "first_decision": "Recognize the Exponential models structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH5-COMPOUND-INTEREST",
+    "title": "Compound interest",
+    "chapter_or_section": "5.3",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md"
+    ],
+    "purpose": "Practice Compound interest using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "interest formulas",
+      "calculator entry"
+    ],
+    "hidden_prerequisites": [
+      "interest formulas",
+      "calculator entry"
+    ],
+    "first_decision": "Recognize the Compound interest structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH5-NATURAL-EXP",
+    "title": "Natural exponential function",
+    "chapter_or_section": "5.3",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Natural exponential function using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "natural exponential"
+    ],
+    "hidden_prerequisites": [
+      "natural exponential"
+    ],
+    "first_decision": "Recognize the Natural exponential function structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  },
+  {
+    "family_id": "CH5-LOGARITHMS",
+    "title": "Logarithms",
+    "chapter_or_section": "5.4",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Logarithms using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "log/exponential conversion"
+    ],
+    "hidden_prerequisites": [
+      "log/exponential conversion"
+    ],
+    "first_decision": "Recognize the Logarithms structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10. Exact answers may contain \uf070 or radicals or logarithms."
+    ]
+  },
+  {
+    "family_id": "CH5-LOG-PROPERTIES",
+    "title": "Logarithm properties",
+    "chapter_or_section": "5.5",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Logarithm properties using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "log properties"
+    ],
+    "hidden_prerequisites": [
+      "log properties"
+    ],
+    "first_decision": "Recognize the Logarithm properties structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10. Exact answers may contain \uf070 or radicals or logarithms."
+    ]
+  },
+  {
+    "family_id": "CH5-LOG-EQUATIONS-FULL",
+    "title": "Logarithmic equations",
+    "chapter_or_section": "5.6",
+    "source_refs": [
+      "sources/final exam review/Version_1_With_Solutions.md",
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/final exam review/Version_3_With_Solutions.md",
+      "sources/final exam review/Version_3_Without_Solutions-1.md",
+      "sources/final exam review/Version_3_Without_Solutions.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.5.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Logarithmic equations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "log equations",
+      "domain checks"
+    ],
+    "hidden_prerequisites": [
+      "log equations",
+      "domain checks"
+    ],
+    "first_decision": "Recognize the Logarithmic equations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10 . Exact answers may contain rt or radicals or logarithms.",
+      "10. Exact answers may contain \uf070 or radicals or logarithms."
+    ]
+  },
+  {
+    "family_id": "CH5-EXP-EQUATIONS-FULL",
+    "title": "Exponential equations",
+    "chapter_or_section": "5.6",
+    "source_refs": [
+      "sources/final exam review/Version_1_Without_Solutions.md",
+      "sources/final exam review/Version_2_With_Solutions.md",
+      "sources/final exam review/Version_2_Without_Solutions.md",
+      "sources/lectures/5.2.md",
+      "sources/lectures/5.3.md",
+      "sources/lectures/5.4.md",
+      "sources/lectures/5.6.md",
+      "sources/tests/Test_3_Review.md",
+      "sources/tests/Test_3_Review_Human_Readable_Complete.md"
+    ],
+    "purpose": "Practice Exponential equations using the attached Math 153 lecture and assessment evidence.",
+    "recognition_clues": [
+      "compound interest",
+      "coordinate plane",
+      "equations",
+      "exponential equations",
+      "exponential functions",
+      "factoring",
+      "function composition",
+      "functions",
+      "inequalities",
+      "inverse functions",
+      "lines",
+      "logarithmic equations",
+      "logarithms",
+      "polynomials",
+      "quadratic equations",
+      "radicals"
+    ],
+    "underlying_structure": [
+      "exponential equations",
+      "logarithms"
+    ],
+    "hidden_prerequisites": [
+      "exponential equations",
+      "logarithms"
+    ],
+    "first_decision": "Recognize the Exponential equations structure before selecting an operation.",
+    "decision_path": [
+      "recognize",
+      "choose a source-supported method",
+      "execute",
+      "verify",
+      "present"
+    ],
+    "professor_traps": [],
+    "answer_presentation": "Use the form and checks requested by the source-shaped prompt.",
+    "error_categories": [
+      "recognition",
+      "first decision",
+      "algebra execution",
+      "answer form"
+    ],
+    "variation_boundaries": "Controlled template parameters only; do not invent a new construction.",
+    "progression_levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "source_evidence": [
+      "10. Exact answers may contain \uf070 or radicals or logarithms.",
+      "1.   Simplify.                                                                                           (1.2 #29)",
+      "2.   Factor the polynomial.                                                                              (1.3 #97)"
+    ]
+  }
+]
